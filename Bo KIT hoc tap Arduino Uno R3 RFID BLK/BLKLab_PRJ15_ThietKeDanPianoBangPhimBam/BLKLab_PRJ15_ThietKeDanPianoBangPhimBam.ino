@@ -13,6 +13,8 @@
   -D5: nối chân (pin1) của phím bấm 6    
   -D4: nối chân (pin1) của phím bấm 7
   -D3: nối chân (pin1) của phím bấm 8
+  -D11: nối chân (pin1) của phím 9
+  -D12: nối chân (pin1) của phím 10
   - Chú thích: + pin 1: (chân nối với Arduino)
                + pin 2: (chân nối với đất - GND)
  + Loa:
@@ -108,10 +110,10 @@ void loop() {
   }
   if (digitalRead(p9) == OFF) {
     playSound(NOTE_re2);                                             // Phát âm thanh tương ứng với phím 8
-    Serial.println("Phim 8 duoc nhan");
+    Serial.println("Phim 9 duoc nhan");
   }
   if (digitalRead(p10) == OFF) {
     playSound(NOTE_mi2);                                             // Phát âm thanh tương ứng với phím 8
-    Serial.println("Phim 8 duoc nhan");
+    Serial.println("Phim 10 duoc nhan");
   }
 }
