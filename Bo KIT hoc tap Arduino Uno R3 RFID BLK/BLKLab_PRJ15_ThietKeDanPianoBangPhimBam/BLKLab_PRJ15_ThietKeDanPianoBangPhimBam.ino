@@ -20,9 +20,6 @@
  + Loa:
   -D2: nối chân Anot của loa   
 
- * Hướng dẫn chơi happy birthday đơn giản:
-   Ta đánh theo nhịp: 1 1 2 1 4 3,                 1 1 2 1 5 4,              1 1 8 6 4 3 2
-                     Happy birthday to you,    happy birthday to you,      happy birthday to…
 */
 
 const int p1 = 10; 
