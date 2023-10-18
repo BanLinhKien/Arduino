@@ -66,7 +66,7 @@ void loop()
         modeRun = OPEN_STATE;
         myservo.write(GOC_MO);
         digitalWrite(BTN_LOA, LOW);
-        delay(20);
+        delay(50);
         digitalWrite(BTN_LOA, HIGH);
         timeMillis = millis();
       }
