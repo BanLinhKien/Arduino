@@ -16,7 +16,6 @@
 #include <DistanceSRF04.h>
 #include <Servo.h>
 
-
 DistanceSRF04 Dist;
 Servo myservo;
 #define BTN_LOA     10
@@ -25,7 +24,7 @@ Servo myservo;
 #define SRF04_TRIG  2
 
 
-#define GOC_DONG 180 //Đây là góc đóng của servo
+#define GOC_DONG 130 //Đây là góc đóng của servo
 #define GOC_MO 0 //Đây là góc mở của servo
 
 int distance;
@@ -52,8 +51,10 @@ void setup()
   myservo.attach(11);
   myservo.write(GOC_DONG);
   pinMode(BTN_LOA, OUTPUT);
+  pinMode(13, OUTPUT);
   pinMode(A7, INPUT_PULLUP);
   digitalWrite(BTN_LOA, HIGH);
+
 }
 void loop()
 { 
@@ -68,6 +69,7 @@ void loop()
         digitalWrite(BTN_LOA, LOW);
         delay(50);
         digitalWrite(BTN_LOA, HIGH);
+        digitalWrite(13, HIGH);
         timeMillis = millis();
       }
       break;
@@ -80,10 +82,11 @@ void loop()
       if(readSRF04() == 1 )
       {
         timeMillis = millis();
-      }
+      }  
       break;
     case CLOSE_STATE:
        myservo.write(GOC_DONG);
+       digitalWrite(13, LOW);
        delay(500);
        modeRun = IDLE_STATE;
       break;
@@ -97,7 +100,7 @@ uint8_t readSRF04()
         previousMillis = millis();
         distance = Dist.getDistanceCentimeter();
         // Phần distance < 10 đây là phần cài đặt khoảng cách cảm biến nhận được kích hoạt mở thùng rác
-        if (distance < 30 && distance > 1) 
+        if (distance < 10 && distance > 1) 
         {  
             autoMillis = millis();
             return 1;
