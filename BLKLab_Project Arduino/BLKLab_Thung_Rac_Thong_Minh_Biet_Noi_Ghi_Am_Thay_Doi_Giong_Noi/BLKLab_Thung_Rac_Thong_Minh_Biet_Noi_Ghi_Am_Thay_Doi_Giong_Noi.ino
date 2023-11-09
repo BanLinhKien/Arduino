@@ -10,8 +10,6 @@
               D11           |      Dây cam
  *          Arduino         |     Còi chip(Loa)
               D10           |     Chân dương
- *          Arduino         |     Cảm biến rung
-              A7            |       Data
  *            
  ***************************************************************************/
 #include <DistanceSRF04.h>
@@ -23,10 +21,10 @@ Servo myservo;
 #define SERVO       11
 #define SRF04_ECHO  3
 #define SRF04_TRIG  2
-#define CB_Rung     A7
 
-#define GOC_DONG 0 //Đây là góc đóng của servo
-#define GOC_MO 180 //Đây là góc mở của servo
+
+#define GOC_DONG 130 //Đây là góc đóng của servo
+#define GOC_MO 0 //Đây là góc mở của servo
 
 int distance;
 unsigned long previousMillis = 0;
@@ -43,7 +41,7 @@ typedef enum
 }MODE_STATE;
 uint8_t modeRun = IDLE_STATE;
 uint32_t timeMillis = 0;
-uint8_t timeOpen  = 3;
+uint8_t timeOpen  = 2;
 void setup()
 {
   Serial.begin(9600);
@@ -52,8 +50,10 @@ void setup()
   myservo.attach(11);
   myservo.write(GOC_DONG);
   pinMode(BTN_LOA, OUTPUT);
+  pinMode(13, OUTPUT);
   pinMode(A7, INPUT_PULLUP);
   digitalWrite(BTN_LOA, HIGH);
+
 }
 void loop()
 { 
@@ -61,13 +61,14 @@ void loop()
   switch(modeRun)
   {
     case IDLE_STATE:
-      if(readSRF04() == 1 || readCBRung() == 1)
+      if(readSRF04() == 1 )
       {
         modeRun = OPEN_STATE;
         myservo.write(GOC_MO);
         digitalWrite(BTN_LOA, LOW);
         delay(50);
         digitalWrite(BTN_LOA, HIGH);
+        digitalWrite(13, HIGH);
         timeMillis = millis();
       }
       break;
@@ -77,13 +78,14 @@ void loop()
          timeMillis = millis() ;
          modeRun = CLOSE_STATE;
       }
-      if(readSRF04() == 1 || readCBRung() == 1)
+      if(readSRF04() == 1 )
       {
         timeMillis = millis();
-      }
+      }  
       break;
     case CLOSE_STATE:
        myservo.write(GOC_DONG);
+       digitalWrite(13, LOW);
        delay(500);
        modeRun = IDLE_STATE;
       break;
@@ -97,21 +99,11 @@ uint8_t readSRF04()
         previousMillis = millis();
         distance = Dist.getDistanceCentimeter();
         // Phần distance < 10 đây là phần cài đặt khoảng cách cảm biến nhận được kích hoạt mở thùng rác
-        if (distance < 30 && distance > 1) 
+        if (distance < 10 && distance > 1) 
         {  
             autoMillis = millis();
             return 1;
         }
         return 0;
       }
-}
-uint8_t readCBRung()
-{
-    sensorValueCBRung = analogRead(A7 );
-    Serial.println(sensorValueCBRung);
-    if(sensorValueCBRung < 2400) 
-    { 
-       return 1;
-    }
-    return 0;
 }
