@@ -127,7 +127,7 @@ void setup()
   Serial.begin(9600);
   lcd.begin(16, 2);
   pinMode(mq2Pin, INPUT);                         // Khởi tạo chân kết nối với MQ2
-  pinMode(mhirPin, INPUT);
+  pinMode(mhirPin, INPUT_PULL);                   // Khởi tạo chân kết nối với Cảm biến lửa
   pinMode(buzzerPin, OUTPUT);
   pinMode(relay1Pin, OUTPUT);
   pinMode(relay2Pin, OUTPUT);
