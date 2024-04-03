@@ -214,7 +214,7 @@ void setup()
   lcd.begin(16, 2);
   sim.begin(9600);
   pinMode(mq2Pin, INPUT);                         // Khởi tạo chân kết nối với MQ2
-  pinMode(mhirPin, INPUT_PULL);
+  pinMode(mhirPin, INPUT_PULLUP);
   pinMode(buzzerPin, OUTPUT);
   pinMode(relay1Pin, OUTPUT);
   pinMode(relay2Pin, OUTPUT);
