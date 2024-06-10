@@ -567,14 +567,22 @@ void TaskMainDisplay(void *pvParameters) {
     xTaskCreatePinnedToCore(TaskButton,         "TaskButton" ,       1024*4 ,  NULL,  5 ,  &TaskButton_handle ,  0);
     while(1) {
          if(autoManual == AUTO) {
-              if(readMQ2() > mq2Thresshold || readFireSensor() == SENSOR_FIRE_ON) {
+              if(readMQ2() > mq2Thresshold ) {
                  buzzerON = 1;
-                 relay1State = ON;  relay2State = ON; 
+                 relay1State = ON;  relay2State = OFF; 
                  controlRelay(RELAY1, relay1State);
                  controlRelay(RELAY2, relay2State);
                  Blynk.virtualWrite(V1, 3); 
                  Blynk.virtualWrite(V2, 1);  
                  windowState = 1; controlWindow(windowState);
+                 delay(3000);
+              }
+              else if(readFireSensor() == SENSOR_FIRE_ON) {
+                 buzzerON = 1;
+                 relay1State = OFF;  relay2State = ON; 
+                 controlRelay(RELAY1, relay1State);
+                 controlRelay(RELAY2, relay2State);
+                 Blynk.virtualWrite(V1, 1); 
                  delay(3000);
               }
               else if(readMQ2() < mq2Thresshold - 100  && readFireSensor() == SENSOR_FIRE_OFF ) {
