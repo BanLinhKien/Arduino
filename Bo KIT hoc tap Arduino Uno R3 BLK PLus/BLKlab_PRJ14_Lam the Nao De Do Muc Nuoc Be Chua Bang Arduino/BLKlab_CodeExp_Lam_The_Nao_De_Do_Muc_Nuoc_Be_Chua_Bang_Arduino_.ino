@@ -7,8 +7,8 @@
              D2             |           Trig
              D3             |           Echo
  *         Arduino          |         LCD_I2C
-             A4             |           SCL
-             A5             |           SDA
+             A4             |           SDA
+             A5             |           SCL
  *         Arduino          |          Relay
              D5             |           IN
  *         Arduino          |        Còi chíp
