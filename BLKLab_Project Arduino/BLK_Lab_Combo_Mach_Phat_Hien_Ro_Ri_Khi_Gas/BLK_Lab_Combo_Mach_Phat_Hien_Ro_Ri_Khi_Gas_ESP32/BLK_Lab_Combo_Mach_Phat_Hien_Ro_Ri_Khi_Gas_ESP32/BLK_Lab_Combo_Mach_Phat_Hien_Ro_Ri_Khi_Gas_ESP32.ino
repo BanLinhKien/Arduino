@@ -136,8 +136,8 @@ void setup() {
   ESP32PWM::allocateTimer(2);
   ESP32PWM::allocateTimer(3);
   myservo1.setPeriodHertz(50);  
-  myservo1.attach(SERVO1, 500, 2400);
   myservo2.setPeriodHertz(50);  
+  myservo1.attach(SERVO1, 500, 2400);
   myservo2.attach(SERVO2, 500, 2400);
   closeWindow();
   // ---------- Kết nối WiFi ---------
@@ -160,6 +160,7 @@ void setup() {
   xTaskCreatePinnedToCore(TaskMainDisplay,    "TaskMainDisplay" ,  1024*4 ,  NULL,  5 ,  &TaskMainDisplay_handle  , 0 );
   xTaskCreatePinnedToCore(TaskSwitchAPtoSTA,  "TaskSwitchAPtoSTA" , 1024*4 ,  NULL,  5 ,  NULL ,  0);
   xTaskCreatePinnedToCore(TaskBuzzer,         "TaskBuzzer" , 1024*2 ,  NULL,  5 ,  NULL ,  0);
+  xTaskCreatePinnedToCore(TaskButton,         "TaskButton" ,       1024*4 ,  NULL,  5 ,  &TaskButton_handle ,  0);
   
 }
 void loop() {
@@ -539,34 +540,35 @@ int sendNotificationsOnce = 0;
 void TaskMainDisplay(void *pvParameters) {
     //----------- Khởi tạo LCD ------------------
     delay(10000);
-    My_LCD.clear();
-    LCDPrint(0,0, "WAIT FOR SENSORS",0 );
-    LCDPrint(1,0, "TO START",0 );
-    for(int i = 60; i >= 10 ; i --) {
-        My_LCD.setCursor(12, 1);
-        My_LCD.print(" ");
-        My_LCD.setCursor(13, 1);
-        My_LCD.print(i);
-        delay(1000);
-    }  
+    // My_LCD.clear();
+    // LCDPrint(0,0, "WAIT FOR SENSORS",0 );
+    // LCDPrint(1,0, "TO START",0 );
+    // for(int i = 60; i >= 10 ; i --) {
+    //     My_LCD.setCursor(12, 1);
+    //     My_LCD.print(" ");
+    //     My_LCD.setCursor(13, 1);
+    //     My_LCD.print(i);
+    //     delay(1000);
+    // }  
 
-    LCDPrint(0,0, "WAIT FOR SENSOR",0 );
-    LCDPrint(1,0, "TO START",0 );
-    for(int i = 9; i >= 0 ; i --) {
-        My_LCD.setCursor(13, 1);
-        My_LCD.print(" ");
-        My_LCD.setCursor(14, 1);
-        My_LCD.print(i);
-        delay(1000);
-    } 
+    // LCDPrint(0,0, "WAIT FOR SENSOR",0 );
+    // LCDPrint(1,0, "TO START",0 );
+    // for(int i = 9; i >= 0 ; i --) {
+    //     My_LCD.setCursor(13, 1);
+    //     My_LCD.print(" ");
+    //     My_LCD.setCursor(14, 1);
+    //     My_LCD.print(i);
+    //     delay(1000);
+    // } 
 
     My_LCD.clear();
     printRelayState();
     printMode();
     printMQ2(); 
-    xTaskCreatePinnedToCore(TaskButton,         "TaskButton" ,       1024*4 ,  NULL,  5 ,  &TaskButton_handle ,  0);
+    
     while(1) {
          if(autoManual == AUTO) {
+           
               if(readMQ2() > mq2Thresshold ) {
                  buzzerON = 1;
                  relay1State = ON;  relay2State = OFF; 
@@ -656,6 +658,10 @@ void TaskBuzzer(void *pvParameters) {
 //----------------------------------------------------------------
 //----------------------Task Button-------------------------------
 void TaskButton(void *pvParameters) {
+    pinMode(buttonPinMENU, INPUT);
+    pinMode(buttonPinDOWN, INPUT);
+    pinMode(buttonPinUP, INPUT);
+    pinMode(buttonPinONOFF, INPUT);
     // ---------- Khởi tạo BUTTON --------------
     button_init(&buttonMENU, buttonPinMENU, BUTTON1_ID);
     button_init(&buttonDOWN, buttonPinDOWN, BUTTON2_ID);
@@ -723,6 +729,7 @@ int modeSetThresHold   = 0;
 void button_press_short_callback(uint8_t button_id) {
       switch(button_id) {
         case BUTTON1_ID :  // Menu
+          Serial.println("bt1 press short");
           buzzerBip();
           modeSetThresHold = 1 - modeSetThresHold;
           if(modeSetThresHold == 1) {
@@ -749,6 +756,7 @@ void button_press_short_callback(uint8_t button_id) {
           }
           break;
         case BUTTON2_ID :
+          Serial.println("bt2 press short");
           buzzerBip();
           if(modeSetThresHold == 1) {
               My_LCD.clear();
@@ -776,6 +784,7 @@ void button_press_short_callback(uint8_t button_id) {
          
           break;
         case BUTTON3_ID :
+          Serial.println("bt3 press short");
           buzzerBip();
           if(modeSetThresHold == 1) {
               My_LCD.clear();
@@ -802,6 +811,7 @@ void button_press_short_callback(uint8_t button_id) {
           }
           break;  
         case BUTTON4_ID :
+          Serial.println("bt4 press short");
           buzzerBip();
           if(modeSetThresHold == 0) {
             if(autoManual == AUTO)
