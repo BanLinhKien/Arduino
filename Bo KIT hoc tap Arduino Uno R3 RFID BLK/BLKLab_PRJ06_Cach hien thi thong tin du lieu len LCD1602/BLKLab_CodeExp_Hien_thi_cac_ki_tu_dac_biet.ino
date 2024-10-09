@@ -7,6 +7,9 @@
   -D3: nối chân D4 trên LCD      -D6: nối chân D7 trên LCD
   -D4: nối chân D5 trên LCD      -D9: nối chân E trên LCD
   -D5: nối chân D6 trên LCD      -D11: nối chân RS trên LCD
+Youtube: https://www.youtube.com/shorts/4kUr1YKePUM
+Tiktok: https://www.tiktok.com/@banlinhkienretail/video/7270699295504895240?lang=vi-VN
+Facebook: https://www.facebook.com/reel/702340381728748
 */
  
 #include <LiquidCrystal.h>                  //Khai báo thư viện của LCD
