@@ -9,4 +9,4 @@ Bộ KIT Học Tập Arduino Uno R3 RFID BLK:
 
 https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-rfid-blk-p38419269.html
 
-![Youtube](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVAxXdQPs4jIvT29LEdy9jZCEztgWzN259g&s) [BanLinhKien.Vn](https://www.youtube.com/@BanLinhKienVn)
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVAxXdQPs4jIvT29LEdy9jZCEztgWzN259g&s" alt="Youtube" width="250" />  [BanLinhKien.Vn](https://www.youtube.com/@BanLinhKienVn)
