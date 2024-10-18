@@ -1,5 +1,5 @@
 # Arduino_BANLINHKIEN
-![BANLINHKIEN](https://drive.google.com/file/d/1VaGzzpWRly3HHHNEbGjeQi1a6ojid0X6/view?usp=sharing)
+![BANLINHKIEN](https://drive.google.com/file/d/10gQAECYKkLewUlCpQhpdJ2m_CF3aPzmu/view?usp=sharing)
 
 Bộ KIT Học Tập Arduino Uno R3 BLK Plus: 
 
