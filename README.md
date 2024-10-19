@@ -36,5 +36,5 @@
 
 [***Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)***](https://banlinhkien.com/combo-mach-phat-hien-ro-ri-khi-gas-phong-chong-chay-no-ngat-khi-esp32-p38420050.html)
 
-<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20240329_OzboUELGyt.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20240329_RUxz1OJYHT.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)" width="400" />  
+<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20240329_OzboUELGyt.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20241019_pA2y2ZBmGu.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)" width="400" />  
 
