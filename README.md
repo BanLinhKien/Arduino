@@ -7,6 +7,10 @@
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdgS0IxquKvMSPtIH1lRTPotJWkOBLT_KQ5g&s" alt="Facebook" width="50" />   [**Banlinhkien**](https://www.facebook.com/banlinhkienMH)
 
+<img src="https://quyhyvong.com/wp-content/uploads/2021/11/Logo-Shopee.png" alt="Shopee" width="50" />   [**Banlinhkien.com Official Store**](https://shopee.vn/banlinhkien_mh)
+
+<img src="https://freepnglogo.com/images/all_img/1714299055tiktok-shop-logo-png.png" alt="TiktokShop" width="50" />   [**BanLinhKien Retail**](https://www.tiktok.com/@banlinhkienretail?_t=8qfDAd26YlD&_r=1)
+
 Bộ KIT Học Tập Arduino Uno R3 BLK Plus: 
 
 https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-blk-plus-p38419270.html
