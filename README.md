@@ -11,7 +11,7 @@
 
 <img src="https://freepnglogo.com/images/all_img/1714299055tiktok-shop-logo-png.png" alt="TiktokShop" width="50" />   [**BanLinhKien Retail**](https://www.tiktok.com/@banlinhkienretail?_t=8qfDAd26YlD&_r=1)
 
-# [Bộ KIT Học Tập Arduino Uno R3 RFID BLK] (https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-rfid-blk-p38419269.html)
+## [Bộ KIT Học Tập Arduino Uno R3 RFID BLK] (https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-rfid-blk-p38419269.html)
 
 <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230809_17PCMBLIyi.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 RFID BLK" width="300" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230812_uYm8JxNdLJ.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 RFID BLK" width="300" />   
 
@@ -27,10 +27,3 @@
 
 <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20240329_OzboUELGyt.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)" width="300" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20240329_RUxz1OJYHT.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)" width="300" />  
 
-Bộ KIT Học Tập Arduino Uno R3 BLK Plus: 
-
-https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-blk-plus-p38419270.html
-
-Bộ KIT Học Tập Arduino Uno R3 RFID BLK: 
-
-https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-rfid-blk-p38419269.html
