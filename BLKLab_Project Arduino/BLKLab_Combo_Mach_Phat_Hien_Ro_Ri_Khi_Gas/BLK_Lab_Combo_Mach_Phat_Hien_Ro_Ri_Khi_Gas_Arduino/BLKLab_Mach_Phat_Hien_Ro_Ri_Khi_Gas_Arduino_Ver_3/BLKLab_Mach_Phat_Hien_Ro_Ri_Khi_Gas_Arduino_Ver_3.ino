@@ -704,13 +704,20 @@ void callNumber1() {                                          // Chuong trinh co
 
 String smokePre;
 void phanhoi(int tipe) {
-  sim.println("AT+CMGF=1");
+//  sim.println("AT+CMGF=1");
 //  sim.println("AT+CSCS=\"GSM\"");
 //  delay(500);
-  String temp = "AT+CMGS=\"";
-    temp += (String)phoneNumber;
-    temp += "\"";
-  sim.println(temp);           // Gửi tin nhắn đến số điện thoại
+//  String temp = "AT+CMGS=\"";
+//    temp += (String)phoneNumber;
+//    temp += "\"";
+//  sim.println(temp);           // Gửi tin nhắn đến số điện thoại
+  Serial.println ("Gui tin nhan den dien thoai");
+  sim.println("AT+CMGF=1");    
+  delay(1500);
+  sim.println("AT+CSCS=\"GSM\"");
+  delay(500);
+  sim.println("AT+CMGS=\"" + phoneNumber + "\"\r");             // Gui tin nhăn đen so dien thoai
+  delay(1000);
   switch (tipe) 
   {
     case 0:
