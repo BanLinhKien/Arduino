@@ -571,6 +571,9 @@ void check_SMS() {
     if (sms == "TU DONG\r") {
       autoo = 1;
       manual = 0;
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(0);
       Serial.println("Che do tu dong");
       delay(200);
@@ -578,6 +581,9 @@ void check_SMS() {
     else if (sms == "DIEU KHIEN\r") {
       autoo = 0;
       manual = 1;
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(1);
       Serial.println("Che do dieu khien");
       delay(200);
@@ -586,6 +592,9 @@ void check_SMS() {
       door_open();
       y++;
       delay(200);
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(2);
       Serial.println("Gui tin mo cua");
     }
@@ -593,6 +602,9 @@ void check_SMS() {
       door_close();
       y++;
       delay(200);
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(3);
       Serial.println("Gui tin dong cua");
     }
@@ -600,6 +612,9 @@ void check_SMS() {
       relay1_on();
       z++;
       delay(200);
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(4);
       Serial.println("Gui tin bat quat");
     }
@@ -607,6 +622,9 @@ void check_SMS() {
       relay1_off();
       z++;
       delay(200);
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(5);
       Serial.println("Gui tin tat quat");
     }
@@ -614,6 +632,9 @@ void check_SMS() {
       relay2_on();
       x++;
       delay(200);
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(6);
       Serial.println("Gui tin bat bom");
     }
@@ -621,18 +642,30 @@ void check_SMS() {
       relay2_off();
       x++;
       delay(200);
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(7);
       Serial.println("Gui tin tat bom");
     }
     else if (sms == "GAS\r") {
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(8);
       Serial.println("Gui khi Gas");
     }
     else if (sms == "SDT\r") {
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(9);
       Serial.println("Gui so dien thoai");
     }
     else if (sms == "CHE DO\r") {
+      digitalWrite(buzzerPin, HIGH);                // Bật còi
+      delay(1000);
+      digitalWrite(buzzerPin, LOW);
       phanhoi(11);
       Serial.println("Gui che do hien tai");
     }
@@ -705,8 +738,8 @@ void callNumber1() {                                          // Chuong trinh co
 String smokePre;
 void phanhoi(int tipe) {
 //  sim.println("AT+CMGF=1");
-//  sim.println("AT+CSCS=\"GSM\"");
-//  delay(500);
+////  sim.println("AT+CSCS=\"GSM\"");
+////  delay(500);
 //  String temp = "AT+CMGS=\"";
 //    temp += (String)phoneNumber;
 //    temp += "\"";
