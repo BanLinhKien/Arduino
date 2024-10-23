@@ -17,7 +17,7 @@
 #include <SoftwareSerial.h>
 SoftwareSerial simSerial(10, 11); // TX 10 ; RX 11
 
-#define PHONE_NUMBER      "0393973793"
+#define PHONE_NUMBER      "0393973793"              // thay đổi số điện thoại
 #define SET_BAUDRATE      "AT+IPREX=115200"         // thay đổi badrate (VD: "AT+IPREX=115200")
 #define MCU_SIM_BAUDRATE  115200
 
@@ -82,12 +82,18 @@ void setup() {
     delay(200);
     sim_at_cmd("AT+CIMI");
     delay(200);
+    sim_at_cmd("AT+CMGF=1");    // khởi động chức năng SMS
+    delay(100);  
+    sim_at_cmd("AT+CNMI=1,2,0,0,0"); 
+    delay(100);
+    sim_at_cmd("AT+CMGL=\"REC UNREAD\"");          // đọc tin nhắn tới
+    delay(100);
     pinMode(13,OUTPUT); 
     digitalWrite(13,HIGH);
 
-    sent_sms();
+    sent_sms();                 // thực hiện gửi tin nhắn
     delay(5000);                // Delay 5s 
-    call();
+    call();                     // thực hiện cuộc gọi đi
 }
 
 void loop() {     
