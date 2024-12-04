@@ -30,7 +30,7 @@
 
 [***Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (Arduino)***](https://banlinhkien.com/combo-mach-phat-hien-ro-ri-khi-gas-phong-chong-chay-no-ngat-khi-arduino-p38420049.html)
 
-<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20240329_ws5QvOexTO.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (Arduino)" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20240331_WYb6CFqFlI.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (Arduino)" width="400" />
+<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20241029_KqWQ0QAZLa.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (Arduino)" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20241021_EGrk21Ezvo.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (Arduino)" width="400" />
 
 ---
 
