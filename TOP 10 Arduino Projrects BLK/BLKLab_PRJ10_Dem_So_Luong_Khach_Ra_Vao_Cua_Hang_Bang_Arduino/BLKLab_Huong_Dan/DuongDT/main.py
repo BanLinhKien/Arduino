@@ -44,24 +44,31 @@ class MainApp(CTk):
         # TODO Create image
         my_image = CTkImage(light_image=Image.open("logo.png"),
                             dark_image=Image.open("logo.png"),
-                            size=(200,200))
+                            size=(220,200))
         # TODO Tao lable de chua anh
         my_logo = CTkLabel(frame_left_1,
                            text="",
                            image=my_image)
         my_logo.grid(column=0, row=0, padx=10, pady=6)
+
+        my_topic = CTkLabel(frame_left_1,
+                            text="Ứng Dụng IoT Trong Quản Lý\n Giám Sát Trạm Xử Lý Rác Thải ",
+                            font=("Arial", 16),
+                            anchor="center")
+        my_topic.grid(column=0, row=1, padx=10, pady=6, sticky="W")
+
         my_name = CTkLabel(frame_left_1,
                            text="Đỗ Thế Dương",
                            font=("Arial", 16))
-        my_name.grid(column=0, row=1, padx=10, pady=6, sticky="W")
+        my_name.grid(column=0, row=2, padx=10, pady=6, sticky="W")
         my_class = CTkLabel(frame_left_1,
                             text="Lớp 62TĐH-HTN",
                             font=("Arial", 16))
-        my_class.grid(column=0, row=2, padx=10, pady=6, sticky="W")
+        my_class.grid(column=0, row=3, padx=10, pady=6, sticky="W")
         my_school = CTkLabel(frame_left_1,
                              text="Trường Đại học Thủy Lợi",
                              font=("Arial", 16))
-        my_school.grid(column=0, row=3, padx=10, pady=6, sticky="W")
+        my_school.grid(column=0, row=4, padx=10, pady=6, sticky="W")
 
         # Frame cho radio chọn khu vực
         frame_left_2 = CTkFrame(frame_left)
