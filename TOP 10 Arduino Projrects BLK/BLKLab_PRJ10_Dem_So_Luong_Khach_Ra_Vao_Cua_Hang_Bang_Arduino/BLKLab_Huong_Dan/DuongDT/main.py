@@ -11,6 +11,7 @@ from db_excel import *
 from lastest_data_show import *
 from map_app import *
 from mqtt_app import *
+from auto_gen_data import *
 class MainApp(CTk):
     def __init__(self):
         super().__init__()
@@ -30,6 +31,14 @@ class MainApp(CTk):
         login_form.mainloop()
 
     def open_dashboard(self):
+        broker = "broker.hivemq.com"
+        port = 1883
+        topic = "ESP_SIM4G/DATA"
+
+        # Create the MQTT client handler and connect to the broker
+        mqtt_handler = MQTTClientHandler(broker, port, topic)
+        mqtt_handler.connect()
+        mqtt_handler.start()
         # Tạo cửa sổ Dashboard
         root = CTkToplevel(self)
         set_appearance_mode("dark")  # Modes: system (default), light, dark

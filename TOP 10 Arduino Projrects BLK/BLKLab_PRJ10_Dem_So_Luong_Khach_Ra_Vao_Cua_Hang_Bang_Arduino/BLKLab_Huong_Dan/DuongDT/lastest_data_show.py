@@ -664,7 +664,7 @@ class SensorApp(ctk.CTkFrame):
 
     def auto_update(self):
         self.update_data()
-        self.after(5000, self.auto_update)  # Lặp lại sau mỗi 5000ms (5 giây)
+        self.after(1000, self.auto_update)  # Lặp lại sau mỗi 5000ms (5 giây)
 
     def blink_box(self, key):
         if not self.blink_flags[key]:
