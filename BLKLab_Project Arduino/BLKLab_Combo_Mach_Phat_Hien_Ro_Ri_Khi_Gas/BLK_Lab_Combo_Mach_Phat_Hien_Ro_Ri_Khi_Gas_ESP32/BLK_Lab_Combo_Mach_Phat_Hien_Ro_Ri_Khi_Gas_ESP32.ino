@@ -18,7 +18,7 @@ char BLYNK_AUTH_TOKEN[32]   =   "";
 #include <ESP32Servo.h>
 
 //-------------------- Khai báo Kalman Filter----------------------
-SimpleKalmanFilter kfilter(2, 2, 0.001);
+SimpleKalmanFilter kfilter(2, 2, 0.1);
 //-------------------- Khai báo Button-----------------------------
 // Khai báo chân các nút nhấn
 #define buttonPinMENU    5
@@ -189,17 +189,38 @@ void D_AP_SER_Page() {
       st += "</li>";
     }
     st += "</ul>";
-   IPAddress ip = WiFi.softAPIP();             //Get ESP IP Adress
-        //String ipStr = String(ip[0]) + '.' + String(ip[1]) + '.' + String(ip[2]) + '.' + String(ip[3]);
-        s = "<ul>";
-        s = "\n\r\n<!DOCTYPE HTML>\r\n<html><h1>GAS DETECTION SYSTEM</h1> ";
-        //s += ipStr;
-        s += "<p>";
-        s += st;
-        s += "<h1> Config Wifi and Token Blynk</h1>";
-        s += "<form method='get' action='a'><label style='font-size:30px'>SSID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input style='font-size: 30px; height:80px'  name='ssid' length=32> <br> <br> <label style='font-size:30px'>Password:</label><input style='font-size: 30px; height:80px' name='pass' length=64> <br><br><label style='font-size:30px'>Tocken:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input style='font-size: 30px; height:80px' name='token' length=64> <br><br><input  style='font-size:30px;height:60px; width: 100px' type='submit'></form>";
-        s += "</ul>";
-        s += "</html>\r\n\r\n";
+   IPAddress ip = WiFi.softAPIP();  // Get ESP IP Address
+      s = "<!DOCTYPE html>\r\n";
+      s += "<html lang='en'>\r\n";
+      s += "<head>\r\n";
+      s += "<meta charset='UTF-8'>\r\n";
+      s += "<meta name='viewport' content='width=device-width, initial-scale=1.0'>\r\n";
+      s += "<title>GAS DETECTION SYSTEM</title>\r\n";
+      s += "<style>\r\n";
+      s += "body { font-family: Arial, sans-serif; background-color: #f2f2f2; text-align: center; padding: 20px; }\r\n";
+      s += "h1 { color: #333; }\r\n";
+      s += "form { background: #fff; display: inline-block; padding: 40px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }\r\n";
+      s += "label { font-size: 24px; display: block; margin: 15px 0 5px; text-align: left; }\r\n";
+      s += "input[type='text'], input[type='password'] { width: 100%; padding: 15px; font-size: 24px; border: 1px solid #ccc; border-radius: 8px; }\r\n";
+      s += "input[type='submit'] { margin-top: 20px; font-size: 24px; padding: 15px 30px; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer; }\r\n";
+      s += "input[type='submit']:hover { background-color: #45a049; }\r\n";
+      s += "</style>\r\n";
+      s += "</head>\r\n";
+      s += "<body>\r\n";
+      s += "<h1>GAS DETECTION SYSTEM</h1>\r\n";
+      s += "<p>" + st + "</p>\r\n";
+      s += "<h1>Configure WiFi and Blynk Token</h1>\r\n";
+      s += "<form method='get' action='a'>\r\n";
+      s += "<label for='ssid'>SSID:</label>\r\n";
+      s += "<input type='text' id='ssid' name='ssid' maxlength='32'>\r\n";
+      s += "<label for='pass'>Password:</label>\r\n";
+      s += "<input type='text' id='pass' name='pass' maxlength='64'>\r\n";
+      s += "<label for='token'>Token:</label>\r\n";
+      s += "<input type='text' id='token' name='token' maxlength='64'>\r\n";
+      s += "<input type='submit' value='Save'>\r\n";
+      s += "</form>\r\n";
+      s += "</body>\r\n";
+      s += "</html>\r\n";
       
     server.send( 200 , "text/html", s);
 }
@@ -501,8 +522,10 @@ void printRelayState() {
 //-----------------------  Read MQ2 value ---------------------------
 int readMQ2() {
     float MQ2_Value = analogRead(SENSOR_MQ2);
-    MQ2_Value = kfilter.updateEstimate(MQ2_Value);
+    // MQ2_Value = kfilter.updateEstimate(MQ2_Value);
+    // MQ2_Value = constrain(MQ2_Value, 400 , 4095);
     MQ2_Value = map(MQ2_Value, 0 , 4095, 0, 10000 );
+
     Serial.println(MQ2_Value);
     return MQ2_Value;
 }
