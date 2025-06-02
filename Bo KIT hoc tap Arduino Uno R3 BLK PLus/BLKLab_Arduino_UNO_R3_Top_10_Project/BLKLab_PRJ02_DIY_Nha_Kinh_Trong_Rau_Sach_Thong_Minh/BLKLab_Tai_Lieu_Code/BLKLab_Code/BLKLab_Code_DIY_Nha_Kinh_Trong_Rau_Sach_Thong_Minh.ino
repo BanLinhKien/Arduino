@@ -1,3 +1,18 @@
+/* =================================================================================================*
+ *                                          BANLINHKIEN.COM                                         *
+ *==================================================================================================*                        
+ *                    PRJ02: DIY Nhà kính trồng rau sạch thông minh
+ * 
+ * Đấu nối: 
+ * Arduino UNO R3 vs LCD 16x2 I2C
+ * 5V <-> VCC  ;   GND <-> GND  ;   A4 <-> SDA  ;   A5 <-> SCL 
+ * Arduino UNO R3 vs Module DS1307
+ * 5V <-> VCC  ;   GND <-> GND  ;   A4 <-> SDA  ;   A5 <-> SCL 
+ * Arduino UNO R3 vs Module LED NEO Pixel 
+ * 5V <-> + (chân giữa)  ;   GND <-> - (ký hiệu trừ)  ;   D6 <-> S (ký hiệu S signal)  
+ * Arduino UNO R3 vs Cảm biến độ ẩm đất
+ * 5V <-> VCC  ;   GND <-> GND  ;   A0 <-> A0 
+ */
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <DHT.h>
