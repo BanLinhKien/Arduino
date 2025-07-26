@@ -1,6 +1,6 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
-LiquidCrystal_I2C lcd(0x3F, 16, 2); 
+LiquidCrystal_I2C lcd(0x27, 16, 2); 
 
   byte stepA1[8] = {0x0F,  0x0F,  0x06,  0x0A,  0x12,  0x12,  0x09,  0x00};
   byte stepA2[8] = {0x18,  0x1e,  0x18,  0x10,  0x10,  0x08,  0x04,  0x00};
@@ -14,7 +14,6 @@ LiquidCrystal_I2C lcd(0x3F, 16, 2);
 void setup() {
  lcd.init();
  lcd.backlight();
- lcd.begin(16,2);
  lcd.clear();
  lcd.setCursor(0,0);
  lcd.print("Banlinhkien.com");
@@ -45,7 +44,7 @@ void loop() {
    lcd.write(3);
    lcd.setCursor(j,0);
    lcd.write(4);
-   delay(500);
+   delay(250);
  
    lcd.clear ();
    lcd.setCursor(j,1);
@@ -56,7 +55,7 @@ void loop() {
    lcd.write(7);
    lcd.setCursor(k,0);
    lcd.write(8);
-   delay(500);
+   delay(250);
    lcd.clear ();
   }
 }
