@@ -9,7 +9,7 @@
 
 <img src="https://quyhyvong.com/wp-content/uploads/2021/11/Logo-Shopee.png" alt="Shopee" width="50" />   [**Banlinhkien.com Official Store**](https://shopee.vn/banlinhkien_mh)
 
-<img src="https://cdn.tuoitrethudo.vn/stores/news_dataimages/ngovuongtuan/042022/28/14/91f38395a754df4f8c27607cb6d840c7.png?rt=20220428145727" alt="TiktokShop" width="50" />   [**BanLinhKien Retail**](https://www.tiktok.com/@banlinhkienretail?_t=8qfDAd26YlD&_r=1)
+<img src="https://advertisingvietnam.com/cdn-cgi/image/width=1440,height=756,quality=90,fit=cover,format=auto/https://media-api.advertisingvietnam.com/oapi/v1/media?uuid=32e8d7f5-d0e0-452d-8d14-4d1357c1995b" alt="TiktokShop" width="50" />   [**BanLinhKien Retail**](https://www.tiktok.com/@banlinhkienretail?_t=8qfDAd26YlD&_r=1)
 
 <img src="https://pos.nvncdn.com/f2fe44-24897/store/20180126_gVLn1I1Irv2dz2XjhYDIshMM.png" alt="Banlinhkien" width="50" />   [**BanLinhKien**](https://banlinhkien.com/)
 
