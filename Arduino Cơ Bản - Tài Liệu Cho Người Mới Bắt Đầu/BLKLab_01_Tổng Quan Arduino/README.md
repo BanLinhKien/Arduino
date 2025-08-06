@@ -4,21 +4,21 @@
 
 ## Arduino là gì?
 
-Arduino là nền tảng điện tử mã nguồn mở gồm phần cứng và phần mềm, dễ sử dụng và linh hoạt. Các bo mạch Arduino có thể đọc dữ liệu từ môi trường (ánh sáng, nhiệt độ, độ ẩm, nút nhấn, tin nhắn…), sau đó điều khiển các thiết bị như động cơ, đèn LED hoặc gửi thông tin đến nơi khác. Vi điều khiển trên bo mạch được lập trình bằng ngôn ngữ C++ thông qua Arduino IDE, biên dịch thành mã máy để thực thi.
+**Arduino** là nền tảng điện tử mã nguồn mở gồm phần cứng và phần mềm, dễ sử dụng và linh hoạt. Các bo mạch Arduino có thể đọc dữ liệu từ môi trường *(ánh sáng, nhiệt độ, độ ẩm, nút nhấn, tin nhắn…)*, sau đó điều khiển các thiết bị như động cơ, đèn LED hoặc gửi thông tin đến nơi khác. Vi điều khiển trên bo mạch được lập trình bằng **ngôn ngữ C/C++** thông qua **Arduino IDE**, biên dịch thành mã máy để thực thi.
 
-Ra đời năm 2003 tại Học viện Interaction Design, Ivrea (Italy), Arduino ban đầu được tạo ra nhằm giúp sinh viên không chuyên về điện tử có thể nhanh chóng chế tạo sản phẩm với chi phí thấp. Là một dự án mã nguồn mở, Arduino khuyến khích cộng đồng toàn cầu cùng phát triển và đóng góp.
+Arduino ra đời năm 2003 tại [Học viện Interaction Design](https://en.wikipedia.org/wiki/Interaction_Design_Institute_Ivrea?utm_source=chatgpt.com), *Ivrea (Italy)*, Arduino ban đầu được tạo ra nhằm giúp sinh viên không chuyên về điện tử có thể nhanh chóng chế tạo sản phẩm với chi phí thấp. Là một dự án mã nguồn mở, Arduino khuyến khích cộng đồng toàn cầu cùng phát triển và đóng góp.
 
-Tên Arduino lấy từ một quán bar ở Ivrea, nơi các nhà sáng lập gặp nhau hình thành ý tưởng. Quán được đặt theo tên một vị chỉ huy quân đội, sau trở thành vua Italy giai đoạn 1002–1014.
+Tên **Arduino** lấy từ một quán bar ở *Ivrea*, nơi các nhà sáng lập gặp nhau hình thành ý tưởng. Quán được đặt theo tên một vị chỉ huy quân đội, sau trở thành vua Italy giai đoạn 1002–1014.
 
 <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_2.png" alt="Arduino" width="400" style="display: block; margin: 0 auto;"  />
 
 ## Tại sao là Arduino?
 
-Arduino được ưa chuộng trong nhiều lĩnh vực nhờ sự đơn giản, dễ sử dụng và mã nguồn mở. Nó phù hợp cho cả người mới bắt đầu lẫn lập trình viên giàu kinh nghiệm. Cộng đồng Arduino toàn cầu rất lớn, cung cấp nhiều thư viện và hỗ trợ mạnh mẽ, giúp người dùng dễ dàng tìm giải pháp cho vấn đề gặp phải.
+**Arduino** được ưa chuộng trong nhiều lĩnh vực nhờ sự đơn giản, dễ sử dụng và mã nguồn mở. Nó phù hợp cho cả người mới bắt đầu lẫn lập trình viên giàu kinh nghiệm. Cộng đồng Arduino toàn cầu rất lớn, cung cấp nhiều thư viện và hỗ trợ mạnh mẽ, giúp người dùng dễ dàng tìm giải pháp cho vấn đề gặp phải.
 
 Với người không chuyên điện tử như kiến trúc sư, giáo viên, nghệ sĩ…, Arduino giúp họ nhanh chóng tạo ra sản phẩm điện tử mà trước đây gần như không thể. Với kỹ sư điện tử, Arduino có thể bị xem là quá đơn giản vì nó che giấu phần phức tạp của lập trình vi điều khiển. Tuy nhiên, để làm chủ Arduino ở mức cao hơn (tùy biến hiệu ứng LED, kết nối cảm biến, truyền nhận dữ liệu…), đòi hỏi kiến thức sâu về vi điều khiển và các giao thức truyền dữ liệu.
 
-Ưu điểm lớn nhất của Arduino là cú pháp lệnh đơn giản, thư viện phong phú, cộng đồng lớn và mã nguồn mở. Ngoài ra, Arduino còn cung cấp Hardware Abstraction Library (HAL) dành cho những ai muốn nghiên cứu sâu cách thức hoạt động bên trong của nền tảng này.
+Ưu điểm lớn nhất của Arduino là *cú pháp lệnh đơn giản*, *thư viện phong phú*, *cộng đồng lớn* và *mã nguồn mở*. Ngoài ra, Arduino còn cung cấp Hardware Abstraction Library (HAL) dành cho những ai muốn nghiên cứu sâu cách thức hoạt động bên trong của nền tảng này.
 
 # Các Board Mạch Arduino Trên Thị Trường
 
@@ -26,7 +26,7 @@ Hiện nay, thị trường có hàng trăm board mạch Arduino khác nhau, ch�
 
 ## 1. Arduino Uno R3
 
-Arduino Uno R3 là board mạch phổ biến nhất, phù hợp cho người mới bắt đầu học về điện tử và lập trình.
+*Arduino Uno R3* là board mạch phổ biến nhất, phù hợp cho người mới bắt đầu học về điện tử và lập trình.
 
 <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_8.png" alt="Arduino" width="400" style="display: block; margin: 0 auto;" />
 
@@ -50,15 +50,15 @@ Arduino Uno R3 là board mạch phổ biến nhất, phù hợp cho người m�
 | Trọng lượng                     | 25 g                           |
 
 ### Đặc điểm nổi bật:
+- Sử dụng vi điều khiển *ATmega328* của hãng Atmel.
 - Lập trình qua cổng USB.
 - 4 LED: nguồn, RX, TX, Debug.
-- Nút nhấn Reset.
+- Nút nhấn Reset board mạch.
 - Jack nguồn DC (khi không dùng USB).
-- Header cho In-circuit Serial Programmer (ICSP).
-- **Giá tham khảo**: €20.00 (theo www.arduino.cc).
+- Các header cho In-circuit serial programmer (ICSP), hiểu đơn giản thì đây là các header để kết nối với mạch nạp cho chip nếu không nạp thông qua cổng USB.
 
 ### Giới thiệu vi điều khiển ATmega328:
-ATmega328 là vi điều khiển 8-bit của Atmel, tích hợp CPU, RAM (2 KB), ROM (32 KB Flash), EEPROM (1 KB), và các giao thức I2C, SPI. Nó là "trái tim" của Arduino Uno R3, hỗ trợ giao tiếp với cảm biến và điều khiển thiết bị.
+*ATmega328* là vi điều khiển 8-bit của Atmel, tích hợp CPU, RAM (2 KB), ROM (32 KB Flash), EEPROM (1 KB), và các giao thức I2C, SPI. Nó là "trái tim" của Arduino Uno R3, hỗ trợ giao tiếp với cảm biến và điều khiển thiết bị.
 
 | **Thông số**                     | **Giá trị**                     |
 |----------------------------------|---------------------------------|
@@ -78,7 +78,7 @@ ATmega328 là vi điều khiển 8-bit của Atmel, tích hợp CPU, RAM (2 KB),
 
 <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_3.jpg" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
 
-Arduino Nano là phiên bản thu gọn của Uno, sử dụng vi điều khiển ATmega328 (Nano 3.x) hoặc ATmega168 (Nano 2.x), được thiết kế cho các dự án cần kích thước nhỏ gọn, dễ tích hợp vào hệ thống nhúng.
+*Arduino Nano* là phiên bản thu gọn của Uno, sử dụng vi điều khiển *ATmega328* (Nano 3.x) hoặc *ATmega168* (Nano 2.x), được thiết kế cho các dự án cần kích thước nhỏ gọn, dễ tích hợp vào hệ thống nhúng.
 
 ### Thông số kỹ thuật
 
@@ -105,16 +105,16 @@ Arduino Nano là phiên bản thu gọn của Uno, sử dụng vi điều khiể
 - **Chân Analog bổ sung**: 8 chân Analog (so với 6 của Uno R3), tăng khả năng đọc dữ liệu từ cảm biến.
 - **Không có jack nguồn DC**: Chỉ cấp nguồn qua USB hoặc chân VIN, giúp giảm kích thước.
 - **Tương thích với Uno**: Sử dụng vi điều khiển tương tự Uno R3 (ATmega328 cho Nano 3.x), hỗ trợ hầu hết các thư viện và shield (với adapter).
-- **Giá tham khảo**: €21.00 (theo www.arduino.cc).
 
 ### Ứng dụng:
-Arduino Nano phù hợp cho các dự án nhỏ gọn như thiết bị IoT, cảm biến di động, robot mini, hoặc các ứng dụng cần tích hợp vào không gian hạn chế như quần áo thông minh hoặc mô hình điều khiển từ xa.
+*Arduino Nano* phù hợp cho các dự án nhỏ gọn như thiết bị IoT, cảm biến di động, robot mini, hoặc các ứng dụng cần tích hợp vào không gian hạn chế như quần áo thông minh hoặc mô hình điều khiển từ xa.
 
 ## 3. Arduino Leonardo
 
 <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_4.jpeg" alt="arduino" width="400" style="display: block; margin: 0 auto;" />
+.
 
-Arduino Leonardo sử dụng vi điều khiển ATmega32u4, tích hợp khả năng giao tiếp USB trực tiếp, phù hợp cho các dự án cần giả lập thiết bị đầu vào như chuột, bàn phím.
+*Arduino Leonardo* sử dụng vi điều khiển ATmega32u4, tích hợp khả năng giao tiếp USB trực tiếp, phù hợp cho các dự án cần giả lập thiết bị đầu vào như chuột, bàn phím.
 
 ### Thông số kỹ thuật
 
@@ -141,16 +141,16 @@ Arduino Leonardo sử dụng vi điều khiển ATmega32u4, tích hợp khả n�
 - **Nhiều chân I/O hơn**: 20 chân Digital I/O (7 chân PWM) và 12 chân Analog, tăng khả năng kết nối so với Uno R3.
 - **Cổng USB và jack nguồn DC**: Hỗ trợ lập trình và cấp nguồn linh hoạt.
 - **Tương thích với shield**: Giữ nguyên kích thước của Uno R3, tương thích với nhiều shield Arduino.
-- **Giá tham khảo**: €18.00 (theo www.arduino.cc).
 
 ### Ứng dụng:
-Arduino Leonardo phù hợp cho các dự án cần tương tác USB, như bàn phím tùy chỉnh, bộ điều khiển game, hoặc thiết bị mô phỏng đầu vào. Nó cũng được sử dụng trong các ứng dụng tự động hóa hoặc điều khiển thiết bị với số lượng cảm biến lớn.
+*Arduino Leonardo* phù hợp cho các dự án cần tương tác USB, như bàn phím tùy chỉnh, bộ điều khiển game, hoặc thiết bị mô phỏng đầu vào. Nó cũng được sử dụng trong các ứng dụng tự động hóa hoặc điều khiển thiết bị với số lượng cảm biến lớn.
 
 ## 4. Arduino Mega 2560
 
 <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_5.jpg" alt="Arduino" width="400" style="display: block; margin: 0 auto;" />
+ .                                                                                             
 
-Arduino Mega 2560 là phiên bản nâng cấp mạnh mẽ của Uno, sử dụng vi điều khiển ATmega2560, được thiết kế cho các dự án phức tạp đòi hỏi nhiều chân I/O và bộ nhớ lớn, như máy in 3D, robot, hoặc hệ thống điều khiển tự động.
+*Arduino Mega 2560* là phiên bản nâng cấp mạnh mẽ của Uno, sử dụng vi điều khiển ATmega2560, được thiết kế cho các dự án phức tạp đòi hỏi nhiều chân I/O và bộ nhớ lớn, như máy in 3D, robot, hoặc hệ thống điều khiển tự động.
 
 ### Thông số kỹ thuật
 
@@ -178,14 +178,13 @@ Arduino Mega 2560 là phiên bản nâng cấp mạnh mẽ của Uno, sử dụn
 - **4 cổng UART**: Cho phép giao tiếp với nhiều thiết bị ngoại vi qua giao thức Serial.
 - **Cổng USB và jack nguồn DC**: Hỗ trợ lập trình và cấp nguồn linh hoạt.
 - **Hỗ trợ shield**: Tương thích với nhiều shield Arduino, mở rộng khả năng như kết nối Ethernet, WiFi, hoặc điều khiển động cơ.
-- **Giá tham khảo**: €38.50 (theo www.arduino.cc).
 
 ### Ứng dụng:
-Arduino Mega 2560 phù hợp cho các dự án yêu cầu xử lý nhiều dữ liệu hoặc điều khiển đồng thời nhiều thiết bị, như robot tự hành, máy in 3D, hệ thống giám sát môi trường, hoặc các ứng dụng IoT phức tạp.
+*Arduino Mega 2560* phù hợp cho các dự án yêu cầu xử lý nhiều dữ liệu hoặc điều khiển đồng thời nhiều thiết bị, như robot tự hành, máy in 3D, hệ thống giám sát môi trường, hoặc các ứng dụng IoT phức tạp.
 
 ## 5. Arduino UNO R4
 
-Arduino UNO R4 là phiên bản mới nhất của dòng UNO, ra mắt vào tháng 6/2023, mang đến bước đột phá với vi điều khiển 32-bit và nhiều tính năng hiện đại. UNO R4 có hai phiên bản: **UNO R4 Minima** (tập trung vào hiệu suất cơ bản) và **UNO R4 WiFi** (tích hợp kết nối không dây và ma trận LED).
+*Arduino UNO R4* là phiên bản mới nhất của dòng **UNO**, ra mắt vào tháng 6/2023, mang đến bước đột phá với vi điều khiển *32-bit* và nhiều tính năng hiện đại. **UNO R4** có hai phiên bản: **UNO R4 Minima** (tập trung vào hiệu suất cơ bản) và **UNO R4 WiFi** (tích hợp kết nối không dây và ma trận LED).
 
 <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_6.webp" alt="UNO_R4" width="400" />  <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_7.webp" alt="UNO_R4" width="400" />
 
@@ -218,7 +217,6 @@ Arduino UNO R4 là phiên bản mới nhất của dòng UNO, ra mắt vào thá
   - Cổng Qwiic I2C để kết nối dễ dàng với các module cảm biến và thiết bị ngoại vi.
 - **Hỗ trợ HID**: Có thể giả lập chuột, bàn phím hoặc gamepad qua USB.
 - **Tương thích ngược**: Giữ nguyên kích thước, chân cắm và điện áp 5V của Uno R3, đảm bảo tương thích với các shield hiện có.
-- **Giá tham khảo**: €18.00 (Minima), €25.00 (WiFi) (theo www.arduino.cc).
 
 ### Ứng dụng:
 - **UNO R4 Minima**: Phù hợp cho các dự án yêu cầu hiệu suất cao nhưng không cần kết nối không dây, như tự động hóa, điều khiển âm thanh (nhờ DAC 12-bit), hoặc các ứng dụng CAN Bus.
@@ -226,7 +224,7 @@ Arduino UNO R4 là phiên bản mới nhất của dòng UNO, ra mắt vào thá
 
 ## 6. Bộ KIT Học Tập Arduino Uno R3 BLK Plus
 
-Bộ KIT Học Tập Arduino Uno R3 BLK Plus là bộ công cụ học tập được biên soạn bởi BanLinhKien, phiên bản nâng cấp của Bộ KIT Arduino Uno R3 RFID BLK, nhằm hỗ trợ người học từ cơ bản đến nâng cao khám phá lập trình và ứng dụng Arduino. Với 41 linh kiện và module, bộ KIT này giúp người dùng làm quen với các giao thức giao tiếp hiện đại và thực hiện nhiều dự án sáng tạo.
+**Bộ KIT Học Tập Arduino Uno R3 BLK Plus** là bộ công cụ học tập được biên soạn bởi [BanLinhKien](https://banlinhkien.com), nhằm hỗ trợ người học từ cơ bản đến nâng cao khám phá lập trình và ứng dụng *Arduino*. Với **41 linh kiện và module**, bộ KIT này giúp người dùng làm quen với các giao thức giao tiếp hiện đại và thực hiện nhiều dự án sáng tạo.
 
 <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230821_o5LKOchlIF.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 BLK Plus" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230818_gWTNTGRu66.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 BLK Plus" width="400" />   
 
