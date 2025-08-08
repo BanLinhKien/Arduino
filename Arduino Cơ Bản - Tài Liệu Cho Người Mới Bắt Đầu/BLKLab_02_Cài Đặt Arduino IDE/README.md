@@ -1,6 +1,6 @@
 # Cài Đặt Arduino IDE
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_1.jpg" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_1.jpg" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
 
 ## Khái niệm
 
@@ -18,7 +18,7 @@ Hiểu một cách đơn giản, **Arduino IDE** là 1 phần mềm giúp chúng
 - Truy cập trang chủ Arduino: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 - Chọn phiên bản phù hợp với hệ điều hành của bạn (Windows, macOS, Linux).
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_2.png" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_2.png" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
 
 - Nhấn nút **Download** để tải về.
 
@@ -30,23 +30,23 @@ Hiểu một cách đơn giản, **Arduino IDE** là 1 phần mềm giúp chúng
 
 2. Nhấn **I Agree** để tiếp tục.
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_3.png" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_3.png" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
 
 3. Chọn thư mục cài đặt (có thể để mặc định).
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_5.png" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_5.png" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
 
 4. Nhấn **Install** để bắt đầu cài đặt.
 
 5. Đợi quá trình cài đặt hoàn tất, nhấn **Finish**.
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_6.png" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_6.png" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
 
 ### Bước 3: Khởi động Arduino IDE
 
 - Tìm biểu tượng Arduino IDE trên màn hình hoặc trong menu Start.
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_7.png" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_7.png" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
 
 - Nhấn đúp để mở phần mềm.
 
@@ -54,7 +54,7 @@ Hiểu một cách đơn giản, **Arduino IDE** là 1 phần mềm giúp chúng
 
 Sau khi khởi động Arduino IDE, phần mềm sẽ có giao diện giống bên dưới:
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_8.png" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_8.png" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
 
 **1. Thanh menu (Menu Bar)**
 
@@ -106,4 +106,4 @@ Cung cấp các nút truy cập nhanh:
 
 Sử dụng cable **USB A-B** kết nối với máy tính và board **Arduino UNO R3** như hình bên dưới:
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
