@@ -54,7 +54,7 @@ Hiểu một cách đơn giản, **Arduino IDE** là 1 phần mềm giúp chúng
 
 Sau khi khởi động Arduino IDE, phần mềm sẽ có giao diện giống bên dưới:
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_8.png" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_8.png" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
 
 **1. Thanh menu (Menu Bar)**
 
@@ -106,4 +106,10 @@ Cung cấp các nút truy cập nhanh:
 
 Sử dụng cable **USB A-B** kết nối với máy tính và board **Arduino UNO R3** như hình bên dưới:
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="600" style="display: block; margin: 0 auto;"  />
+
+Trên thanh menu bar chọn **Tools**, ở mục **Boards** chọn **Arduino Uno**, mục **Port** chọn cổng **USB** đã kết nối vào máy tính, với **Windows** thường là **COM1**, **COM2**,...
+
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="600" style="display: block; margin: 0 auto;"  />
+
+Sau đó, chúng ta đã có thể viết source code và sử dụng Arduino với board Arduino UNO R3.
