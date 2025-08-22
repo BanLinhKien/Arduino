@@ -111,7 +111,8 @@ Sử dụng cable **USB A-B** kết nối với máy tính và board **Arduino U
 
 Trên thanh menu bar chọn **Tools**, ở mục **Boards** chọn **Arduino Uno**, mục **Port** chọn cổng **USB** đã kết nối vào máy tính, với **Windows** thường là **COM1**, **COM2**,...
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_10" alt="UNO" width="600" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_10.png" alt="UNO" width="600" style="display: block; margin: 0 auto;"  />
+'
 
 Sau đó, chúng ta đã có thể viết source code và sử dụng Arduino với board Arduino UNO R3.
 
