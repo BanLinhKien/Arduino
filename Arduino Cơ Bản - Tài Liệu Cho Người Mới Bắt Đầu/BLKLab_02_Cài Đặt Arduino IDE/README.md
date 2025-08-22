@@ -1,6 +1,6 @@
 # Cài Đặt Arduino IDE
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_1.jpg" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_1.jpg" alt="Nano" width="900" style="display: block; margin: 0 auto;"  />
 
 ## Khái niệm
 
@@ -46,7 +46,7 @@ Hiểu một cách đơn giản, **Arduino IDE** là 1 phần mềm giúp chúng
 
 - Tìm biểu tượng Arduino IDE trên màn hình hoặc trong menu Start.
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_7.png" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_7.png" alt="Nano" width="300" style="display: block; margin: 0 auto;"  />
 
 - Nhấn đúp để mở phần mềm.
 
@@ -54,7 +54,7 @@ Hiểu một cách đơn giản, **Arduino IDE** là 1 phần mềm giúp chúng
 
 Sau khi khởi động Arduino IDE, phần mềm sẽ có giao diện giống bên dưới:
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_8.png" alt="Nano" width="400" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_8.png" alt="Nano" width="800" style="display: block; margin: 0 auto;"  />
 
 **1. Thanh menu (Menu Bar)**
 
@@ -107,9 +107,19 @@ Cung cấp các nút truy cập nhanh:
 Sử dụng cable **USB A-B** kết nối với máy tính và board **Arduino UNO R3** như hình bên dưới:
 
 <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="600" style="display: block; margin: 0 auto;"  />
+'
 
 Trên thanh menu bar chọn **Tools**, ở mục **Boards** chọn **Arduino Uno**, mục **Port** chọn cổng **USB** đã kết nối vào máy tính, với **Windows** thường là **COM1**, **COM2**,...
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="600" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_10" alt="UNO" width="600" style="display: block; margin: 0 auto;"  />
 
 Sau đó, chúng ta đã có thể viết source code và sử dụng Arduino với board Arduino UNO R3.
+
+---
+## Tổng Kết
+
+Qua phần này, chúng ta đã cài đặt các công cụ, môi trường cần thiết để xây dựng 1 dự án với nền tảng phát triển Arduino, đồng thời đã có thể bắt đầu phát triển ứng dụng với Arduino. Các công cụ được lựa chọn đều là đa nền tảng và dễ dàng sử dụng.
+
+Một số website giúp chúng ta hiểu rõ hơn về Arduino và các công cụ hỗ trợ đi kèm:
+- Trang chủ [www.arduino.cc](https://www.arduino.cc/), bao gồm tất cả các thông tin liên quan đến Arduino của thế giới.
+- Trang [arduino.vn](https://www.arduino.vn), diễn đàn trao đổi các thông tin liên quan đến các dự án Arduino tại Việt Nam.
