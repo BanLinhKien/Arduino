@@ -80,3 +80,4 @@ Mỗi cuộn cảm có một độ tự cảm (hay hệ số tự cảm hoặc t
 
 Để hiểu rõ hơn về cách hoạt động và chức năng của cuộn cảm, chúng ta có thể tham khảo tại đây: www.youtube.com/watch?v=NgwXkUt3XxQ
 
+---
