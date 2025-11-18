@@ -1,23 +1,22 @@
-/*
- * ================================================================================*
+ /* ================================================================================*
  *                            BANLINHKIEN.COM
  * ================================================================================*                           
- *      ĐIỀU KHIỂN LED BẰNG NÚT NHẤN (Hướng dẫn xác định LED nào đang sáng)
- *      
- * Đấu nối: 
+ *      ĐIỀU KHIỂN LED BẰNG NÚT Nhấn (Hướng dẫn xác định LED nào đang sáng)
+ * * Đấu nối: 
   -D2: nối với chân nút nhấn      -D5: nối với chân led 3
   -D3: nối với chân led 1         -D6: nối với chân led 4
   -D4: nối với chân led 2         -D7: nối với chân led 5   
  */
 
-const int ledPins[] = {3, 4, 5, 6, 7};                      // Khai báo mảng chứa các chân kết nối của lED với Arduino
+const int ledPins[] = {3, 4, 5, 6, 7};                      // Khai báo mảng chứa các chân kết nối của LED với Arduino
 const int buttonPin = 2;                                    // Khai báo chân kết nối của nút nhấn với Arduino
-int buttonState = 0;                                        // Trạng thái hiện tại của nút nhấn
-int dem=0;
+
+int lastButtonState = HIGH;                                 // Trạng thái nút nhấn trước đó (mặc định chưa nhấn là HIGH)
+int currentButtonState;                                     // Trạng thái hiện tại của nút nhấn
 
 void setup()
 {
-  Serial.begin(9600);                                       // Mở cổng Serial để Hiển thị đèn LED sáng hiện tại
+  Serial.begin(9600);                                       // Mở cổng Serial để hiển thị trạng thái
   for (int i = 0; i < 5; i++)
   {
     pinMode(ledPins[i], OUTPUT);                            // Cài đặt chân là OUTPUT để điều khiển LED
@@ -28,25 +27,34 @@ void setup()
 
 void loop()
 {
-  buttonState = digitalRead(buttonPin);                    // Đọc trạng thái nút nhấn
-  if (buttonState == LOW)                                  // Nếu nút nhấn được nhấn xuống
+  currentButtonState = digitalRead(buttonPin);              // Đọc trạng thái hiện tại của nút nhấn
+
+  // Kiểm tra xem nút có vừa được nhấn xuống không (chuyển từ TRẠNG THÁI CAO xuống THẤP)
+  if (lastButtonState == HIGH && currentButtonState == LOW) 
   {
-    for (int i = 0; i < 5; i++)                            // Dùng for để bật lần lượt các LED
+    delay(50);                                              // Chờ 50ms để chống dội phím (debounce)
+    
+    if (digitalRead(buttonPin) == LOW)                      // Nếu sau khi chờ mà nút vẫn đang nhấn
     {
-      digitalWrite(ledPins[i], HIGH);                      // Hiển thị LED với các giá trị i tương ứng
-      dem=i+1;                                             // Biến 'dem' là số thứ tự đèn LED đang sáng hiện tại
-      Serial.print("Den LED đang sáng la den so: ");       // Hiển thị trên cổng Serial đèn LED hiện tại đang sáng
-      Serial.println(dem);                                 // Sau 1 giây sẽ bật 1 LED, LED được bật cuối cùng là LED số 5
-      delay(1000); 
+      // --- GIAI ĐOẠN 1: BẬT ĐÈN ---
+      for (int i = 0; i < 5; i++)                           // Dùng for để bật lần lượt các LED
+      {
+        digitalWrite(ledPins[i], HIGH);                     // Bật sáng đèn LED thứ i
+        Serial.print("Den LED dang sang la den so: ");      // Hiển thị thông báo trên Serial
+        Serial.println(i + 1);                              // In ra số thứ tự đèn đang sáng
+        delay(500);                                         // Chờ 0.5 giây rồi bật đèn tiếp theo
+      }
+
+      // --- GIAI ĐOẠN 2: TẮT ĐÈN ---
+      for (int i = 0; i < 5; i++)                           // Dùng for để tắt lần lượt các LED sau khi đã sáng hết
+      {
+        digitalWrite(ledPins[i], LOW);                      // Tắt đèn LED thứ i
+        Serial.print("Den LED dang tat la den so: ");       // Hiển thị thông báo trên Serial
+        Serial.println(i + 1);                              // In ra số thứ tự đèn đang tắt
+        delay(500);                                         // Chờ 0.5 giây rồi tắt đèn tiếp theo
+      }
     }
   }
-  else                                                    // Ngược lại nếu nút nhấn được nhả ra
-  {
-    for (int i = 0; i < 5; i++)                           // Dùng for để tắt các LED
-    {
-      digitalWrite(ledPins[i], LOW);                      // LED được tắt cuối cùng là LED số 5                    
-      delay(1000);
-    } 
-  }
-  
+
+  lastButtonState = currentButtonState;                     // Lưu lại trạng thái nút nhấn cho vòng lặp tiếp theo
 }
