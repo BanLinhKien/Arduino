@@ -14,6 +14,8 @@
  * 5V <-> VCC  ;   GND <-> GND  ;   D10 <-> TX  ;   D11 <-> RX
  * Arduino UNO R3 vs Cảm biến siêu âm SRF04
  * 5V <-> VCC  ;   GND <-> GND  ;   D3 <-> TRIG ;   D2 <-> ECHO
+ * Arduino UNO R3 vs Còi chíp
+ * 5V <-> Chân + ;   GND <-> Chân -
  */
 #include <RTClib.h>
 #include <SoftwareSerial.h>
@@ -24,8 +26,8 @@
 #define TRIGGER_PIN 2
 #define ECHO_PIN 3
 #define SIREN_PIN 6
-#define SIM_TX 10
-#define SIM_RX 11
+#define SIM_TX 11
+#define SIM_RX 10
 #define HOUR_SEND 19
 #define MINUTE_SEND 00
 
@@ -45,8 +47,8 @@ bool alerting = false;
 float min_distance = 1000.0;            // Khoảng cách nhỏ nhất (mực nước cao nhất)
 float max_distance = 0.0;               // Khoảng cách lớn nhất (mực nước thấp nhất)
 String phone_number = "03xxxxxxxx";     // Số điện thoại nhận cảnh báo
-#define MCU_SIM_BAUDRATE 9600           // Baud rate cho SIM A7680X
-#define SET_BAUDRATE "AT+IPREX=9600"    // Cài đặt baud rate
+#define MCU_SIM_BAUDRATE 115200           // Baud rate cho SIM A7680X
+#define SET_BAUDRATE "AT+IPREX=115200"    // Cài đặt baud rate
 bool report_sent = false;
 
 // Biến cho tính trung bình
