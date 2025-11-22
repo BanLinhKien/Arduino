@@ -17,7 +17,7 @@
 #include <SoftwareSerial.h>
 SoftwareSerial simSerial(10, 11); // TX 10 ; RX 11
 
-#define PHONE_NUMBER      "0393973793"              // thay đổi số điện thoại
+#define PHONE_NUMBER      "03xxxxxxxx"              // thay đổi số điện thoại
 #define SET_BAUDRATE      "AT+IPREX=115200"         // thay đổi badrate (VD: "AT+IPREX=115200")
 #define MCU_SIM_BAUDRATE  115200
 
