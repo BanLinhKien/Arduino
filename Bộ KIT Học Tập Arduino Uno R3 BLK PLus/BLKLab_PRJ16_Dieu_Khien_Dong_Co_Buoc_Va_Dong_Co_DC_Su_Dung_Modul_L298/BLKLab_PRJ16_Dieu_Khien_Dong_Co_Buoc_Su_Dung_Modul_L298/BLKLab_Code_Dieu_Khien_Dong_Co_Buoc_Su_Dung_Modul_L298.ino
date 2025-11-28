@@ -1,25 +1,22 @@
-#include <Stepper.h>
-
-const int stepsPerRevolution = 64;                                        // Số bước mỗi vòng quay cho động cơ của bạn
-Stepper myStepper(stepsPerRevolution, 8, 9, 10, 11);                      // Khởi tạo đối tượng Stepper cho động cơ
-
-int stepCount = 0;                                                        // Số bước đếm
-int motorSpeed = 0;                                                       // Tốc độ mặc định của động cơ
-int analogValue = 0;                                                      // Giá trị analog từ biến trở
-
+#include <Stepper.h>                    
+const int STEPS_PER_REV = 2048;         
+const int motorPin1 = 9;                
+const int motorPin2 = 10;                
+const int motorPin3 = 11;                
+const int motorPin4 = 12;  
+      
+const int REVOLUTIONS = 5; 
+Stepper myStepper(STEPS_PER_REV, motorPin1, motorPin3, motorPin2, motorPin4);
 void setup() {
-  Serial.begin(9600);                                                     // Khởi tạo cổng Serial 
+  myStepper.setSpeed(18);               
+  Serial.begin(9600);                   
 }
 
-void loop() {
-  analogValue = analogRead(A0);                                           // Đọc giá trị từ chân A0, nơi bạn kết nối biến trở
-  motorSpeed = map(analogValue, 0, 1023, 0, 500);                         // Chuyển giá trị analog sang tốc độ động cơ (0-500)
-  myStepper.setSpeed(motorSpeed);                                         // Đặt tốc độ động cơ dựa trên giá trị tốc độ
-  myStepper.step(stepsPerRevolution);                                     // Quay động cơ 1 vòng theo chiều kim đồng hồ
-  stepCount++;                                                            // Tăng số vòng quay
-
-  Serial.print("Revolutions: ");
-  Serial.print(stepCount);
-  Serial.print(", Speed: ");
-  Serial.println(motorSpeed);
+void loop(){
+  Serial.println("Quay Thuận....");
+  myStepper.step(STEPS_PER_REV * REVOLUTIONS);
+  delay(1000);
+  Serial.println("Quay Nghịch....");
+  myStepper.step(-STEPS_PER_REV * REVOLUTIONS);
+  delay(1000);
 }

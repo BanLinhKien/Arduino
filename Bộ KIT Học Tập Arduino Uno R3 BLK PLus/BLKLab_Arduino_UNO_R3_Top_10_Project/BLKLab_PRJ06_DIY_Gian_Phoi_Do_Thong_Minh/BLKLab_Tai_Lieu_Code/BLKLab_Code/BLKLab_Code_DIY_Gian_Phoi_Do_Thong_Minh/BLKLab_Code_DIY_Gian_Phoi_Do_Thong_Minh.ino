@@ -74,7 +74,7 @@ void setup() {
   pinMode(extendButtonPin, INPUT_PULLUP);
   pinMode(retractButtonPin, INPUT_PULLUP);
   pinMode(ldrPin, INPUT);
-  myStepper.setSpeed(19);               
+  myStepper.setSpeed(18);               
   IrReceiver.begin(irPin, true, 13);    
   Serial.begin(9600);                   
   dht.begin();
