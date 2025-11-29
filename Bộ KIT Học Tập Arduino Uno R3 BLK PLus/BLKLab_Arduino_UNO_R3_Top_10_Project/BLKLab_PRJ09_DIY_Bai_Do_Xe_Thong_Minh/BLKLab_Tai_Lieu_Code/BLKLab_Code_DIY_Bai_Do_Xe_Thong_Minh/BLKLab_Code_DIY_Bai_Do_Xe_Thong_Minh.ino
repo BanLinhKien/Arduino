@@ -45,16 +45,17 @@ const long FEE_PER_UNIT = 50;         // Đơn giá gửi xe (50 VNĐ cho mỗi 
 const unsigned long BARRIER_DELAY = 3000; // Thời gian giữ barrier mở (3000ms = 3 giây)
 
 // --- Định nghĩa chân kết nối (Pin Mapping) ---
-#define PIN_RFID_SS     10            // Chân SS (SDA) của module RFID
-#define PIN_RFID_RST    9             // Chân RST của module RFID
-#define PIN_SERVO       8             // Chân tín hiệu điều khiển Servo
-#define PIN_LED_GREEN   7             // Chân đèn LED Xanh (Báo thành công/Mở cổng)
-#define PIN_LED_RED     6             // Chân đèn LED Đỏ (Báo lỗi/Thất bại)
-#define PIN_BUZZER      5             // Chân còi chip (Buzzer) báo âm thanh
-#define PIN_FLAME       4             // Chân cảm biến lửa (Báo cháy)
-#define PIN_MQ2         3             // Chân cảm biến khí Gas/Khói
-#define PIN_RESET_BTN   A0            // Chân nút nhấn cứng (Dùng để Reset dữ liệu gốc)
-
+#define PIN_RFID_SS              10            // Chân SS (SDA) của module RFID
+#define PIN_RFID_RST             9             // Chân RST của module RFID
+#define PIN_SERVO                8             // Chân tín hiệu điều khiển Servo
+#define PIN_LED_GREEN            7             // Chân đèn LED Xanh (Báo thành công/Mở cổng)
+#define PIN_LED_RED              6             // Chân đèn LED Đỏ (Báo lỗi/Thất bại)
+#define PIN_BUZZER               5             // Chân còi chip (Buzzer) báo âm thanh
+#define PIN_FLAME                4             // Chân cảm biến lửa (Báo cháy)
+#define PIN_MQ2                  3             // Chân cảm biến khí Gas/Khói
+#define PIN_RESET_BTN            A0            // Chân nút nhấn cứng (Dùng để Reset dữ liệu gốc)
+#define CLOSE_ANGLE_SERVO        90            // Góc đóng của servo
+#define OPEN_ANGLE_SERVO         0             // Góc mở của servo
 // --- Khởi tạo các đối tượng điều khiển ---
 RTC_DS1307 rtc;                       // Đối tượng quản lý thời gian thực
 MFRC522 mfrc522(PIN_RFID_SS, PIN_RFID_RST); // Đối tượng quản lý đầu đọc thẻ RFID
@@ -109,9 +110,9 @@ void controlBarrier(bool success) {
         digitalWrite(PIN_LED_RED, LOW);
         
         barrierServo.attach(PIN_SERVO); // Kết nối servo
-        barrierServo.write(90);         // Góc 90 độ: Mở cổng lên
+        barrierServo.write(OPEN_ANGLE_SERVO);         // Góc 0 độ: Mở cổng lên
         delay(BARRIER_DELAY);           // Giữ cổng mở trong thời gian quy định
-        barrierServo.write(0);          // Góc 0 độ: Đóng cổng xuống
+        barrierServo.write(CLOSE_ANGLE_SERVO);          // Góc 90 độ: Đóng cổng xuống
         delay(500);                     // Chờ servo chạy xong
         barrierServo.detach();          // Ngắt kết nối để tránh rung servo
         
@@ -333,7 +334,7 @@ void checkFireSafety() {
     // 1. Cảm biến lửa (Ưu tiên cao nhất)
     if (digitalRead(PIN_FLAME) == LOW) { 
         barrierServo.attach(PIN_SERVO);
-        barrierServo.write(90); // Mở toang cổng ngay lập tức để thoát hiểm
+        barrierServo.write(OPEN_ANGLE_SERVO); // Mở toang cổng ngay lập tức để thoát hiểm
 
         // Vòng lặp cảnh báo, chặn mọi hoạt động khác đến khi hết lửa
         while (digitalRead(PIN_FLAME) == LOW) {
@@ -346,7 +347,7 @@ void checkFireSafety() {
             delay(50);
         }
 
-        barrierServo.write(0); delay(500); barrierServo.detach(); // Đóng cổng sau khi an toàn
+        delay(1000); barrierServo.write(CLOSE_ANGLE_SERVO); delay(500); barrierServo.detach(); // Đóng cổng sau khi an toàn
         isGasWarningActive = false;
         updateIdleScreen(); // Cập nhật lại màn hình chính
     }
@@ -356,8 +357,12 @@ void checkFireSafety() {
         lcd.clear();
         lcd.setCursor(0, 0); lcd.print("! CANH BAO GAS !");
         lcd.setCursor(0, 1); lcd.print("NGUY HIEM !!!");
-        digitalWrite(PIN_BUZZER, HIGH); delay(200);
-        digitalWrite(PIN_BUZZER, LOW);  delay(200);
+        digitalWrite(PIN_BUZZER, HIGH);
+        digitalWrite(PIN_LED_RED, HIGH);
+        delay(50);
+        digitalWrite(PIN_BUZZER, LOW);
+        digitalWrite(PIN_LED_RED, LOW);
+        delay(50);
     }
     // 3. Trạng thái bình thường
     else {
@@ -413,7 +418,7 @@ void handleParking(uint32_t rfid) {
 
         // Từ chối nếu hết chỗ
         if (!allowEntry) {
-            showMessage("!!! HET CHO", "VUI LONG CHO", 1000);
+            showMessage("!!! HET CHO", "VUI LONG CHO", 0);
             controlBarrier(false); updateIdleScreen(); return;
         }
 
@@ -495,7 +500,7 @@ void setup() {
     
     // Đặt trạng thái ban đầu cho Servo (Đóng cổng)
     barrierServo.attach(PIN_SERVO); 
-    barrierServo.write(0); 
+    barrierServo.write(CLOSE_ANGLE_SERVO); 
     delay(500); 
     barrierServo.detach();
 
