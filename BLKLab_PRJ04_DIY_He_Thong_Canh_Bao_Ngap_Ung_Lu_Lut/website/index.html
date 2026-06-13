@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PRJ04 - DIY Hệ Thống Cảnh Báo Ngập Lụt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>PRJ04 — Hệ Thống Cảnh Báo Ngập Lụt (DIY)</h1>
+      <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#features">Tính năng</a>
+        <a href="#how">Nguyên lý</a>
+        <a href="#code">Đoạn mã</a>
+        <a href="#files">Tệp dự án</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Giải pháp đo mực nước & gửi cảnh báo qua SIM/Serial</h2>
+        <p>Một dự án Arduino hoàn chỉnh: đo mực nước bằng cảm biến siêu âm, hiện thị LCD, gửi SMS/gọi khi vượt ngưỡng.</p>
+        <p class="cta"><a href="#about" class="btn">Tìm hiểu ngay</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h3>Giới thiệu dự án</h3>
+      <p>Đây là dự án PRJ04 do BanLinhKien phát triển: sử dụng Arduino UNO, cảm biến siêu âm SRF04, module SIM, module RTC và LCD I2C để giám sát mực nước và gửi cảnh báo khi cần.</p>
+      <ul>
+        <li>Phần cứng chính: Arduino UNO, SRF04, DS3231/DS1307 (RTC), module SIM A7680C, LCD 16x2 I2C, còi báo.</li>
+        <li>Mục tiêu: phát hiện ngập, cảnh báo tức thì, lưu trữ min/max, gửi báo cáo hàng ngày.</li>
+      </ul>
+    </section>
+
+    <section id="features" class="container section">
+      <h3>Tính năng nổi bật</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Đa mức cảnh báo</h4>
+          <p>Cấu hình nhiều ngưỡng cảnh báo, hiển thị trên LCD và bật còi.</p>
+        </div>
+        <div class="card">
+          <h4>Gửi SMS/Gọi</h4>
+          <p>Module SIM gửi SMS và thực hiện cuộc gọi khi mực nước vượt ngưỡng.</p>
+        </div>
+        <div class="card">
+          <h4>Lưu trữ & báo cáo</h4>
+          <p>Lưu min/max vào EEPROM, gửi báo cáo định kỳ (ví dụ 20:00 hàng ngày).</p>
+        </div>
+        <div class="card">
+          <h4>Ổn định đo</h4>
+          <p>Dùng trung bình mẫu để lọc nhiễu, loại bỏ mẫu bất thường.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="container section">
+      <h3>Nguyên lý hoạt động & đấu nối</h3>
+      <p>Tóm tắt đấu nối chính (theo file mã nguồn):</p>
+      <pre class="code-block">Arduino UNO R3
+- LCD 16x2 I2C: 5V, GND, A4(SDA), A5(SCL)
+- DS1307/DS3231 RTC: 5V, GND, A4(SDA), A5(SCL)
+- Module SIM A7680C: 5V, GND, D10(TX), D11(RX)
+- SRF04 (siêu âm): 5V, GND, D3(TRIG), D2(ECHO)
+- Còi: 5V (áp vào chân +), GND (chân -), điều khiển chân SIREN_PIN (6)
+      </pre>
+      <p>Nguyên lý: đo khoảng cách bằng sóng siêu âm, tính trung bình mẫu, so sánh với ngưỡng nguy hiểm, bật còi và gửi cảnh báo khi cần; lưu min/max vào EEPROM; gửi báo cáo hàng ngày.</p>
+    </section>
+
+    <section id="code" class="container section">
+      <h3>Đoạn mã minh họa</h3>
+      <p>Dưới đây là trích đoạn logic chính (rút gọn từ file gốc):</p>
+      <pre class="code-block" id="code-sample">// Đo khoảng cách mỗi giây, lấy trung bình 10 mẫu
+float measureDistance() {
+  digitalWrite(TRIGGER_PIN, LOW);
+  delayMicroseconds(2);
+  digitalWrite(TRIGGER_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIGGER_PIN, LOW);
+  long duration = pulseIn(ECHO_PIN, HIGH);
+  float distance = duration * 0.034 / 2;
+  return distance;
+}
+
+// Vòng lặp chính kiểm soát gửi SMS và cảnh báo
+void loop() {
+  DateTime now = rtc.now();
+  float distance = measureDistance();
+  // cập nhật mảng mẫu, tính trung bình, kiểm tra ngưỡng
+  // gửi SMS, bật còi, hiển thị LCD...
+}
+      </pre>
+      <p><button id="copyBtn" class="btn">Sao chép đoạn mã</button></p>
+    </section>
+
+    <section id="files" class="container section">
+      <h3>Tệp trong dự án</h3>
+      <p>Những file chính trong repository:</p>
+      <ul>
+        <li><code>BLKLab_Code_DIY_He_Thong_Canh_Bao_Ngap_Ung_Lu_Lut.ino</code> — mã nguồn chính</li>
+        <li><code>FEATURE_IMPROVEMENTS.md</code> — danh sách cải tiến và ý tưởng</li>
+      </ul>
+      <p>Mở trực tiếp file gốc trong repo để xem chi tiết mã và sơ đồ đấu nối.</p>
+    </section>
+
+    <section class="container section contact">
+      <h3>Liên hệ & Tài liệu</h3>
+      <p>Trang này được tạo từ mã nguồn trong repository. Xem thêm tài liệu hướng dẫn và sơ đồ trong thư mục dự án.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© BanLinhKien — PRJ04 | Website giới thiệu dự án</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
