@@ -1,1 +1,0 @@
-Tiktok: https://www.tiktok.com/@banlinhkienretail/video/7453147178031222034
