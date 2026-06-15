@@ -1,7 +1,32 @@
-# ☀️ ĐỀ XUẤT HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI CHO PRJ04
+# ☀️ HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI CHO PRJ04
+## 🏆 Dự án STEM cho cuộc thi Samsung Solve for Tomorrow
 
 ## 📌 Mục đích
-Tích hợp năng lượng mặt trời vào hệ thống cảnh báo ngập lụt để hoạt động độc lập, không phụ thuộc vào điện lưới công cộng, đặc biệt phù hợp cho vùng sâu, nông thôn.
+**Tích hợp năng lượng mặt trời** vào hệ thống cảnh báo ngập lụt giúp hoạt động **độc lập 24/7** mà không cần điện lưới công cộng.
+
+**Ứng dụng thực tế:** Cảnh báo ngập úng cho vùng nông thôn, vùng sâu, vùng có điều kiện điện lưới kém.
+
+**Tác động:** Bảo vệ người dân khỏi lũ lụt & giáo dục STEM cho học sinh cấp 3.
+
+---
+
+---
+
+## 🔌 PHIÊN BẢN ĐƠNGIẢN CHO HỌC SINH CẤP 3
+
+### So sánh 3 phiên bản
+
+| Tiêu chí | Phiên bản Học sinh (Cuộc thi) | Phiên bản Tiêu chuẩn | Phiên bản Premium |
+|----------|------|---------|---------|
+| **Chi phí** | 950K - 1.2M | 3.7M | 8M+ |
+| **Công suất Solar** | 0W (dùng USB) | 15W | 45W |
+| **Dung lượng pin** | 2×18650 (5Ah) | 10Ah LiFePO₄ | 20Ah LiFePO₄ |
+| **Thời gian chạy** | 1-2 ngày | 5-7 ngày | 10+ ngày |
+| **Độ phức tạp** | Thấp (Breadboard) | Cao (PCB) | Rất cao |
+| **Thích hợp** | ✅ Học sinh, Thí nghiệm | Triển khai, Nông thôn | Sản xuất hàng loạt |
+| **Nơi dùng** | Phòng thí nghiệm, Demo | Ngoài trời, Hệ thống | Hạ tầng quốc gia |
+
+**=> KHUYẾN NGHỊ cho cuộc thi:** Phiên bản Học sinh
 
 ---
 
@@ -108,88 +133,91 @@ Polycrystalline (đa tinh thể):
 
 #### Thông số kỹ thuật đề xuất
 
+**Phiên bản Học sinh (Cuộc thi):**
 ```
-Công suất danh định:  10Ah - 20Ah @ 12V
-  → Khuyên: 10Ah (cân bằng giá - hiệu năng)
+Loại pin:             2× Pin Lithium 18650 (kết cấu series)
+Điện áp:              7.4V (2× 3.7V)
+Dung lượng:           5-6 Ah (nếu 3000mAh × 2)
+Sức chứa năng lượng:  37 Wh (5Ah × 7.4V)
+Thời gian chạy:       12-24 giờ (phụ thuộc tiêu thụ)
+Giá:                  ~100K đ
+```
 
+**Phiên bản Tiêu chuẩn (Nâng cấp sau):**
+```
+Loại pin:             LiFePO₄ 12V 10Ah
+Điện áp:              12V (3S)
+Dung lượng:           10 Ah
 Sức chứa năng lượng:  120 Wh (10Ah × 12V)
-                       240 Wh (20Ah × 12V)
-
-Loại pin:             LiFePO₄ (khuyến cáo) hoặc Lead-Acid
-
-Dự phòng không nắng:  2-3 ngày liên tục
+Thời gian chạy:       2-3 ngày
+Giá:                  ~2,000K đ
 ```
-
-#### So sánh các loại pin
-
-| Loại | Ưu điểm | Nhược điểm | Tuổi thọ | Giá |
-|------|---------|-----------|---------|-----|
-| **LiFePO₄ 12V 10Ah** | ✅ Tuổi thọ cao (10+ năm), Lightweight, BMS tốt, Tự phóng chậm | ❌ Đắt hơn | 2000-3000 chu kỳ | 2-3M đ |
-| **Lead-Acid 12V 12Ah** | ✅ Giá rẻ, Dễ tìm, Bền | ❌ Nặng, Tự phóng nhanh | 500-1000 chu kỳ | 500K-1M đ |
-| **Lithium 12V 20Ah** | ✅ Sức chứa lớn, Rất nhẹ | ❌ Rất đắt, Cần bảo vệ | 1000+ chu kỳ | 4-5M đ |
-
-#### ⭐ Khuyến nghị: **LiFePO₄ 12V 10Ah**
-
-**Lý do:**
-- Tuổi thọ lâu dài (10-15 năm) → Tiết kiệm chi phí
-- BMS (Battery Management System) tích hợp → An toàn
-- Tự phóng chậm → Giữ năng lượng dự trữ lâu
-- Hiệu suất cao (95%+)
-- Phù hợp với khí hậu Việt Nam (ổn định từ 0-40°C)
 
 ---
 
 ### 3. BỘ ĐIỀU KHIỂN SẠC (Charge Controller)
 
-#### Thông số kỹ thuật
+**Phiên bản Học sinh (Cuộc thi - KHÔNG CẦN):**
+```
+Sử dụng: USB Power + PowerBank thay vì Solar
+→ Tiết kiệm: 1.5M đ
+→ Đơn giản: Chỉ cần sạc qua cổng Micro-USB
+→ Phù hợp: Thử nghiệm trong phòng thí nghiệm
+```
 
+**Phiên bản Tiêu chuẩn (Nâng cấp sau):**
 ```
 Loại điều khiển:     MPPT hoặc PWM
-  → Khuyên: MPPT (hiệu suất 90-95% vs PWM 70-75%)
+  → Khuyên: MPPT (hiệu suất 90-95%)
 
-Điện áp hệ thống:    12V/24V
-  → Chọn: 12V (match với panel và pin)
-
-Dòng điện tối đa:    10A - 20A
-  → Khuyên: 20A (cho phép mở rộng panel)
-
-Tính năng bắt buộc:
-  ✅ Overcharge protection (Chống sạc quá)
-  ✅ Over-discharge protection (Chống phóng quá)
-  ✅ Temperature compensation (Bù nhiệt độ)
-  ✅ LCD hiển thị trạng thái sạc
-  ✅ USB output 5V (sạc điện thoại)
-  ✅ Cổng XT60 hoặc Anderson (dòng lớn)
-```
-
-#### So sánh PWM vs MPPT
-
-| Chỉ số | PWM | MPPT |
-|--------|-----|------|
-| **Hiệu suất** | 70-75% | 90-95% |
-| **Giá** | 300-500K đ | 1-2M đ |
-| **Mục đích** | Hệ thống nhỏ, đơn giản | Hệ thống lớn, hiệu quả |
-| **Dòng sạc** | Ít (linear) | Nhiều hơn (buck converter) |
-| **Độ phức tạp** | Thấp | Trung |
-
-#### Mẫu phổ biến
-
-```
-PWM:
-- JINGSUN PWM 10A: ~300K đ (AliExpress)
-- Epever PWM 10A: ~400K đ
-- SRNE PWM 20A: ~500K đ
-
-MPPT (KHUYÊN):
-- Epever MPPT20I: $80-100 (~2M đ)
-- Victron Blue Smart: $500+ (Premium)
-- SRNE MPPT 20A: ~1.5M đ
-- MidNite Kid MPPT: $200 (~5M đ)
+Điện áp hệ thống:    12V
+Dòng điện tối đa:    10-20A
+Tính năng:
+  ✅ Overcharge protection
+  ✅ Over-discharge protection
+  ✅ Temperature compensation
+  ✅ LCD hiển thị
+  ✅ USB output 5V
+  
+Chi phí: 1-1.5M đ
 ```
 
 ---
 
 ## 🔌 SƠ ĐỒ KẾT NỐI TOÀN HỆ THỐNG
+
+### Phiên bản Học sinh (Đơn giản - Breadboard)
+
+```
+┌──────────────────┐
+│  Micro-USB (5V)  │ (từ PowerBank hoặc máy tính)
+│   Power Source   │
+└────────┬─────────┘
+         │
+         ↓
+    ┌─────────────┐
+    │ DC-DC 5V    │ (hoặc USB trực tiếp)
+    │ Regulator   │
+    └────┬────────┘
+         │ [Dây USB hoặc Jumper]
+         ↓
+    ┌────────────────────────┐
+    │   Arduino UNO R3       │
+    │   ├─ LCD 16x2 I2C      │
+    │   ├─ SRF04 (siêu âm)   │
+    │   ├─ RTC DS1307        │
+    │   ├─ Module SIM        │
+    │   ├─ Buzzer            │
+    │   └─ Voltage Sensor    │
+    └────────────────────────┘
+```
+
+**Ưu điểm:** ✅ Không焊, ✅ Dễ sửa, ✅ Chi phí thấp  
+**Nhược điểm:** ❌ Không ngoài trời, ❌ Dây rơi
+
+---
+
+### Phiên bản Tiêu chuẩn (Nâng cấp sau)
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -551,54 +579,45 @@ void loop() {
 
 ---
 
-## 📦 DANH SÁCH MŨI NHẬP KHẨU
+## 📦 DANH SÁCH MŨI & CHI PHÍ
 
-### Phương án 2: KHUYẾN NGHỊ (Cân bằng - 3.7M đ)
+### Phiên bản Học sinh (Cuộc thi) - ~1 Triệu
 
-| Sản phẩm | Mẫu | Nơi mua | Giá | Ghi chú |
-|----------|-----|--------|-----|---------|
-| **Panel Solar 15W** | BP3515 (Renogy) | Shopee, AliExpress | 500K đ | Monocrystalline |
-| **Pin LiFePO₄ 12V 10Ah** | JBL-SP-LY-12100 hoặc Relion | Điện tử Việt, Amazon | 2M đ | Có BMS tích hợp |
-| **MPPT Charge Controller 20A** | Epever MPPT20I hoặc SRNE | Amazon, AliExpress | 1.5M đ | LCD + USB |
-| **Dây AWG + Đầu cắm XT60** | Lipo battery cable set | AliExpress | 150K đ | Tất cả size |
-| **Cầu chì + Holder** | ANL 15A, 20A | Điện tử Việt, Shopee | 80K đ | Fast Blow type |
-| **Diode Schottky** | 1N5406 20A | Điện tử Việt | 30K đ | Chống dòng ngược |
-| **Đã có sẵn** | Arduino, LCD, RTC, SIM, SRF04, Buzzer | Repo | - | Từ PRJ04 gốc |
+| Loại | Sản phẩm | Giá (K đ) | Ghi chú |
+|------|----------|----------|---------|
+| Lõi MCU | Arduino UNO R3 | 150 | Vi xử lý chính |
+| Cảm biến | SRF04 siêu âm | 35 | Đo mực nước |
+| Cảm biến | RTC DS1307 | 50 | Đồng hồ thực |
+| Hiển thị | LCD 16x2 I2C | 100 | Màn hình |
+| Giao tiếp | Module SIM A7680C | 120 | Gửi SMS |
+| Giao tiếp | Breadboard 400 lỗ | 35 | Kết nối |
+| Giao tiếp | Dây jumper M-M | 20 | Nối dây |
+| Năng lượng | Pin 18650×2 + Holder | 100 | Dự trữ điện |
+| Năng lượng | DC-DC 5V Converter | 30 | Chuyển điện áp |
+| Giao diện | Buzzer chủ động | 15 | Còi báo |
+| Điều khiển | Resistor + Tụ (combo) | 40 | Mạch bổ trợ |
+| Bảo vệ | Cầu chì + Holder | 20 | Bảo vệ quá dòng |
+| **TỔNG (Không Solar)** | | **715** | Có PowerBank |
+| **Solar (Tùy)** | Panel 5W | 150 | Sạc mặt trời |
+| **TỔNG (Có Solar)** | | **865** | Đủ dùng 1-2 ngày |
 
-**Tổng chi phí phụ kiện mới: ~3.7M đ**
+**Danh sách chi tiết:** Xem file `SIMPLIFIED_BUDGET.md`
 
-### Phương án 1: Tiết kiệm (1.3M đ)
+---
 
-```
-├─ Panel Solar 10W: 300K đ
-├─ Pin Lead-Acid 12V 12Ah: 600K đ
-├─ Charge Controller PWM 10A: 300K đ
-└─ Dây, cầu chì: 100K đ
-────────────────────────────
-TỔNG: 1.3M đ
-
-⚠️ Nhược điểm:
-- Pin nặng, tự phóng nhanh
-- Chỉ dùng được 3-4 ngày mưa
-- Hiệu suất sạc thấp (70%)
-```
-
-### Phương án 3: Premium (7.7M đ)
+### Phiên bản Tiêu chuẩn (Nâng cấp) - 3.7M
 
 ```
-├─ Panel Solar 30W×2: 1.2M đ
-├─ Pin LiFePO₄ 24V 20Ah: 4M đ
-├─ MPPT 40A: 2M đ
-├─ Inverter 220V 500W: 500K đ
-└─ Dây, bảo vệ: 1M đ
-────────────────────────────
-TỔNG: 8.7M đ
-
-✅ Lợi ích:
-- Hoạt động 4-5 ngày mưa
-- Có 220V cho thiết bị khác
-- Hiệu suất cao nhất
+Panel 15W Monocrystalline    500K đ
+Pin LiFePO₄ 12V 10Ah        2,000K đ
+MPPT Charge Controller 20A   1,000K đ
+Dây, cầu chì, varistor       200K đ
+───────────────────────────
+TỔNG                        3,700K đ
 ```
+
+**Ưu điểm:** 5-7 ngày chạy không nắng, hiệu suất cao, tuổi thọ lâu  
+**Phù hợp:** Triển khai ngoài trời, vùng nông thôn
 
 ---
 
@@ -791,70 +810,63 @@ Arduino UNO + Accessories
 
 ---
 
-## 📊 KẾT LUẬN & KHUYẾN NGHỊ
+## 🎯 KẾT LUẬN & KHUYẾN NGHỊ
 
-### ⭐ Phương án 2: KHUYẾN NGHỊ NHẤT
+### ⭐ Phương án Khuyến Nghị: PHIÊN BẢN HỌC SINH
 
 ```
-☀️ Panel Solar: 15W Monocrystalline
-🔋 Pin: LiFePO₄ 12V 10Ah (120 Wh)
-⚙️ Controller: MPPT 20A (hiệu suất 90-95%)
-💰 Chi phí: 3.7M đ
-⏱️ Thời gian thi công: 2-3 giờ
+🎓 Cho cuộc thi Samsung:
+├─ Loại: Breadboard (không焊, dễ hiệu chỉnh)
+├─ Năng lượng: PowerBank + (Tùy: Pin 18650 hoặc USB)
+├─ Chi phí: 715K - 865K đ
+├─ Thời gian lắp: 4-6 giờ
+├─ STEM: Đầy đủ (Vật lý, Điện tử, Lập trình, Toán)
+└─ Phù hợp: Học sinh cấp 3, Demo, Thí nghiệm
 
-✅ Lợi ích:
-- Hoạt động độc lập 24/7, không mất nước
-- Dự phòng 6-7 ngày mưa liên tục
-- Tuổi thọ pin 10-15 năm
-- Hiệu suất năng lượng cao (90%)
-- Phù hợp với khí hậu Việt Nam
-- Có giám sát điện áp & cảnh báo tự động
-- Dễ nâng cấp sau này (thêm panel, pin)
+✅ Ưu điểm:
+- Chi phí rẻ, trong tầm học sinh
+- Không cần công cụ đặc biệt
+- Dễ sửa đổi, thử nghiệm
+- Đủ tính năng cho cuộc thi
+- Có thể nâng cấp sau
 
-📈 ROI (Return on Investment):
-- Tiết kiệm điện lưới: ~200K đ/năm (máy phát điện)
-- Payback: 18-24 tháng
-- Tiết kiệm 15-20 năm sau
+📈 Hạn chế:
+- Chỉ chạy 1-2 ngày (dùng PowerBank)
+- Không thích hợp ngoài trời mưa
+- Dây jumper dễ rơi
 ```
 
-### 🎯 Các bước tiếp theo
+### 🔄 Nâng cấp Giai đoạn 2 (sau cuộc thi)
 
-1. **Đặt hàng phụ kiện** (1 tuần)
-   - AliExpress, Amazon, Shopee
+```
+Chi phí thêm: 2.5-3M đ
 
-2. **Chuẩn bị code Python** (2 tuần)
-   - Tối ưu code Arduino
-   - Thêm BMS communication (nếu pin có)
-   - Đồng bộ Telegram notification
+├─ Upgrade lên phiên bản Tiêu chuẩn:
+│  ├─ Thêm Panel Solar 15W (500K)
+│  ├─ Thêm Pin LiFePO₄ 10Ah (2M)
+│  ├─ Thêm MPPT Controller (1.5M)
+│  └─ Lắp đặt ngoài trời (Hộp IP65, dây)
+│
+└─ Kết quả:
+   ✅ Hoạt động 24/7 ngoài trời
+   ✅ Chạy 5-7 ngày không nắng
+   ✅ Đủ sức triển khai thực tế
 
-3. **Lắp ráp & test** (2-3 ngày)
-   - Trong nhà trước
-   - Ngoài trời sau
-
-4. **Ghi nhận dữ liệu** (30 ngày)
-   - Ghi lịch sử điện áp
-   - Phân tích tiêu thụ thực tế
-   - Điều chỉnh cài đặt nếu cần
-
----
-
-## 📚 TÀI LIỆU THAM KHẢO
-
-- **RTClib Documentation**: https://adafruit.github.io/RTClib
-- **LiquidCrystal_I2C**: https://github.com/johnrickman/LiquidCrystal_I2C
-- **Epever MPPT Manual**: Manual riêng kèm sản phẩm
-- **Battery Management System**: Tìm hiểu khi mua pin có BMS
-- **Solar Irradiance VN**: Xem bản đồ nắng Việt Nam
+Timeline: 2-3 tháng
+```
 
 ---
 
-## 📝 LỊCH SỬ CHỈNH SỬa
+## 📝 LỊCH SỬ CHỈNH SỬA
 
-- **2026-06-14**: Tạo đề xuất hệ thống năng lượng mặt trời cho PRJ04
-- **Phiên bản**: 1.0 (Hoàn chỉnh)
+- **2026-06-15:** Chỉnh sửa lại cho học sinh cấp 3, cuộc thi Samsung
+- **Phiên bản:** 1.1 (Đã cân bằng)
 
 ---
 
-**Tài liệu được tạo bởi GitHub Copilot - STEM Arduino Expert**
+**Tài liệu hoàn chỉnh:**
+1. ✅ SOLAR_POWER_PROPOSAL.md (Hướng dẫn kỹ thuật)
+2. ✅ CONTEST_PROPOSAL.md (Đơng kiến cuộc thi)
+3. ✅ SIMPLIFIED_BUDGET.md (Chi phí chi tiết)
 
-Hãy liên hệ BanLinhKien hoặc cộng đồng STEM nếu cần hỗ trợ thêm! 🚀
+**Xem thêm:** Repo GitHub BanLinhKien/Arduino
