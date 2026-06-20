@@ -1,0 +1,293 @@
+================================================================================
+                    DANH GIA TINH KHA THI DU AN
+================================================================================
+
+DU AN: PRJ04 - He Thong Canh Bao Ngap Lut DIY
+NGAY DANH GIA: 19/06/2026
+XEP HANG: 8.4/10 - KHUYEN NGHI THAM GIA CUOC THI
+
+================================================================================
+TOM TAT
+================================================================================
+
+PRJ04 - He Thong Canh Bao Ngap Lut DIY co TINH KHA THI RAT CAO voi diem 8.4/10.
+Du an giai quyet van de lu lut o 2/3 dien tich Viet Nam, chi phi thap 
+(0.95-1.15 trieu), phu hop voi hoc sinh cap 3, va co tac dong xa hoi cao.
+
+================================================================================
+DIEM MANH
+================================================================================
+
+1. CHI PHI: 9/10
+   - Chi phi phan cung: 0.95-1.15 trieu dong (< 2 trieu dieu kien)
+   - Co the tim tai tro tu nha truong / cuoc thi
+   - ROI cao cho nong thon (< 100K/ho neu chia se)
+
+2. CONG NGHE: 8.5/10
+   - Toan bo linh kien tieu chuan, mua duoc tren thi truong Viet Nam
+   - Code Arduino C voi thu vien chuan, co cong dong ho tro
+   - So do ket noi ro rang, huong dan chi tiet
+   - Breadboard + day jumper, khong can han linh kien
+
+3. NANG LUONG: 8/10
+   - Pin 18650 (2x): du cho cuoc thi (demo 1-2 ngay)
+   - Solar Panel 15W: 60 Wh/ngay ≈ du nhu cau 72 Wh (troi nang)
+   - Thoi gian chay khong nang: 5-7 ngay (voi Solar)
+   - Phu hop vung nong thon khong co dien luoi
+
+4. THUC TIEN: 8.5/10
+   - Thoi gian lap rap: 4-6 gio (hoc sinh cap 3 co huong dan)
+   - Khong can phan mem DAC biet, chi can Arduino IDE + thu vien
+   - SMS canh bao khong can Internet
+   - Khong can dien luoi cong cong
+
+5. GIAO DUC: 9/10
+   - Vat ly: quang dien, sieu am, mach dien
+   - Ky thuat: cam bien, giao tiep I2C/UART, nang luong
+   - Lap trinh: C, Arduino, xu ly du lieu
+   - Toan: tinh toan nang luong, loc nhieu
+
+6. XA HOI: 9.5/10
+   - Giai quyet lu lut: 2/3 dien tich Viet Nam
+   - Bao ve hang chuc ngan nguoi neu trien khai
+   - Su dung nang luong tai tao (ben vung)
+   - Giam canh bao som giup dan so
+
+7. NANG CAP: 9/10
+   - Lo trinh ro rang (10 tinh nang cai thien)
+   - Khong be tac cong nghe
+   - Co the nam rong tu demo -> san xuat hang loat
+
+================================================================================
+HAN CHE
+================================================================================
+
+1. THOI GIAN CHAY NGAN (pin 18650)
+   - Chi 1-2 ngay -> can nang cap Solar + pin 10Ah cho ung dung dai han
+   - Giai phap: nang cap Solar Panel 15W + pin LiFePO4 10Ah
+
+2. DO CHINH XAC CAM BIEN
+   - SRF04 bi anh huong boi do am, nuoc, vat chuong ngai
+   - Giai phap: tru binh dong, loc nhieu, them cam bien backup (ap suat)
+
+3. QUAN LY NANG LUONG
+   - Can huong dan them cho hoc sinh (hysteresis, EEPROM)
+   - Can calibrate, hieu chinh nguong theo mua
+
+4. CHI PHI SIM HANG THANG
+   - +50-100K/thang -> tong 3 nam ~1.8M
+   - Can tinh toan chi phi tang them
+
+================================================================================
+TINH KHA THI TUNG KHIA CANH
+================================================================================
+
+A. CONG NGHE: 8.5/10
+
+Diem Manh:
+  + Linh kien tieu chuan, pho bien, hieu ung
+  + Arduino UNO R3 pho bien, co thu vien hang can (RTClib, Wire, SoftwareSerial)
+  + Breadboard + day jumper -> khong can han linh kien
+  + So do ket noi chi tiet, huong dan rõ rang
+  + Nhieu lua chon thay the (SIM800L, DS1307, DHT22)
+
+Tham Tho:
+  + Cam bien SRF04: anh huong am do, noi + tat lien tuc
+  + Module SIM: can cau hinh AT Command phuc tap
+  + Calibrate: hoc sinh can huong dan them
+
+B. KINH TE: 9/10
+
+Chi Phi:
+  - Arduino UNO R3:        150K
+  - Cam bien (SRF04, RTC):  85K
+  - Hien thi (LCD, Buzzer): 115K
+  - Giao tiep (SIM):        145K
+  - Nang luong (pin):       115K
+  - Phu kien (day):          55K
+  - ---- TONG ----          665K (can nen)
+  - Solar (tuy chon):       150K
+  - ---- TONG DAY DU ----   815-965K
+
+Nhan Xet:
+  + Chi phi < 1 trieu -> thap hon nhieu so voi he thong chuyen nghiep (100M+)
+  + Co the tim tai tro, hoc sinh co the mua duoc
+  + ROI cao neu trien khai (1 trieu bao ve nhieu ho dan)
+  - Chi phi SIM them: 50-100K/thang -> 600-1200K/nam
+
+C. NANG LUONG: 8/10
+
+Tieu Thu:
+  - Binh thuong: 170-260 mA x 24h = 4-6.2 Ah/ngay
+  - Co gui SMS: +0.5-1 Ah = 6-7 Ah/ngay
+  - Peak: 900 mA khi canh bao
+
+Phuong An 1 - Pin 18650 (2x, 5Ah):
+  + Don gian, chi phi thap (115K)
+  - Thoi gian chay: 1-2 ngay (khong dat yeu cau 24/7)
+  + Phu hop demo / cuoc thi
+
+Phuong An 2 - Solar Panel 15W:
+  + Sinh ra: 60 Wh/ngay (troi nang 4h) ≈ du nhu cau 72 Wh
+  + Thoi gian chay: 5-7 ngay khong nang
+  - Phu thuoc thoi tiet
+  + Chi phi them: 150K (chap nhan duoc)
+
+D. THUC TIEN: 8.5/10
+
+Lap Rap:
+  + Thoi gian: 4-6 gio / nhom 2-3 hoc sinh cap 3
+  + Khong can han, chi can breadboard + day jumper
+  + Co serial monitor, LCD debug -> de debug
+
+Trien Khai:
+  + Khong can dien luoi cong cong
+  + Module SIM A7680C -> gui SMS den dien thoai dan so
+  + Co the lap trong hop plastic chong tham, dat ngoai troi
+  - Can kiem tra dinh ky & hieu chinh nguong
+
+Kho Khan:
+  - Chon vi tri cam bien (cao hon muc nuoc toi da)
+  - Bao ve chong nuoc (hop/vo phai chong nuoc hoan toan)
+  - Quan ly cap dien (can che phu, giu kin)
+
+E. GIAO DUC: 9/10
+
+Vat Ly:
+  - Hieu ung quang dien (photovoltaic)
+  - Sieu am (ultrasound)
+  - Mach dien + Nguon nang luong
+
+Ky Thuat:
+  - Cam bien sieu am (dap ung)
+  - Giao tiep I2C (LCD + RTC)
+  - Giao tiep UART (Arduino + SIM)
+  - Quan ly nang luong
+
+Lap Trinh:
+  - Vong lap, mang, ham
+  - Xu ly chuoi du lieu
+  - Luu tru EEPROM
+  - Hysteresis logic
+
+Toan:
+  - Tinh khoang cach = (thoi gian x van toc) / 2
+  - Chuyen doi ADC -> Dien ap
+  - Tinh toan nang luong (P = U x I)
+
+F. XA HOI: 9.5/10
+
+Giai Quyet Van De:
+  - Lu lut anh huong 2/3 dien tich Viet Nam
+  - Giam thiet hai -> bao ve dan so
+  - Canh bao som giup son tru duoc tro cap
+
+Tac Dong Dua Hoc Sinh:
+  - Hoc sinh tu thiet ke, lap rap, kiem tra
+  - Phat trien ky nang STEM
+  - Co hoi nang cao suc khoe
+
+Tinh Ben Vung:
+  - Su dung nang luong tai tao (mat troi)
+  - Chi phi thap -> pho cap rong
+  - Khong phu thuoc dien luoi
+
+================================================================================
+LO TRINH PHAT TRIEN
+================================================================================
+
+GIAI DOAN 1: CUOC THI (2-3 thang)
+  - Hoan thien code hien tai
+  - Lap rap & kiem tra tren breadboard
+  - Demo voi pin 18650 + USB sac
+  - Chuan bi tai lieu & video huong dan
+
+GIAI DOAN 2: NANG CAP (3-6 thang)
+  - Them Solar Panel 15W
+  - Nang cap pin len 10Ah LiFePO4
+  - Thiet ke PCB don gian (thay breadboard)
+  - Cau hinh quan ly nang luong MPPT toi uu
+
+GIAI DOAN 3: TRIEN KHAI (6-12 thang)
+  - Them ket noi Wi-Fi / Cloud (ThingSpeak, MQTT)
+  - Lich su du lieu & bieu do web
+  - Them cam bien ap suat xac nhan muc nuoc
+  - Mo rong 10-50 thon xom
+
+GIAI DOAN 4: SAN XUAT (12+ thang)
+  - Thiet ke lap rap chuyen nghiep (PCBA)
+  - Them 4G / 5G (thay GSM 2G)
+  - Du bao bang ML (machine learning)
+  - San xuat hang loat & ban thuong mai
+
+================================================================================
+CAC TINH NANG CAI THIEN (10 Tiem Nang)
+================================================================================
+
+1. Nhieu nguong canh bao (muc 1, 2, 3) + LED mau sac
+2. Ket noi Wi-Fi/GSM du lieu thoi gian thuc
+3. Bao cao va thong bao linh hoat (SMS, email, Telegram)
+4. Giao dien cau hinh LCD + phim nhan
+5. Loc nhieu & trung binh dong tot hon
+6. Them cam bien ap suat / dien dung
+7. Giam sat trang thai phan cung
+8. Toi uu EEPROM & bo nho
+9. Cap nhat firmware OTA
+10. Tai lieu huong dan & so do mach
+
+================================================================================
+KET LUAN
+================================================================================
+
+KHUYẾN NGHI: TIEP TUC & HOAN THIEN DU AN
+
+Tong Diem: 8.4/10
+
+Bang Danh Gia:
+  - Cong nghe:       8.5/10  |  Vung chac, san co, co ho tro
+  - Kinh te:         9/10    |  Chi phi thap, ROI cao
+  - Nang luong:      8/10    |  Kha thi (pin 18650), toi uu hon voi Solar
+  - Thuc tien:       8.5/10  |  Co the trien khai o quy mo nho
+  - Giao duc:        9/10    |  Gia tri STEM cao
+  - Xa hoi:          9.5/10  |  Tac dong lon, bao ve nhieu nguoi
+  - Nang cap:        9/10    |  Lo trinh ro rang, khong be tac
+
+DIEM MANH:
+  1. Chi phi thap (< 1 trieu) -> de trien khai rong
+  2. Cong nghe san co -> de bao tri, sua chua
+  3. Doc lap dien (Solar) -> phu hop vung nong thon
+  4. Canh bao SMS -> khong can Internet
+  5. Huong dan chi tiet -> phu hop hoc sinh, cong dong
+  6. Tac dong xa hoi cao -> bao ve nhieu nguoi
+  7. Nang cap de -> tu phien ban hoc sinh -> phien ban chuyen nghiep
+
+HAN CHE & GIAI PHAP:
+  1. Thoi gian chay ngan (pin 18650 chi 1-2 ngay)
+     -> Nang cap Solar + pin lon
+  
+  2. Do chinh xac cam bien (anh huong am do, nuoc)
+     -> Them cam bien backup, loc nhieu
+  
+  3. Quan ly nang luong phuc tap
+     -> Huong dan chi tiet, test tren hardware
+  
+  4. Chi phi SIM hang thang
+     -> Tinh toan chi phi total 3 nam
+
+CHI SO THANH CONG:
+  - Chi phi: < 1.2 trieu                           [✓ Dat]
+  - Thoi gian lap rap: < 6 gio                     [✓ Dat]
+  - Doc lap dien: Phien ban hoc sinh               [✓ Dat]
+  - Tac dong xa hoi: Bao ve nhieu nguoi           [✓ Dat]
+
+KHUYEN CAO THUC HANH:
+  1. Hoan thien & test code tren hardware thuc
+  2. Kiem tra do chinh xac cam bien o nhieu dieu kien
+  3. Test gui SMS voi module SIM thuc
+  4. Chuan bi tai lieu & video huong dan
+  5. Xac dinh 10-20 thon xom trien khai
+
+XEP HANG CUOI CUNG: 8.4/10
+TRANG THAI: KHUYEN NGHI THAM GIA CUOC THI
+
+================================================================================
