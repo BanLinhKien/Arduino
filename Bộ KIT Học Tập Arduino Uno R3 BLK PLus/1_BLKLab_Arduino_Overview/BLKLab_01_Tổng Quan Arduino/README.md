@@ -364,9 +364,7 @@ Nâng cao tư duy lập trình bằng cách kết hợp nhiều module ngoại v
 * 🎯 **Đếm số lượng khách:** Theo dõi và đếm tự động lượng khách ra vào cửa hàng dựa trên nguyên lý phản xạ sóng của Cảm biến Siêu âm.
 * 🎯 **Đo tần số:** Xây dựng hệ thống đo đạc tần số xung vuông được tạo ra từ IC tạo xung NE555.
 * 🎯 **Đàn Piano điện tử:** Tự chế một chiếc đàn piano mini phát nhạc vui nhộn sử dụng hàng nút nhấn ma trận.
-* 🎯 **Hệ thống SmartParking:** Thiết kế mô hình quản lý bãi đỗ xe bảo mật tự động nhận diện thẻ từ với Module RFID RC522.
 * 🎯 **Đèn giao thông:** Lập trình giả lập hệ thống đèn tín hiệu điều phối giao thông ngã tư thông minh.
-* 🎯 **Khóa cửa RFID:** Chế tạo bộ khóa cửa thông minh, tự động mở chốt cửa khi quẹt đúng thẻ RFID hợp lệ.
 * 🎯 **Lò ấp trứng tự động:** Ứng dụng thuật toán khống chế và duy trì nhiệt độ ổn định cho lò ấp trứng gia cầm.
 * 🎯 **Hệ thống tương tác Keypad + LCD:** Nhập dữ liệu, mật khẩu từ ma trận bàn phím Keypad và xuất kết quả lên màn hình LCD.
 * 🎯 **Cảm biến an ninh:** Tích hợp bộ ba module cảm biến (Rung, Ánh sáng, Âm thanh) để bật/tắt thiết bị bảo an thông minh.
