@@ -1,40 +1,4 @@
-# Banlinhkien.com
-![BANLINHKIEN](https://pos.nvncdn.com/f2fe44-24897/store/20180126_gVLn1I1Irv2dz2XjhYDIshMM.png)
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMYP8t3RGESq5KDLPLjtqvTmeG_ZQzaz56Q&s" alt="Youtube" width="50" />   [**BanLinhKien.Vn**](https://www.youtube.com/@BanLinhKienVn)
+![BANLINHKIEN](https://raw.githubusercontent.com/BanLinhKien/Arduino/refs/heads/main/B%E1%BB%99%20KIT%20H%E1%BB%8Dc%20T%E1%BA%ADp%20Arduino%20Uno%20R3%20BLK%20PLus/1_BLKLab_Arduino_Overview/BLKLab_01_T%E1%BB%95ng%20Quan%20Arduino/BLKLab_01_%20L%E1%BB%99%20Tr%C3%ACnh%20h%E1%BB%8Dc%20Arduino%20v%E1%BB%9Bi%20B%E1%BB%99%20KIT%20H%E1%BB%8Dc%20t%E1%BA%ADp%20Arduino%20Plus%20BLK.png)
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvQHkkzWJBXyAHKcdVe2KQ3kYJvneBO-zUag&s" alt="Tiktok" width="50" />   [**BanLinhKien Retail**](https://www.tiktok.com/@banlinhkienretail?lang=vi-VN)
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdgS0IxquKvMSPtIH1lRTPotJWkOBLT_KQ5g&s" alt="Facebook" width="50" />   [**Banlinhkien**](https://www.facebook.com/banlinhkienMH)
-
-<img src="https://quyhyvong.com/wp-content/uploads/2021/11/Logo-Shopee.png" alt="Shopee" width="50" />   [**Banlinhkien.com Official Store**](https://shopee.vn/banlinhkien_mh)
-
-<img src="https://cdn.tuoitrethudo.vn/stores/news_dataimages/ngovuongtuan/042022/28/14/91f38395a754df4f8c27607cb6d840c7.png?rt=20220428145727" alt="TiktokShop" width="50" />   [**BanLinhKien Retail**](https://www.tiktok.com/@banlinhkienretail?_t=8qfDAd26YlD&_r=1)
-
-<img src="https://pos.nvncdn.com/f2fe44-24897/store/20180126_gVLn1I1Irv2dz2XjhYDIshMM.png" alt="Banlinhkien" width="50" />   [**BanLinhKien**](https://banlinhkien.com/)
-
----
-
-
-[***Bộ KIT Học Tập Arduino Uno R3 RFID BLK***](https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-rfid-blk-p38419269.html)
-
-<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230809_17PCMBLIyi.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 RFID BLK" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230812_uYm8JxNdLJ.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 RFID BLK" width="400" />   
-
----
-
-[***Bộ KIT Học Tập Arduino Uno R3 BLK Plus***](https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-blk-plus-p38419270.html)
-
-<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230821_o5LKOchlIF.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 BLK Plus" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230818_gWTNTGRu66.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 BLK Plus" width="400" />   
-
----
-
-[***Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (Arduino)***](https://banlinhkien.com/combo-mach-phat-hien-ro-ri-khi-gas-phong-chong-chay-no-ngat-khi-arduino-p38420049.html)
-
-<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20241029_KqWQ0QAZLa.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (Arduino)" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20241021_EGrk21Ezvo.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (Arduino)" width="400" />
-
----
-
-[***Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)***](https://banlinhkien.com/combo-mach-phat-hien-ro-ri-khi-gas-phong-chong-chay-no-ngat-khi-esp32-p38420050.html)
-
-<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20240329_OzboUELGyt.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20241019_pA2y2ZBmGu.jpeg" alt="Combo Mạch Phát Hiện Rò Rỉ Khí GAS Phòng Chống Cháy Nổ, Ngạt Khí (ESP32)" width="400" />  
 
