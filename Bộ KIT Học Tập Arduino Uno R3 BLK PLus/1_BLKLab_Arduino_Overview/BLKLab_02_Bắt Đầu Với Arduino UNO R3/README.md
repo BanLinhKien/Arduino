@@ -271,9 +271,7 @@ Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for loca
 
 ### 4.4. Nạp Code (Upload)
 
-Sau khi biên dịch thành công, nhấn nút **→ Upload** (hoặc tổ hợp phím **Ctrl+U**) để nạp code vào Arduino:
-
-<img src="https://docs.arduino.cc/static/9c86771f21c63130a363a4575b8ed712/a6d36/uploading-a-sketch-img01.png" alt="Nạp code vào Arduino" width="500" style="display: block; margin: 0 auto;" />
+Sau khi biên dịch thành công, nhấn nút **→ Upload** (hoặc tổ hợp phím **Ctrl+U**) để nạp code vào Arduino.
 
 Trong quá trình nạp:
 - Hai đèn LED nhỏ **TX** và **RX** trên bo mạch sẽ nháy liên tục – đây là dấu hiệu dữ liệu đang được truyền.
