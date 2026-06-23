@@ -8,9 +8,6 @@ Bất kỳ một chương trình học nào cũng cần nên bắt đầu một 
 - Giới thiệu các khái niệm, linh kiện điện tử cơ bản.
 - Cài đặt Arduino IDE và nạp chương trình.
 - Blink LED (Chớp tắt đèn LED).
-- Nút nhấn và các ứng dụng.
-- Sử dụng chức năng PWM trong Arduino.
-- Đọc dữ liệu Analog từ cảm biến.
 
 ---
 
