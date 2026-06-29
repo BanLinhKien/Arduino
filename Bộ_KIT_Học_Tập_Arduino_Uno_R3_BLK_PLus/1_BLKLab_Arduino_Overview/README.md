@@ -16,7 +16,7 @@
 
 ---
 
-## ![duong](image.png){ width=30px } Tại sao là Arduino?
+## 💡 Tại sao là Arduino?
 
 **Arduino** được ưa chuộng trong nhiều lĩnh vực nhờ sự đơn giản, dễ sử dụng và mã nguồn mở. Nó phù hợp cho cả người mới bắt đầu lẫn lập trình viên giàu kinh nghiệm. Cộng đồng Arduino toàn cầu rất lớn, cung cấp nhiều thư viện và hỗ trợ mạnh mẽ, giúp người dùng dễ dàng tìm giải pháp cho vấn đề gặp phải.
 
