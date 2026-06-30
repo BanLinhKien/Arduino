@@ -27,219 +27,31 @@
 
 ---
 
-# 🛠️ Các Board Mạch Arduino Trên Thị Trường
+## 📊 Bảng So Sánh Các Board Arduino Phổ Biến
 
-Hiện nay, thị trường có hàng trăm board mạch Arduino khác nhau, chủ yếu là các biến thể PCB của những board mạch chính từ nhà sản xuất Arduino. Các board này thường được cải tiến với tính năng mới hoặc thiết kế lại để giảm giá thành, giúp tiếp cận nhiều người dùng hơn. Dưới đây là một số board mạch Arduino chính:
-
-## 1. 🛄 Arduino Uno R3
-
-*Arduino Uno R3* là board mạch phổ biến nhất, phù hợp cho người mới bắt đầu học về điện tử và lập trình.
-
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_8.png" alt="Arduino" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
-
-### 📊 Thông số kỹ thuật
-
-| **Thông số** | **Giá trị** |
-| :--- | :--- |
-| **Vi điều khiển** | ATmega328P |
-| **Điện áp hoạt động** | 5V |
-| **Điện áp đầu vào (khuyến nghị)** | 7-12V |
-| **Điện áp đầu vào (giới hạn)** | 6-20V |
-| **Chân Digital I/O** | 14 (6 chân hỗ trợ PWM) |
-| **Chân Analog** | 6 |
-| **Dòng điện tối đa mỗi chân I/O** | 20 mA |
-| **Dòng điện cho chân 3.3V** | 50 mA |
-| **Bộ nhớ Flash** | 32 KB (0.5 KB dùng cho bootloader) |
-| **SRAM** | 2 KB |
-| **EEPROM** | 1 KB |
-| **Tần số xung nhịp** | 16 MHz |
-| **Kích thước** | 68.6 mm x 53.4 mm |
-| **Trọng lượng** | 25 g |
-
-### ✨ Đặc điểm nổi bật:
-* Sử dụng vi điều khiển *ATmega328* của hãng Atmel.
-* Lập trình qua cổng USB.
-* Tích hợp **4 LED báo**: nguồn, RX, TX, Debug.
-* Có nút nhấn Reset board mạch tiện lợi.
-* Hỗ trợ Jack nguồn DC riêng biệt (khi không dùng USB).
-* Các header cho *In-circuit serial programmer (ICSP)* - các header để kết nối với mạch nạp cho chip nếu không nạp thông qua cổng USB.
-
-### 🧠 Giới thiệu vi điều khiển ATmega328:
-*ATmega328* là vi điều khiển 8-bit của Atmel, tích hợp CPU, RAM (2 KB), ROM (32 KB Flash), EEPROM (1 KB), và các giao thức I2C, SPI. Nó là "trái tim" của Arduino Uno R3, hỗ trợ giao tiếp với cảm biến và điều khiển thiết bị.
-
-| **Thông số vi điều khiển** | **Giá trị** |
-| :--- | :--- |
-| **CPU** | 8-bit AVR |
-| **Hiệu suất** | 20 MIPS tại 20 MHz |
-| **Flash** | 32 KB |
-| **SRAM** | 2 KB |
-| **EEPROM** | 1 KB |
-| **Số chân** | 28 (PDIP, MLF), 32 (TQFP, MLF) |
-| **Tần số tối đa** | 20 MHz |
-| **Kênh cảm ứng** | 16 |
-| **Chân I/O tối đa** | 26 |
-| **Ngắt ngoài** | 2 |
-| **Giao diện USB** | Không |
-
+| **Thông số** | **UNO R3** | **Nano 3.x** | **Nano 2.x** | **Leonardo** | **Mega 2560** | **UNO R4 Minima** | **UNO R4 WiFi** |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Hình ảnh** | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_8.png" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_3.jpg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_3.jpg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_4.jpeg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_5.jpg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_6.webp" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_7.webp" width="120"> |
+| **Vi điều khiển** | ATmega328P | ATmega328 | ATmega168 | ATmega32u4 | ATmega2560 | Renesas RA4M1 (ARM Cortex-M4) | Renesas RA4M1 (ARM Cortex-M4) |
+| **Đồng xử lý** | — | — | — | — | — | Không | ESP32-S3-MINI (WiFi/BT) |
+| **Điện áp hoạt động** | 5V | 5V | 5V | 5V | 5V | 5V | 5V |
+| **Điện áp đầu vào (khuyến nghị)** | 7–12V | 7–12V | 7–12V | 7–12V | 7–12V | 6–24V | 6–24V |
+| **Điện áp đầu vào (giới hạn)** | 6–20V | 6–20V | 6–20V | 6–20V | 6–20V | — | — |
+| **Chân Digital I/O** | 14 (6 PWM) | 14 (6 PWM) | 14 (6 PWM) | 20 (7 PWM) | 54 (15 PWM) | 14 (6 PWM) | 14 (6 PWM) |
+| **Chân Analog** | 6 | 8 | 8 | 12 | 16 | 6 (14-bit ADC) | 6 (14-bit ADC) |
+| **Dòng điện tối đa mỗi chân I/O** | 20 mA | 20 mA | 20 mA | 20 mA | 20 mA | 8 mA | 8 mA |
+| **Dòng điện cho chân 3.3V** | 50 mA | 50 mA | 50 mA | 50 mA | 50 mA | — | — |
+| **Bộ nhớ Flash** | 32 KB (0.5 KB bootloader) | 32 KB (2 KB bootloader) | 16 KB (2 KB bootloader) | 32 KB (4 KB bootloader) | 256 KB (8 KB bootloader) | 256 KB | 256 KB |
+| **SRAM** | 2 KB | 2 KB | 1 KB | 2.5 KB | 8 KB | 32 KB | 32 KB |
+| **EEPROM / Data Flash** | 1 KB | 1 KB | 0.5 KB | 1 KB | 4 KB | 8 KB (Data Flash) | 8 KB (Data Flash) |
+| **Tần số xung nhịp** | 16 MHz | 16 MHz | 16 MHz | 16 MHz | 16 MHz | 48 MHz | 48 MHz |
+| **UART (Serial)** | 1 | 1 | 1 | 1 | 4 | 1 | 1 |
+| **Kích thước** | 68.6 × 53.4 mm | 45 × 18 mm | 45 × 18 mm | 68.6 × 53.4 mm | 101.52 × 53.3 mm | 68.6 × 53.4 mm | 68.6 × 53.4 mm |
+| **Trọng lượng** | 25 g | 7 g | 7 g | 20 g | 37 g | 25 g | 25 g |
+| **Tính năng nổi bật** | Chuẩn học tập phổ biến nhất | Kích thước nhỏ gọn | Phiên bản Nano đời cũ | Hỗ trợ HID (chuột, bàn phím) | 4 UART, nhiều I/O | DAC 12-bit, CAN Bus, OP AMP | WiFi, Bluetooth, LED Matrix 12×8, Qwiic I2C |
 ---
 
-## 2. 🛄 Arduino Nano
-
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_3.jpg" alt="Nano" width="400" style="display: block; margin: 0 auto; border-radius: 8px;"  />
-
-*Arduino Nano* là phiên bản thu gọn của Uno, sử dụng vi điều khiển *ATmega328* (Nano 3.x) hoặc *ATmega168* (Nano 2.x), được thiết kế cho các dự án cần kích thước nhỏ gọn, dễ tích hợp vào hệ thống nhúng.
-
-### 📊 Thông số kỹ thuật
-
-| **Thông số** | **Giá trị (Nano 3.x)** | **Giá trị (Nano 2.x)** |
-| :--- | :--- | :--- |
-| **Vi điều khiển** | ATmega328 | ATmega168 |
-| **Điện áp hoạt động** | 5V | 5V |
-| **Điện áp đầu vào (khuyến nghị)**| 7-12V | 7-12V |
-| **Điện áp đầu vào (giới hạn)** | 6-20V | 6-20V |
-| **Chân Digital I/O** | 14 (6 chân hỗ trợ PWM) | 14 (6 chân hỗ trợ PWM) |
-| **Chân Analog** | 8 | 8 |
-| **Dòng điện tối đa mỗi chân I/O** | 20 mA | 20 mA |
-| **Dòng điện cho chân 3.3V** | 50 mA | 50 mA |
-| **Bộ nhớ Flash** | 32 KB (2 KB cho bootloader) | 16 KB (2 KB cho bootloader) |
-| **SRAM** | 2 KB | 1 KB |
-| **EEPROM** | 1 KB | 0.5 KB |
-| **Tần số xung nhịp** | 16 MHz | 16 MHz |
-| **Kích thước** | 45 mm x 18 mm | 45 mm x 18 mm |
-| **Trọng lượng** | 7 g | 7 g |
-
-### ✨ Đặc điểm nổi bật:
-* **Kích thước siêu nhỏ gọn:** Với kích thước chỉ 45 mm x 18 mm, Nano lý tưởng cho các dự án cần tiết kiệm không gian, như thiết bị đeo hoặc hệ thống nhúng.
-* **Cổng Mini-B USB:** Thay thế cổng USB-B chuẩn, phù hợp với thiết kế nhỏ nhắn.
-* **Chân Analog bổ sung:** 8 chân Analog (so với 6 của Uno R3), tăng khả năng đọc dữ liệu từ cảm biến.
-* **Tối giản phần nguồn:** Không có jack nguồn DC, chỉ cấp nguồn qua USB hoặc chân VIN để giảm tối đa kích thước.
-* **Tương thích hoàn toàn với Uno:** Sử dụng vi điều khiển tương tự Uno R3, hỗ trợ hầu hết các thư viện và shield (thông qua adapter).
-
-### 🎯 Ứng dụng:
-*Arduino Nano* phù hợp cho các dự án nhỏ gọn như thiết bị IoT, cảm biến di động, robot mini, hoặc các ứng dụng cần tích hợp vào không gian hạn chế như quần áo thông minh hoặc mô hình điều khiển từ xa.
-
----
-
-## 3. 🛄 Arduino Leonardo
-
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_4.jpeg" alt="arduino" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
-
-*Arduino Leonardo* sử dụng vi điều khiển ATmega32u4, tích hợp khả năng giao tiếp USB trực tiếp, phù hợp cho các dự án cần giả lập thiết bị đầu vào như chuột, bàn phím.
-
-### 📊 Thông số kỹ thuật
-
-| **Thông số** | **Giá trị** |
-| :--- | :--- |
-| **Vi điều khiển** | ATmega32u4 |
-| **Điện áp hoạt động** | 5V |
-| **Điện áp đầu vào (khuyến nghị)** | 7-12V |
-| **Điện áp đầu vào (giới hạn)** | 6-20V |
-| **Chân Digital I/O** | 20 (7 chân hỗ trợ PWM) |
-| **Chân Analog** | 12 |
-| **Dòng điện tối đa mỗi chân I/O** | 20 mA |
-| **Dòng điện cho chân 3.3V** | 50 mA |
-| **Bộ nhớ Flash** | 32 KB (4 KB dùng cho bootloader) |
-| **SRAM** | 2.5 KB |
-| **EEPROM** | 1 KB |
-| **Tần số xung nhịp** | 16 MHz |
-| **Kích thước** | 68.6 mm x 53.4 mm |
-| **Trọng lượng** | 20 g |
-
-### ✨ Đặc điểm nổi bật:
-* **Tích hợp USB-to-Serial trực tiếp:** Vi điều khiển ATmega32u4 có khả năng giao tiếp USB tích hợp sẵn, không cần chip FTDI riêng như Uno R3, giúp giảm chi phí và tăng tốc độ truyền dữ liệu.
-* **Hỗ trợ tính năng HID:** Có thể giả lập chuột, bàn phím, hoặc joystick, lý tưởng cho các dự án giao diện người-máy (HMI).
-* **Nhiều chân I/O mở rộng:** 20 chân Digital I/O (7 chân PWM) và 12 chân Analog, tăng khả năng kết nối vượt trội so với Uno R3.
-* **Đầy đủ cổng nguồn:** Cổng USB và jack nguồn DC hỗ trợ lập trình và cấp nguồn linh hoạt.
-* **Tương thích hoàn hảo với shield:** Giữ nguyên form-factor kích thước của Uno R3, tương thích với nhiều shield phổ thông.
-
-### 🎯 Ứng dụng:
-*Arduino Leonardo* phù hợp cho các dự án cần tương tác USB, như bàn phím tùy chỉnh, bộ điều khiển game, hoặc thiết bị mô phỏng đầu vào. Nó cũng được sử dụng trong các ứng dụng tự động hóa hoặc điều khiển thiết bị với số lượng cảm biến lớn.
-
----
-
-## 4. 🛄 Arduino Mega 2560
-
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_5.jpg" alt="Arduino" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" />
-
-*Arduino Mega 2560* là phiên bản nâng cấp mạnh mẽ của Uno, sử dụng vi điều khiển ATmega2560, được thiết kế cho các dự án phức tạp đòi hỏi nhiều chân I/O và bộ nhớ lớn, như máy in 3D, robot, hoặc hệ thống điều khiển tự động.
-
-### 📊 Thông số kỹ thuật
-
-| **Thông số** | **Giá trị** |
-| :--- | :--- |
-| **Vi điều khiển** | ATmega2560 |
-| **Điện áp hoạt động** | 5V |
-| **Điện áp đầu vào (khuyến nghị)** | 7-12V |
-| **Điện áp đầu vào (giới hạn)** | 6-20V |
-| **Chân Digital I/O** | 54 (15 chân hỗ trợ PWM) |
-| **Chân Analog** | 16 |
-| **Dòng điện tối đa mỗi chân I/O** | 20 mA |
-| **Dòng điện cho chân 3.3V** | 50 mA |
-| **Bộ nhớ Flash** | 256 KB (8 KB dùng cho bootloader) |
-| **SRAM** | 8 KB |
-| **EEPROM** | 4 KB |
-| **Tần số xung nhịp** | 16 MHz |
-| **UART (Serial)** | 4 cổng độc lập |
-| **Kích thước** | 101.52 mm x 53.3 mm |
-| **Trọng lượng** | 37 g |
-
-### ✨ Đặc điểm nổi bật:
-* **Số lượng chân I/O cực khủng:** 54 chân Digital I/O (15 chân PWM) và 16 chân Analog, lý tưởng cho các dự án cần rất nhiều kết nối cảm biến và thiết bị điều khiển cùng lúc.
-* **Không gian bộ nhớ lớn:** Bộ nhớ Flash lên đến 256 KB (gấp 8 lần Uno R3), SRAM 8 KB, EEPROM 4 KB, hỗ trợ đắc lực cho các chương trình thuật toán phức tạp.
-* **4 cổng UART phần cứng:** Cho phép giao tiếp song song với nhiều thiết bị ngoại vi qua giao thức Serial mà không lo nghẽn.
-* **Hỗ trợ hệ sinh thái mở rộng:** Tương thích với nhiều shield nặng đô như kết nối Ethernet, WiFi, hoặc các mạch điều khiển động cơ công suất lớn.
-
-### 🎯 Ứng dụng:
-*Arduino Mega 2560* phù hợp cho các dự án yêu cầu xử lý nhiều dữ liệu hoặc điều khiển đồng thời nhiều thiết bị, như robot tự hành, máy in 3D, hệ thống giám sát môi trường diện rộng, hoặc các ứng dụng IoT phức tạp.
-
----
-
-## 5. ⚡ Arduino UNO R4
-
-*Arduino UNO R4* là phiên bản mới nhất của dòng **UNO**, ra mắt vào tháng 6/2023, mang đến bước đột phá với vi điều khiển *32-bit* và nhiều tính năng hiện đại. **UNO R4** có hai phiên bản: **UNO R4 Minima** (tập trung vào hiệu suất cơ bản) và **UNO R4 WiFi** (tích hợp kết nối không dây và ma trận LED).
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_6.webp" alt="UNO_R4 Minima" width="380" style="border-radius: 8px; margin-right: 10px;" />  
-  <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_7.webp" alt="UNO_R4 WiFi" width="380" style="border-radius: 8px;" />
-</p>
-
-### 📊 Thông số kỹ thuật (UNO R4 Minima và WiFi)
-
-| **Thông số** | **Giá trị (UNO R4 Minima)** | **Giá trị (UNO R4 WiFi)** |
-| :--- | :--- | :--- |
-| **Vi điều khiển** | Renesas RA4M1 (ARM Cortex-M4) | Renesas RA4M1 (ARM Cortex-M4) |
-| **Đồng xử lý** | Không | ESP32-S3-MINI (WiFi/BT) |
-| **Điện áp hoạt động** | 5V | 5V |
-| **Điện áp đầu vào (khuyến nghị)**| 6-24V | 6-24V |
-| **Chân Digital I/O** | 14 (6 chân hỗ trợ PWM) | 14 (6 chân hỗ trợ PWM) |
-| **Chân Analog** | 6 (14-bit ADC) | 6 (14-bit ADC) |
-| **Dòng điện tối đa chân I/O** | 8 mA | 8 mA |
-| **Bộ nhớ Flash** | 256 KB | 256 KB |
-| **SRAM** | 32 KB | 32 KB |
-| **EEPROM** | 8 KB (Data Flash) | 8 KB (Data Flash) |
-| **Tần số xung nhịp** | 48 MHz | 48 MHz |
-| **Kích thước** | 68.6 mm x 53.4 mm | 68.6 mm x 53.4 mm |
-| **Trọng lượng** | 25 g | 25 g |
-| **Tính năng bổ sung** | DAC 12-bit, CAN Bus, OP AMP | DAC 12-bit, CAN Bus, OP AMP, Ma trận LED 12x8, Qwiic I2C, WiFi/Bluetooth |
-
-### ✨ Đặc điểm nổi bật:
-* **Vi điều khiển 32-bit thế hệ mới:** Sử dụng chip Renesas RA4M1 (ARM Cortex-M4) chạy ở 48 MHz, cho tốc độ xử lý nhanh gấp 3 lần Uno R3, đi kèm bộ nhớ Flash 256 KB (gấp 8 lần) và SRAM 32 KB (gấp 16 lần).
-* **Cổng kết nối USB-C hiện đại:** Thay thế cổng USB-B cũ kỹ, hỗ trợ tốc độ truyền tải nhanh và tương thích với hầu hết thiết bị đời mới.
-* **Điện áp đầu vào mở rộng vượt trội:** Hỗ trợ nguồn vào lên đến **24V**, cực kỳ an toàn và ổn định khi kéo các thiết bị ngoại vi nặng như động cơ, dải LED.
-* **Tính năng độc quyền trên bản UNO R4 WiFi:**
-  * Tích hợp module đồng xử lý **ESP32-S3** cho kết nối WiFi và Bluetooth, hỗ trợ đắc lực cho các giải pháp IoT và hệ sinh thái *Arduino IoT Cloud*.
-  * **Ma trận LED 12x8 (96 điểm)** sử dụng công nghệ Charlieplexing, lý tưởng để hiển thị hình ảnh động, ký tự hoặc dữ liệu cảm biến trực quan.
-  * Tích hợp cổng **Qwiic I2C** giúp cắm nóng (plug-and-play) các module cảm biến mà không cần hàn hay dùng dây nối phiền phức.
-* **Hỗ trợ HID hoàn hảo:** Dễ dàng biến bo mạch thành chuột, bàn phím hoặc gamepad mượt mà qua kết nối USB.
-* **Tương thích ngược 100%:** Giữ nguyên layout kích thước, sơ đồ chân cắm và mức điện áp IO 5V truyền thống của dòng Uno R3, giúp bạn tái sử dụng toàn bộ shield cũ.
-
-### 🎯 Ứng dụng:
-* **UNO R4 Minima:** Phù hợp cho các dự án yêu cầu hiệu suất cao tính toán thuần túy nhưng không cần kết nối không dây, như tự động hóa công nghiệp, xử lý tín hiệu âm thanh tinh chỉnh (nhờ DAC 12-bit), hoặc ứng dụng mạng điều khiển thiết bị trên CAN Bus.
-* **UNO R4 WiFi:** Lựa chọn hàng đầu cho các dự án IoT, điều khiển thiết bị thông minh qua internet, hiển thị hình ảnh/biểu tượng động, hoặc xây dựng các mô hình robot điều khiển từ xa cao cấp.
-
----
-
-## 6. 🏆 Bộ KIT Học Tập Arduino Uno R3 BLK Plus
+##  🏆 Bộ KIT Học Tập Arduino Uno R3 BLK Plus
 
 **Bộ KIT Học Tập Arduino Uno R3 BLK Plus** là bộ công cụ học tập cao cấp được biên soạn chuyên nghiệp bởi [BanLinhKien](https://banlinhkien.com), nhằm hỗ trợ người học tiếp cận từ cơ bản đến nâng cao để khám phá lập trình và ứng dụng thực tế của *Arduino*. Với hệ sinh thái lên tới **41 linh kiện và module phong phú**, bộ KIT giúp bạn làm chủ nhanh chóng các giao thức truyền thông hiện đại và hiện thực hóa các ý tưởng sáng tạo độc đáo.
 
@@ -293,7 +105,7 @@ Bộ KIT hỗ trợ xây dựng hơn **40 dự án thực tế sinh động**, t
 
 ---
 
-# 7. 📈 Lộ Trình Học Lập Trình Arduino
+#  📈 Lộ Trình Học Lập Trình Arduino
 
 **Mô tả tổng quan:** Đây là lộ trình huấn luyện lập trình Arduino bài bản được thiết kế cấu trúc khoa học từ cấp độ "Cơ bản đến Nâng cao". Lộ trình này được tối ưu hóa đặc biệt nhằm đi kèm với **Bộ KIT Học Tập Arduino Uno R3 BLK Plus**, tuân thủ nguyên tắc giáo dục STEM trực quan: học đi đôi với hành, tiếp cận dễ hiểu và ứng dụng trực tiếp vào các dự án thực tế ngoài đời sống.
 
@@ -415,4 +227,7 @@ Rèn luyện kỹ năng làm việc độc lập và tư duy kỹ thuật thông
 
 ---
 
-*Thông tin tham khảo uy tín từ [www.arduino.cc](https://www.arduino.cc), [wikipedia.org](https://wikipedia.org) và [banlinhkien.com](https://banlinhkien.com).*
+*Thông tin tham khảo từ [www.arduino.cc](https://www.arduino.cc), [wikipedia.org](https://wikipedia.org) và [banlinhkien.com](https://banlinhkien.com).*
+
+
+
