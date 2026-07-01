@@ -1,6 +1,6 @@
 
 
-# <p align="center"> <img src="https://img.icons8.com/?size=100&id=Pl2Qypp6s5yx&format=png&color=000000" alt="Arduino" width="40"/> Bộ KIT Học Tập Arduino Uno R3 BLK Plus </p>
+# <p align="center"> <img src="https://img.icons8.com/?size=100&id=FkH67dulbfEw&format=png&color=000000" alt="Arduino" width="60"/>  Bộ KIT Học Tập Arduino Uno R3 BLK Plus </p>
 
 
 **Bộ KIT Học Tập Arduino Uno R3 BLK Plus** là bộ công cụ học tập cao cấp được biên soạn chuyên nghiệp bởi [BanLinhKien](https://banlinhkien.com), nhằm hỗ trợ người học tiếp cận từ cơ bản đến nâng cao để khám phá lập trình và ứng dụng thực tế của *Arduino*. Với hệ sinh thái lên tới **41 linh kiện và module phong phú**, bộ KIT giúp bạn làm chủ nhanh chóng các giao thức truyền thông hiện đại và hiện thực hóa các ý tưởng sáng tạo độc đáo.
@@ -119,16 +119,16 @@ Nâng cao tư duy lập trình bằng cách kết hợp nhiều module ngoại v
 
 ### <img src="https://img.icons8.com/?size=100&id=119238&format=png&color=000000"  width="30"/> Giai đoạn 5: Top 10 Projects (Top 10 Dự Án Độc Đáo Nổi Bật)
 Rèn luyện kỹ năng làm việc độc lập và tư duy kỹ thuật thông qua 10 dự án DIY hoàn chỉnh:
-  <img src="https://img.icons8.com/?size=100&id=l1WEsTEkba1B&format=png&color=000000"  width="25"/>  **Làm hiệu ứng siêu đẹp với LED đơn bằng Arduino:** Sáng tạo các hiệu ứng chuyển động ánh sáng siêu đẹp mắt với hệ thống LED đơn.
-  <img src="https://img.icons8.com/?size=100&id=qPtN2YC9glNR&format=png&color=000000"  width="25"/>  **DIY nhà kính trồng rau sạch thông minh:** Xây dựng mô hình nhà kính nông nghiệp thông minh tự động chăm sóc rau sạch.
-  <img src="https://img.icons8.com/?size=100&id=VHYSAR2dZwad&format=png&color=000000"  width="25"/>  **DIY bộ điều khiển thiết bị điện từ xa bằng remote hồng ngoại:** Thiết kế bộ điều khiển bật/tắt các thiết bị điện trong nhà từ khoảng cách xa.
-  <img src="https://img.icons8.com/?size=100&id=LBraU5RHcH0n&format=png&color=000000"  width="25"/>  **DIY hệ thống cảnh báo ngập úng, lũ lụt:** Chế tạo hệ thống tự động phát tín hiệu cảnh báo khi có hiện tượng ngập úng hoặc lũ lụt dâng cao.
-  <img src="https://img.icons8.com/?size=100&id=eCH3ZrUh4efA&format=png&color=000000"  width="25"/>  **DIY hệ thống cửa tự động :** Thiết kế và lắp ráp hệ thống cửa ra vào tự động đóng mở khi phát hiện có người đến gần.
-  <img src="https://img.icons8.com/?size=100&id=Hg6Hznsfoth8&format=png&color=000000"  width="25"/>  **DIY giàn phơi đồ thông minh:** Hiện thực hóa giàn phơi quần áo thông minh bảo vệ đồ giặt khỏi thời tiết xấu.
-  <img src="https://img.icons8.com/?size=100&id=j95AEAW9B68s&format=png&color=000000"  width="25"/>  **DIY két sắt mini chống trộm:** Tạo ra một chiếc đồng hồ cát kỹ thuật số mô phỏng hạt cát rơi nghệ thuật bằng LED Matrix.
-  <img src="https://img.icons8.com/?size=100&id=JbMacZJ29wHV&format=png&color=000000"  width="25"/>  **DIY đồng hồ cát dùng LED Matrix:** Chế tạo chiếc đồng hồ chuyên dụng đếm ngược thời gian thi đấu cho các kỳ thủ cờ vua.
-  <img src="https://img.icons8.com/?size=100&id=jWStkWhIxb9r&format=png&color=000000"  width="25"/>  **DIY bãi đỗ xe thông minh:** Hoàn thiện mô hình bãi đỗ xe tự động phân luồng và quản lý vị trí trống.
-  <img src="https://img.icons8.com/?size=100&id=4bruBkjJijps&format=png&color=000000"  width="25"/>  **DIY đồng hồ đếm ngược trong cờ vua:** Tự tay làm một chiếc két sắt mini bảo mật cao có tích hợp còi báo động chống trộm.
+ - <img src="https://img.icons8.com/?size=100&id=l1WEsTEkba1B&format=png&color=000000"  width="25"/>  **Làm hiệu ứng siêu đẹp với LED đơn bằng Arduino:** Sáng tạo các hiệu ứng chuyển động ánh sáng siêu đẹp mắt với hệ thống LED đơn.
+ - <img src="https://img.icons8.com/?size=100&id=qPtN2YC9glNR&format=png&color=000000"  width="25"/>  **DIY nhà kính trồng rau sạch thông minh:** Xây dựng mô hình nhà kính nông nghiệp thông minh tự động chăm sóc rau sạch.
+ - <img src="https://img.icons8.com/?size=100&id=VHYSAR2dZwad&format=png&color=000000"  width="25"/>  **DIY bộ điều khiển thiết bị điện từ xa bằng remote hồng ngoại:** Thiết kế bộ điều khiển bật/tắt các thiết bị điện trong nhà từ khoảng cách xa.
+ - <img src="https://img.icons8.com/?size=100&id=LBraU5RHcH0n&format=png&color=000000"  width="25"/>  **DIY hệ thống cảnh báo ngập úng, lũ lụt:** Chế tạo hệ thống tự động phát tín hiệu cảnh báo khi có hiện tượng ngập úng hoặc lũ lụt dâng cao.
+ - <img src="https://img.icons8.com/?size=100&id=eCH3ZrUh4efA&format=png&color=000000"  width="25"/>  **DIY hệ thống cửa tự động :** Thiết kế và lắp ráp hệ thống cửa ra vào tự động đóng mở khi phát hiện có người đến gần.
+ - <img src="https://img.icons8.com/?size=100&id=Hg6Hznsfoth8&format=png&color=000000"  width="25"/>  **DIY giàn phơi đồ thông minh:** Hiện thực hóa giàn phơi quần áo thông minh bảo vệ đồ giặt khỏi thời tiết xấu.
+ - <img src="https://img.icons8.com/?size=100&id=j95AEAW9B68s&format=png&color=000000"  width="25"/>  **DIY két sắt mini chống trộm:** Tạo ra một chiếc đồng hồ cát kỹ thuật số mô phỏng hạt cát rơi nghệ thuật bằng LED Matrix.
+ - <img src="https://img.icons8.com/?size=100&id=JbMacZJ29wHV&format=png&color=000000"  width="25"/>  **DIY đồng hồ cát dùng LED Matrix:** Chế tạo chiếc đồng hồ chuyên dụng đếm ngược thời gian thi đấu cho các kỳ thủ cờ vua.
+ - <img src="https://img.icons8.com/?size=100&id=jWStkWhIxb9r&format=png&color=000000"  width="25"/>  **DIY bãi đỗ xe thông minh:** Hoàn thiện mô hình bãi đỗ xe tự động phân luồng và quản lý vị trí trống.
+ - <img src="https://img.icons8.com/?size=100&id=4bruBkjJijps&format=png&color=000000"  width="25"/>  **DIY đồng hồ đếm ngược trong cờ vua:** Tự tay làm một chiếc két sắt mini bảo mật cao có tích hợp còi báo động chống trộm.
 
 ---
 

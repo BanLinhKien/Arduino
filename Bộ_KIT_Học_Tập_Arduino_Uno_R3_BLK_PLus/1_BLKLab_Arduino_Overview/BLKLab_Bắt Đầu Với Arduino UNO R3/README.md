@@ -136,7 +136,7 @@ Bo mạch **Arduino UNO R3 clone** (hàng Trung Quốc giá rẻ) thường dùn
 - 🔗 Windows/macOS: https://sparks.gogo.co.nz/ch340.html
 - Sau khi cài, cắm Arduino vào máy tính qua cáp USB. Kiểm tra trong **Device Manager** (Windows) hoặc `/dev/tty.wchusbserial*` (macOS) để xác nhận đã nhận cổng.
 
-> ✅ Với **Arduino UNO R3 chính hãng** (Arduino.cc), máy tính sẽ tự nhận diện mà không cần cài driver thêm.
+> <img src="https://img.icons8.com/?size=100&id=pIPl8tqh3igN&format=png&color=000000"  width="20"/> Với **Arduino UNO R3 chính hãng** (Arduino.cc), máy tính sẽ tự nhận diện mà không cần cài driver thêm.
 
 ---
 
@@ -307,10 +307,10 @@ Sau khi sửa, nhấn **Upload** lại và quan sát đèn LED thay đổi theo 
 
 Qua phần này, bạn đã:
 
-- ✅ Cài đặt thành công **Arduino IDE 2.x**
-- ✅ Kết nối bo mạch **Arduino UNO R3** với máy tính
-- ✅ Cấu hình đúng **Board** và **Port** trong IDE
-- ✅ Hiểu cấu trúc cơ bản của một **Arduino Sketch** (setup + loop)
-- ✅ Biên dịch và nạp chương trình **Blink LED** đầu tiên
+- <img src="https://img.icons8.com/?size=100&id=pIPl8tqh3igN&format=png&color=000000"  width="20"/>  Cài đặt thành công **Arduino IDE 2.x**
+- <img src="https://img.icons8.com/?size=100&id=pIPl8tqh3igN&format=png&color=000000"  width="20"/> Kết nối bo mạch **Arduino UNO R3** với máy tính
+- <img src="https://img.icons8.com/?size=100&id=pIPl8tqh3igN&format=png&color=000000"  width="20"/> Cấu hình đúng **Board** và **Port** trong IDE
+- <img src="https://img.icons8.com/?size=100&id=pIPl8tqh3igN&format=png&color=000000"  width="20"/> Hiểu cấu trúc cơ bản của một **Arduino Sketch** (setup + loop)
+- <img src="https://img.icons8.com/?size=100&id=pIPl8tqh3igN&format=png&color=000000"  width="20"/> Biên dịch và nạp chương trình **Blink LED** đầu tiên
 
 Ở các phần tiếp theo, chúng ta sẽ tìm hiểu cách điều khiển LED với nút nhấn, sử dụng PWM để điều chỉnh độ sáng, và đọc tín hiệu analog từ cảm biến.
