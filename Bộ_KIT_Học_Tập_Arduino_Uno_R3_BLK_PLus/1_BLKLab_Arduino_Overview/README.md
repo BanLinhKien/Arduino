@@ -15,7 +15,7 @@
 * **Hệ thống module đa dạng, trực quan:** Bao gồm cảm biến siêu âm SRF04, cảm biến độ ẩm đất TH, module nhiệt độ/độ ẩm DHT11, module thời gian thực chính xác cao DS1307+AT24C32, và module tạo xung NE555 mở rộng tư duy mạch học.
 * **Dễ dàng lắp ráp và thực hành:** Các linh kiện riêng lẻ đều được module hóa giúp kết nối nhanh chóng thông qua testboard và dây cắm mạch cao cấp, đi kèm hộp đựng chuyên dụng chống va đập HD-UNO.
 * **Chính sách bảo hành tối ưu:** Bảo hành 6 tháng cho bo mạch chủ Arduino Uno R3, hỗ trợ đổi trả linh hoạt trong vòng 7 ngày nếu phát sinh lỗi từ nhà sản xuất.
-* **Giá trị đầu tư thông minh:** Mức giá tham khảo chỉ **699,000 VNĐ** (cập nhật tại banlinhkien.com).
+* **Giá trị đầu tư thông minh:** Mức giá tham khảo chỉ **850,000 VNĐ** (cập nhật tại banlinhkien.com).
 
 ### <img src="https://img.icons8.com/?size=100&id=Yql0VW2pObfc&format=png&color=000000"  width="40"/> Danh sách chi tiết 41 thành phần linh kiện
 
