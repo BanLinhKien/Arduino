@@ -59,24 +59,7 @@ Bộ KIT hỗ trợ xây dựng hơn **40 dự án thực tế sinh động**, t
 
 **Mô tả tổng quan:** Đây là lộ trình huấn luyện lập trình Arduino bài bản được thiết kế cấu trúc khoa học từ cấp độ "Cơ bản đến Nâng cao". Lộ trình này được tối ưu hóa đặc biệt nhằm đi kèm với **Bộ KIT Học Tập Arduino Uno R3 BLK Plus**, tuân thủ nguyên tắc giáo dục STEM trực quan: học đi đôi với hành, tiếp cận dễ hiểu và ứng dụng trực tiếp vào các dự án thực tế ngoài đời sống.
 
-```
-       [ 1. OVERVIEW (Tổng Quan) ]
-                   │
-                   ▼
-     [ 2. PERIPHERALS (Ngoại Vi) ]
-                   │
-                   ▼
-     [ 3. BASIC PROJECTS (Cơ Bản) ]
-                   │
-                   ▼
-   [ 4. EXPANSION PROJECTS (Mở Rộng) ]
-                   │
-                   ▼
-    [ 5. TOP 10 PROJECTS (Nổi Bật) ]
-                   │
-                   ▼
-  [ 6. TOP 3 ADVANCED PROJECTS (Nâng Cao) ]
-```
+<img src="https://raw.githubusercontent.com/BanLinhKien/Arduino/refs/heads/main/B%E1%BB%99_KIT_H%E1%BB%8Dc_T%E1%BA%ADp_Arduino_Uno_R3_BLK_PLus/1_BLKLab_Arduino_Overview/BLKLab_B%E1%BA%AFt%20%C4%90%E1%BA%A7u%20V%E1%BB%9Bi%20Arduino%20UNO%20R3/BLKLab_02_%20L%E1%BB%99%20Tr%C3%ACnh%20h%E1%BB%8Dc%20Arduino%20v%E1%BB%9Bi%20B%E1%BB%99%20KIT%20H%E1%BB%8Dc%20t%E1%BA%ADp%20Arduino%20Plus%20BLK.png" />
 
 ---
 
@@ -136,16 +119,16 @@ Nâng cao tư duy lập trình bằng cách kết hợp nhiều module ngoại v
 
 ### <img src="https://img.icons8.com/?size=100&id=119238&format=png&color=000000"  width="30"/> Giai đoạn 5: Top 10 Projects (Top 10 Dự Án Độc Đáo Nổi Bật)
 Rèn luyện kỹ năng làm việc độc lập và tư duy kỹ thuật thông qua 10 dự án DIY hoàn chỉnh:
-<img src="https://img.icons8.com/?size=100&id=l1WEsTEkba1B&format=png&color=000000"  width="25"/>  **Làm hiệu ứng siêu đẹp với LED đơn bằng Arduino:** Sáng tạo các hiệu ứng chuyển động ánh sáng siêu đẹp mắt với hệ thống LED đơn.
-<img src="https://img.icons8.com/?size=100&id=qPtN2YC9glNR&format=png&color=000000"  width="25"/>  **DIY nhà kính trồng rau sạch thông minh:** Xây dựng mô hình nhà kính nông nghiệp thông minh tự động chăm sóc rau sạch.
-<img src="https://img.icons8.com/?size=100&id=VHYSAR2dZwad&format=png&color=000000"  width="25"/>  **DIY bộ điều khiển thiết bị điện từ xa bằng remote hồng ngoại:** Thiết kế bộ điều khiển bật/tắt các thiết bị điện trong nhà từ khoảng cách xa.
-<img src="https://img.icons8.com/?size=100&id=LBraU5RHcH0n&format=png&color=000000"  width="25"/>  **DIY hệ thống cảnh báo ngập úng, lũ lụt:** Chế tạo hệ thống tự động phát tín hiệu cảnh báo khi có hiện tượng ngập úng hoặc lũ lụt dâng cao.
-<img src="https://img.icons8.com/?size=100&id=eCH3ZrUh4efA&format=png&color=000000"  width="25"/>  **DIY hệ thống cửa tự động :** Thiết kế và lắp ráp hệ thống cửa ra vào tự động đóng mở khi phát hiện có người đến gần.
-<img src="https://img.icons8.com/?size=100&id=Hg6Hznsfoth8&format=png&color=000000"  width="25"/>  **DIY giàn phơi đồ thông minh:** Hiện thực hóa giàn phơi quần áo thông minh bảo vệ đồ giặt khỏi thời tiết xấu.
-<img src="https://img.icons8.com/?size=100&id=j95AEAW9B68s&format=png&color=000000"  width="25"/>  **DIY két sắt mini chống trộm:** Tạo ra một chiếc đồng hồ cát kỹ thuật số mô phỏng hạt cát rơi nghệ thuật bằng LED Matrix.
-<img src="https://img.icons8.com/?size=100&id=JbMacZJ29wHV&format=png&color=000000"  width="25"/>  **DIY đồng hồ cát dùng LED Matrix:** Chế tạo chiếc đồng hồ chuyên dụng đếm ngược thời gian thi đấu cho các kỳ thủ cờ vua.
-<img src="https://img.icons8.com/?size=100&id=jWStkWhIxb9r&format=png&color=000000"  width="25"/>  **DIY bãi đỗ xe thông minh:** Hoàn thiện mô hình bãi đỗ xe tự động phân luồng và quản lý vị trí trống.
-<img src="https://img.icons8.com/?size=100&id=4bruBkjJijps&format=png&color=000000"  width="25"/>  **DIY đồng hồ đếm ngược trong cờ vua:** Tự tay làm một chiếc két sắt mini bảo mật cao có tích hợp còi báo động chống trộm.
+  <img src="https://img.icons8.com/?size=100&id=l1WEsTEkba1B&format=png&color=000000"  width="25"/>  **Làm hiệu ứng siêu đẹp với LED đơn bằng Arduino:** Sáng tạo các hiệu ứng chuyển động ánh sáng siêu đẹp mắt với hệ thống LED đơn.
+  <img src="https://img.icons8.com/?size=100&id=qPtN2YC9glNR&format=png&color=000000"  width="25"/>  **DIY nhà kính trồng rau sạch thông minh:** Xây dựng mô hình nhà kính nông nghiệp thông minh tự động chăm sóc rau sạch.
+  <img src="https://img.icons8.com/?size=100&id=VHYSAR2dZwad&format=png&color=000000"  width="25"/>  **DIY bộ điều khiển thiết bị điện từ xa bằng remote hồng ngoại:** Thiết kế bộ điều khiển bật/tắt các thiết bị điện trong nhà từ khoảng cách xa.
+  <img src="https://img.icons8.com/?size=100&id=LBraU5RHcH0n&format=png&color=000000"  width="25"/>  **DIY hệ thống cảnh báo ngập úng, lũ lụt:** Chế tạo hệ thống tự động phát tín hiệu cảnh báo khi có hiện tượng ngập úng hoặc lũ lụt dâng cao.
+  <img src="https://img.icons8.com/?size=100&id=eCH3ZrUh4efA&format=png&color=000000"  width="25"/>  **DIY hệ thống cửa tự động :** Thiết kế và lắp ráp hệ thống cửa ra vào tự động đóng mở khi phát hiện có người đến gần.
+  <img src="https://img.icons8.com/?size=100&id=Hg6Hznsfoth8&format=png&color=000000"  width="25"/>  **DIY giàn phơi đồ thông minh:** Hiện thực hóa giàn phơi quần áo thông minh bảo vệ đồ giặt khỏi thời tiết xấu.
+  <img src="https://img.icons8.com/?size=100&id=j95AEAW9B68s&format=png&color=000000"  width="25"/>  **DIY két sắt mini chống trộm:** Tạo ra một chiếc đồng hồ cát kỹ thuật số mô phỏng hạt cát rơi nghệ thuật bằng LED Matrix.
+  <img src="https://img.icons8.com/?size=100&id=JbMacZJ29wHV&format=png&color=000000"  width="25"/>  **DIY đồng hồ cát dùng LED Matrix:** Chế tạo chiếc đồng hồ chuyên dụng đếm ngược thời gian thi đấu cho các kỳ thủ cờ vua.
+  <img src="https://img.icons8.com/?size=100&id=jWStkWhIxb9r&format=png&color=000000"  width="25"/>  **DIY bãi đỗ xe thông minh:** Hoàn thiện mô hình bãi đỗ xe tự động phân luồng và quản lý vị trí trống.
+  <img src="https://img.icons8.com/?size=100&id=4bruBkjJijps&format=png&color=000000"  width="25"/>  **DIY đồng hồ đếm ngược trong cờ vua:** Tự tay làm một chiếc két sắt mini bảo mật cao có tích hợp còi báo động chống trộm.
 
 ---
 
