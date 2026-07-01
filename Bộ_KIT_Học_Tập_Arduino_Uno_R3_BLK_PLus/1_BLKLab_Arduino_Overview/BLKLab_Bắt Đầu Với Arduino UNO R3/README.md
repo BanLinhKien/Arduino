@@ -1,78 +1,55 @@
-# 🚀 Bắt Đầu Với Arduino UNO R3
+# <img src="https://img.icons8.com/?size=100&id=qJhh65nOkrqR&format=png&color=000000" alt="Arduino" width="40"  /> Nền Tảng Lập Trình Arduino & Lộ Trình Phát Triển Toàn Diện
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_8.png" alt="Arduino" width="500" style="display: block; margin: 0 auto; border-radius: 8px;" />
 
-Bất kỳ một chương trình học nào cũng cần nên bắt đầu một cách từ từ. Bởi vì thời điểm này chúng ta đều mới bắt đầu, nhiều khái niệm, kiến thức về lĩnh vực này gần như không có nhiều. Ở bài này giúp các bạn có thể nắm được các kiến thức cơ bản về điện tử, làm sao để biên dịch, nạp được chương trình trong **Arduino**, cũng như nắm được một số kiến thức về kiến trúc chương trình của **Arduino**. 
-
-**🎯 Nội dung sẽ tìm hiểu ở phần này như sau:**
-- Giới thiệu các khái niệm, linh kiện điện tử cơ bản.
-- Cài đặt Arduino IDE và nạp chương trình.
-- Blink LED (Chớp tắt đèn LED).
+<p align="center"> <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_1.png" alt="Arduino" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" /></p>
 
 ---
 
-## 1. ⚡ Giới thiệu một số khái niệm và linh kiện điện tử cơ bản
+## 1. <img src="https://img.icons8.com/?size=100&id=L4pdpzfSacLz&format=png&color=000000" alt="Arduino" width="30"  /> Arduino là gì?
 
-Trong phần này chúng ta sẽ tìm hiểu về 1 số khái niệm cũng như 1 số linh kiện điện tử cơ bản. Các kiến thức này cũng đã được trình bày chi tiết ở chương trình vật lý bậc phổ thông. Mỗi khái niệm hay linh kiện sẽ có những video giúp chúng ta dễ hiểu hơn những khái niệm cũng như cách hoạt động của các linh kiện điện tử thông dụng.
+**Arduino** là nền tảng điện tử mã nguồn mở gồm phần cứng và phần mềm, dễ sử dụng và linh hoạt. Các bo mạch Arduino có thể đọc dữ liệu từ môi trường *(ánh sáng, nhiệt độ, độ ẩm, nút nhấn, tin nhắn…)*, sau đó điều khiển các thiết bị như động cơ, đèn LED hoặc gửi thông tin đến nơi khác. Vi điều khiển trên bo mạch được lập trình bằng **ngôn ngữ C/C++** thông qua **Arduino IDE**, biên dịch thành mã máy để thực thi.
 
-### 🔴 Điện áp, dòng điện và điện trở
+> ⏳ **Lịch sử hình thành:** Ra đời năm 2003 tại [Học viện Interaction Design](https://en.wikipedia.org/wiki/Interaction_Design_Institute_Ivrea?utm_source=chatgpt.com), *Ivrea (Italy)*, Arduino ban đầu được tạo ra nhằm giúp sinh viên không chuyên về điện tử có thể nhanh chóng chế tạo sản phẩm với chi phí thấp. Là một dự án mã nguồn mở, Arduino khuyến khích cộng đồng toàn cầu cùng phát triển và đóng góp.
 
-#### 1.1 Điện áp (Voltage)
-**Điện áp** hay còn gọi là hiệu điện thế (tiếng Anh: *voltage*) là sự chênh lệch về điện áp giữa 2 điểm, nó là công thực hiện được để di chuyển một hạt điện tích trong trường tĩnh điện từ điểm này đến điểm kia. Hiệu điện thế có thể đại diện cho nguồn năng lượng (lực điện), hoặc sự mất đi, sử dụng, hoặc năng lượng lưu trữ (giảm thế).
+> 🍻 **Tên gọi thú vị:** Tên **Arduino** lấy từ một quán bar ở *Ivrea*, nơi các nhà sáng lập gặp nhau hình thành ý tưởng. Quán được đặt theo tên một vị chỉ huy quân đội, sau trở thành vua Italy giai đoạn 1002–1014.
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/3_1.png" alt="Điện áp" width="400" style="display: block; margin: 10px auto; border-radius: 8px;" />
+<p align="center"> <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_2.png" alt="Arduino" width="400" style="display: block; margin: 0 auto; border-radius: 8px;"  /></p>
 
-#### 1.2 Dòng điện (Current)
-**Dòng điện** (tiếng Anh: *electric current*) là dòng chuyển dịch có hướng của các hạt mang điện. Trong mạch điện, các hạt mang điện phần lớn là các electron chuyển động bên trong dây dẫn. Kim loại là chất dẫn điện phổ biến nhất, kim loại có hạt nhân mang điện tích dương không thể di chuyển, chỉ có các electron tích điện âm có khả năng di chuyển tự do trong vùng dẫn, do đó, trong kim loại các electron là các hạt mang điện.
+---
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/3_2.png" alt="Dòng điện" width="400" style="display: block; margin: 10px auto; border-radius: 8px;" />
+## <img src="https://img.icons8.com/?size=100&id=63231&format=png&color=000000" alt="Arduino" width="30"  /> Tại sao là Arduino?
 
-> 💡 **Quy ước:** Chiều dòng điện được quy ước là chiều đi từ **cực dương** qua dây dẫn và các thiết bị điện đến **cực âm** của nguồn. 
+**Arduino** được ưa chuộng trong nhiều lĩnh vực nhờ sự đơn giản, dễ sử dụng và mã nguồn mở. Nó phù hợp cho cả người mới bắt đầu lẫn lập trình viên giàu kinh nghiệm. Cộng đồng Arduino toàn cầu rất lớn, cung cấp nhiều thư viện và hỗ trợ mạnh mẽ, giúp người dùng dễ dàng tìm giải pháp cho vấn đề gặp phải.
 
-Sự chuyển dịch có hướng của các điện tích sinh ra do tác động của điện trường gây ra bởi hiệu điện thế. Do đó, có thể hiểu là điện áp sinh ra dòng điện trong một mạch điện, hay nói đơn giản là *"điện áp có trước dòng điện"* trong mạch điện.
+* **Đối với người không chuyên (kiến trúc sư, giáo viên, nghệ sĩ…):** Arduino giúp họ nhanh chóng tạo ra sản phẩm điện tử mà trước đây gần như không thể.
+* **Đối với kỹ sư điện tử:** Arduino có thể bị xem là quá đơn giản vì nó che giấu phần phức tạp của lập trình vi điều khiển. Tuy nhiên, để làm chủ Arduino ở mức cao hơn (tùy biến hiệu ứng LED, kết nối cảm biến, truyền nhận dữ liệu…), đòi hỏi kiến thức sâu về vi điều khiển và các giao thức truyền dữ liệu.
 
-**🎬 Video tham khảo:**
-- What is Voltage: [www.youtube.com/watch?v=V1ulri4s_E8](https://www.youtube.com/watch?v=V1ulri4s_E8)
-- Electricity and Circuits: [www.youtube.com/watch?v=D2monVkCkX](https://www.youtube.com/watch?v=D2monVkCkX)
+🌟 **Ưu điểm lớn nhất:** Cú pháp lệnh đơn giản, thư viện phong phú, cộng đồng lớn và mã nguồn mở. Ngoài ra, Arduino còn cung cấp *Hardware Abstraction Library (HAL)* dành cho những ai muốn nghiên cứu sâu cách thức hoạt động bên trong của nền tảng này.
 
-#### 1.3 Điện trở (Resistance)
-**Điện trở** (tiếng Anh: *electric resistance*) là một đại lượng đặc trưng cho khả năng cản trở dòng điện của một vật. Đơn vị của điện trở là **Ohm (Ω)**. Khái niệm điện trở của vật xuất phát từ định luật Ohm. 
+---
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/3_3.png" alt="Điện trở" width="300" style="display: block; margin: 10px auto; border-radius: 8px;" />
+## <img src="https://img.icons8.com/?size=100&id=2tud6xmnCEsU&format=png&color=000000" alt="Arduino" width="30"/> Bảng So Sánh Các Board Arduino Phổ Biến
 
-Điện trở gồm 2 tiếp điểm kết nối, thường được dùng để hạn chế cường độ dòng điện chạy trong mạch, điều chỉnh mức độ tín hiệu, dùng để chia điện áp, kích hoạt các linh kiện điện tử chủ động như transistor và có trong rất nhiều ứng dụng khác.
-
-#### 1.4 Định luật Ohm (Ohm’s law)
-**Phát biểu định luật:** Cường độ dòng điện chạy qua dây dẫn tỉ lệ thuận với hiệu điện thế đặt vào 2 đầu dây dẫn và tỉ lệ nghịch với điện trở của dây dẫn.
-
-**Công thức:** > ## $$I = \frac{V}{R}$$
-
-Trong đó:
-- **V:** Điện áp (Voltage) - Đơn vị: Volts (V)
-- **I:** Dòng điện (Current) - Đơn vị: Amperes (A)
-- **R:** Điện trở (Resistor) - Đơn vị: Ohms (Ω)
-
-### 🔵 Tụ điện (Capacitor)
-**Khái niệm:** **Tụ điện** là linh kiện điện tử gồm 2 vật dẫn đặt gần nhau. Mỗi vật dẫn đó gọi là một bản của tụ điện. Khoảng không gian giữa hai bản có thể là chân không hay bị chiếm bởi một chất điện môi nào đó.
-
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/3_4.png" alt="Tụ điện" width="300" style="display: block; margin: 10px auto; border-radius: 8px;" />
-
-**Các thông số đặc trưng:**
-- **Điện dung:** Đại diện cho khả năng tích điện của tụ. Đơn vị là Fara (F).
-- **Điện áp làm việc:** Giá trị điện áp cao nhất mà tụ có thể chịu được. Nếu vượt quá, lớp điện môi sẽ bị đánh thủng gây nổ tụ.
-- **Nhiệt độ làm việc:** Nhiệt độ tại vị trí đặt tụ điện không được vượt quá thông số này để đảm bảo an toàn.
-
-🎬 **Video tham khảo:** [www.youtube.com/watch?v=5hFC9ugTGLs](https://www.youtube.com/watch?v=5hFC9ugTGLs)
-
-### 🟢 Cuộn cảm (Inductor)
-**Khái niệm:** **Cuộn cảm** (tiếng Anh là *coil* hay *inductor*) là cuộn dây bao gồm nhiều vòng dây dẫn điện quấn quanh một lõi vật liệu từ. Dùng để làm phần ứng trong máy phát điện, lọc nhiễu, tạo nam châm điện...
-
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/3_5.webp" alt="Cuộn cảm" width="350" style="display: block; margin: 10px auto; border-radius: 8px;" />
-
-Mỗi cuộn cảm có một độ tự cảm, kí hiệu là **L**, đo bằng đơn vị Henry (**H**) đặc trưng cho khả năng sinh suất điện động cảm ứng và tích lũy năng lượng điện từ.
-
-🎬 **Video tham khảo:** [www.youtube.com/watch?v=NgwXkUt3XxQ](https://www.youtube.com/watch?v=NgwXkUt3XxQ)
-
+| **Thông số** | **UNO R3** | **Nano 3.x** | **Nano 2.x** | **Leonardo** | **Mega 2560** | **UNO R4 Minima** | **UNO R4 WiFi** |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Hình ảnh** | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_8.png" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_3.jpg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_3.jpg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_4.jpeg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_5.jpg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_6.webp" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_7.webp" width="120"> |
+| **Vi điều khiển** | ATmega328P | ATmega328 | ATmega168 | ATmega32u4 | ATmega2560 | Renesas RA4M1 (ARM Cortex-M4) | Renesas RA4M1 (ARM Cortex-M4) |
+| **Đồng xử lý** | — | — | — | — | — | Không | ESP32-S3-MINI (WiFi/BT) |
+| **Điện áp hoạt động** | 5V | 5V | 5V | 5V | 5V | 5V | 5V |
+| **Điện áp đầu vào (khuyến nghị)** | 7–12V | 7–12V | 7–12V | 7–12V | 7–12V | 6–24V | 6–24V |
+| **Điện áp đầu vào (giới hạn)** | 6–20V | 6–20V | 6–20V | 6–20V | 6–20V | — | — |
+| **Chân Digital I/O** | 14 (6 PWM) | 14 (6 PWM) | 14 (6 PWM) | 20 (7 PWM) | 54 (15 PWM) | 14 (6 PWM) | 14 (6 PWM) |
+| **Chân Analog** | 6 | 8 | 8 | 12 | 16 | 6 (14-bit ADC) | 6 (14-bit ADC) |
+| **Dòng điện tối đa mỗi chân I/O** | 20 mA | 20 mA | 20 mA | 20 mA | 20 mA | 8 mA | 8 mA |
+| **Dòng điện cho chân 3.3V** | 50 mA | 50 mA | 50 mA | 50 mA | 50 mA | — | — |
+| **Bộ nhớ Flash** | 32 KB (0.5 KB bootloader) | 32 KB (2 KB bootloader) | 16 KB (2 KB bootloader) | 32 KB (4 KB bootloader) | 256 KB (8 KB bootloader) | 256 KB | 256 KB |
+| **SRAM** | 2 KB | 2 KB | 1 KB | 2.5 KB | 8 KB | 32 KB | 32 KB |
+| **EEPROM / Data Flash** | 1 KB | 1 KB | 0.5 KB | 1 KB | 4 KB | 8 KB (Data Flash) | 8 KB (Data Flash) |
+| **Tần số xung nhịp** | 16 MHz | 16 MHz | 16 MHz | 16 MHz | 16 MHz | 48 MHz | 48 MHz |
+| **UART (Serial)** | 1 | 1 | 1 | 1 | 4 | 1 | 1 |
+| **Kích thước** | 68.6 × 53.4 mm | 45 × 18 mm | 45 × 18 mm | 68.6 × 53.4 mm | 101.52 × 53.3 mm | 68.6 × 53.4 mm | 68.6 × 53.4 mm |
+| **Trọng lượng** | 25 g | 7 g | 7 g | 20 g | 37 g | 25 g | 25 g |
+| **Tính năng nổi bật** | Chuẩn học tập phổ biến nhất | Kích thước nhỏ gọn | Phiên bản Nano đời cũ | Hỗ trợ HID (chuột, bàn phím) | 4 UART, nhiều I/O | DAC 12-bit, CAN Bus, OP AMP | WiFi, Bluetooth, LED Matrix 12×8, Qwiic I2C |
 ---
 
 ## 2. 💻 Cài đặt phần mềm Arduino IDE
@@ -169,7 +146,7 @@ Bo mạch **Arduino UNO R3 clone** (hàng Trung Quốc giá rẻ) thường dùn
 
 Dùng cáp **USB Type-A sang USB Type-B** (cáp hình vuông, giống cáp máy in cũ) để kết nối Arduino UNO R3 với máy tính.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/USB_AB_DDiff.jpg/640px-USB_AB_DDiff.jpg" alt="Cáp USB Type-B" width="400" style="display: block; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="600" style="display: block; margin: 0 auto;"  />
 
 Khi cắm đúng:
 - **Đèn LED nguồn ON** (màu xanh lá hoặc đỏ) trên bo mạch sẽ sáng lên.
@@ -185,7 +162,7 @@ Trong Arduino IDE, thực hiện 2 bước quan trọng trước khi nạp code:
 
 Vào menu **Tools → Board → Arduino AVR Boards → Arduino Uno**
 
-<img src="https://docs.arduino.cc/static/e3c05cf1cfa7fbc7f6cc38cac4e9b0d2/29007/ide-2-select-board.png" alt="Chọn bo mạch Arduino" width="500" style="display: block; margin: 0 auto;" />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_10.png" alt="UNO" width="600" style="display: block; margin: 0 auto;"  />
 
 **Bước 2 – Chọn cổng kết nối:**
 
