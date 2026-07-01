@@ -25,7 +25,7 @@
 | LCD1602 Xanh Lá 5V | 1 | LED 7 Thanh 0.56" 1 Số Anot (Sáng Đỏ) | 1 |
 | Module Chuyển Đổi I2C cho LCD1602 | 1 | IC 74HC595 DIP16 (Mở rộng chân) | 1 |
 | Module Điều khiển Động Cơ L298 V3 5-35VDC 2A | 1 | LED Matrix 2 Màu Xanh Đỏ 8x8 Anode Chung | 1 |
-| Động cơ Mini 130 1-6V 18000RPM | 1 | Module Thu Hồng Ngoại 1838T MH-R38 | 1 |
+| Máy Bơm Mini MB370 3.7-6VDC  | 1 | Module Thu Hồng Ngoại 1838T MH-R38 | 1 |
 | Động cơ Servo SG90 (Góc Quay 180 Độ) | 1 | Remote Hồng Ngoại 20 Phím Điều Khiển | 1 |
 | Động Cơ Bước 5V STEP MOTOR 28BYJ-48 5VDC | 1 | Nút Nhấn 4 Chân 12x12x7.3MM (OMRON B3F) | 4 |
 | Module Cảm Biến Ánh Sáng MS-CDS05 | 1 | Vỏ Nút Nhấn B3F 10MM (Tròn Đen) | 4 |
