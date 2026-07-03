@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PRJ04 - Các linh kiện cần có</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>PRJ04 — Các linh kiện cần có</h1>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="components.html">Linh kiện</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Danh sách linh kiện chính cho dự án cảnh báo ngập lụt</h2>
+        <p>Trang này liệt kê những module và bộ phận cần thiết để hoàn thành PRJ04 theo mã nguồn gốc và sơ đồ đấu nối.</p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h3>Linh kiện bắt buộc</h3>
+      <div class="component-grid">
+        <div class="card">
+          <div class="card-image"><img src="assets/arduino-uno.svg" alt="Arduino UNO R3"></div>
+          <h4>Arduino UNO R3</h4>
+          <p>Bo mạch điều khiển trung tâm để đọc cảm biến, xử lý và điều khiển LCD, module SIM, còi.</p>
+          <p><strong>Số lượng:</strong> 1</p>
+          <p class="price">Giá tham khảo: 300.000đ</p>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="assets/srf04-ultrasonic.svg" alt="Cảm biến siêu âm SRF04"></div>
+          <h4>Cảm biến siêu âm SRF04</h4>
+          <p>Đo khoảng cách mực nước bằng sóng siêu âm. Kết nối chân TRIG và ECHO với Arduino.</p>
+          <p><strong>Số lượng:</strong> 1</p>
+          <p class="price">Giá tham khảo: 40.000đ</p>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="assets/rtc-module.svg" alt="Module RTC DS3231"></div>
+          <h4>Module đồng hồ thực (RTC) DS1307 / DS3231</h4>
+          <p>Cung cấp thời gian chính xác để gửi báo cáo hàng ngày và ghi log thời điểm cảnh báo.</p>
+          <p><strong>Số lượng:</strong> 1</p>
+          <p class="price">Giá tham khảo: 80.000đ</p>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="assets/lcd-i2c.svg" alt="LCD 16x2 I2C"></div>
+          <h4>Màn hình LCD 16x2 I2C</h4>
+          <p>Hiển thị thời gian, mực nước hiện tại, trạng thái cảnh báo. Kết nối qua I2C giúp đơn giản hóa dây nối.</p>
+          <p><strong>Số lượng:</strong> 1</p>
+          <p class="price">Giá tham khảo: 120.000đ</p>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="assets/sim-module.svg" alt="Module SIM A7680C"></div>
+          <h4>Module SIM A7680C</h4>
+          <p>Cho phép gửi SMS và thực hiện cuộc gọi cảnh báo khi mực nước vượt ngưỡng.</p>
+          <p><strong>Số lượng:</strong> 1</p>
+          <p class="price">Giá tham khảo: 180.000đ</p>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="assets/buzzer.svg" alt="Còi báo"></div>
+          <h4>Còi báo / buzzer</h4>
+          <p>Thiết bị âm thanh bật khi hệ thống phát hiện ngập. Nên dùng buzzer active để dễ điều khiển.</p>
+          <p><strong>Số lượng:</strong> 1</p>
+          <p class="price">Giá tham khảo: 25.000đ</p>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="assets/jumper-wires.svg" alt="Dây jumper và nguồn 5V"></div>
+          <h4>Dây jumpers và nguồn 5V</h4>
+          <p>Dây kết nối male-to-male / male-to-female giữa các module. Nguồn 5V ổn định cho Arduino và module.</p>
+          <p><strong>Số lượng:</strong> tùy theo lắp ráp</p>
+          <p class="price">Giá tham khảo: 60.000đ</p>
+        </div>
+        <div class="card">
+          <div class="card-image"><img src="assets/accessories.svg" alt="Phụ kiện hỗ trợ"></div>
+          <h4>Phụ kiện hỗ trợ</h4>
+          <p>Breadboard, khung cố định, mô-đun adapter I2C, nam châm giữ, dây cắm bổ sung cho hệ thống gọn gàng.</p>
+          <p><strong>Số lượng:</strong> tùy nhu cầu</p>
+          <p class="price">Giá tham khảo: 50.000đ</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h3>Các linh kiện đề xuất nâng cấp</h3>
+      <ul>
+        <li>Module cảm biến áp suất hoặc cảm biến mức nước điện dung để tăng độ chính xác.</li>
+        <li>Module lưu trữ thẻ SD để ghi log sự kiện và mực nước.</li>
+        <li>Module Wi-Fi / MQTT nếu muốn mở rộng lên nền tảng IoT.</li>
+        <li>Pin dự phòng hoặc nguồn UPS nhỏ để giữ hệ thống hoạt động khi mất điện.</li>
+      </ul>
+    </section>
+
+    <section class="container section">
+      <h3>Ghi chú quan trọng</h3>
+      <ul>
+        <li>Trên Arduino, chân D2 dùng cho ECHO, D3 cho TRIG, D6 cho còi, D10/D11 cho SIM, A4/A5 cho I2C.</li>
+        <li>Module SIM cần thẻ SIM có dịch vụ SMS và mạng đủ mạnh ở vị trí lắp đặt.</li>
+        <li>Kiểm tra đúng địa chỉ I2C của LCD (thường 0x27 hoặc 0x3F) trước khi nạp code.</li>
+        <li>Dùng nguồn 5V ổn định; tránh sụt áp khi SIM module hoặc còi hoạt động.</li>
+      </ul>
+    </section>
+
+    <section class="container section contact">
+      <h3>Tham khảo thêm</h3>
+      <p>Trang linh kiện này được xây dựng dựa trên file mã `BLKLab_Code_DIY_He_Thong_Canh_Bao_Ngap_Ung_Lu_Lut.ino` và mô tả đấu nối trong repository.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© BanLinhKien — PRJ04 | Linh kiện cần có</div>
+  </footer>
+</body>
+</html>
