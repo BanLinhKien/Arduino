@@ -1,166 +1,316 @@
+# <img src="https://img.icons8.com/?size=100&id=qJhh65nOkrqR&format=png&color=000000" alt="Arduino" width="40"  /> Nền Tảng Lập Trình Arduino & Lộ Trình Phát Triển Toàn Diện
 
 
-# <p align="center">  Bộ KIT Học Tập Arduino Uno R3 BLK Plus </p>
-
-
-**Bộ KIT Học Tập Arduino Uno R3 BLK Plus** là bộ công cụ học tập cao cấp được biên soạn chuyên nghiệp bởi [BanLinhKien](https://banlinhkien.com), nhằm hỗ trợ người học tiếp cận từ cơ bản đến nâng cao để khám phá lập trình và ứng dụng thực tế của *Arduino*. Với hệ sinh thái lên tới **41 linh kiện và module phong phú**, bộ KIT giúp bạn làm chủ nhanh chóng các giao thức truyền thông hiện đại và hiện thực hóa các ý tưởng sáng tạo độc đáo.
-
-<p align="center">
-  <img src="https://pos.nvncdn.com/f2fe44-24897/ps/Bo-KIT-Hoc-Tap-Arduino-Uno-R3-BLK-Plus-3.jpg?v=1780998279" width="380" style="border-radius: 8px; margin-right: 10px;" />   
-  <img src="https://pos.nvncdn.com/f2fe44-24897/ps/Bo-KIT-Hoc-Tap-Arduino-Uno-R3-BLK-Plus-2.jpg?v=1780998221" width="380" style="border-radius: 8px;" />
-</p>
-
-###  Đặc điểm nổi bật:
-* **Phiên bản nâng cấp vượt trội:** Sở hữu 41 linh kiện/module chuyên sâu (so với 34 của bản Uno R3 RFID BLK cũ), hỗ trợ thực hành đầy đủ các giao thức truyền thông cốt lõi: I2C, SPI, USART, OneWire.
-* **Hệ thống module đa dạng, trực quan:** Bao gồm cảm biến siêu âm SRF04, cảm biến độ ẩm đất TH, module nhiệt độ/độ ẩm DHT11, module thời gian thực chính xác cao DS1307+AT24C32, và module tạo xung NE555 mở rộng tư duy mạch học.
-* **Dễ dàng lắp ráp và thực hành:** Các linh kiện riêng lẻ đều được module hóa giúp kết nối nhanh chóng thông qua testboard và dây cắm mạch cao cấp, đi kèm hộp đựng chuyên dụng chống va đập HD-UNO.
-* **Chính sách bảo hành tối ưu:** Bảo hành 6 tháng cho bo mạch chủ Arduino Uno R3, hỗ trợ đổi trả linh hoạt trong vòng 7 ngày nếu phát sinh lỗi từ nhà sản xuất.
-* **Giá trị đầu tư thông minh:** Mức giá tham khảo chỉ **850,000 VNĐ** (cập nhật tại banlinhkien.com).
-
-### Danh sách chi tiết 41 thành phần linh kiện
-
-| **Tên Linh Kiện** | **SL** | **Tên Linh Kiện** | **SL** |
-| :--- | :---: | :--- | :---: |
-| KIT Arduino UNO R3 CH340G (Kèm Dây USB & Jump) | 1 | Module LED 7 Thanh 0.36" 4 Số Katot | 1 |
-| LCD1602 Xanh Lá 5V | 1 | LED 7 Thanh 0.56" 1 Số Anot (Sáng Đỏ) | 1 |
-| Module Chuyển Đổi I2C cho LCD1602 | 1 | IC 74HC595 DIP16 (Mở rộng chân) | 1 |
-| Module Điều khiển Động Cơ L298 V3 5-35VDC 2A | 1 | LED Matrix 2 Màu Xanh Đỏ 8x8 Anode Chung | 1 |
-| Máy Bơm Mini MB370 3.7-6VDC  | 1 | Module Thu Hồng Ngoại 1838T MH-R38 | 1 |
-| Động cơ Servo SG90 (Góc Quay 180 Độ) | 1 | Remote Hồng Ngoại 20 Phím Điều Khiển | 1 |
-| Động Cơ Bước 5V STEP MOTOR 28BYJ-48 5VDC | 1 | Nút Nhấn 4 Chân 12x12x7.3MM (OMRON B3F) | 4 |
-| Module Cảm Biến Ánh Sáng MS-CDS05 | 1 | Vỏ Nút Nhấn B3F 10MM (Tròn Đen) | 4 |
-| Module Cảm Biến Rung SW-420 | 1 | Điện trở vạch 1/4W 5% 220R | 10 |
-| Module Cảm Biến Âm Thanh | 1 | Điện trở vạch 1/4W 5% 1K | 10 |
-| Cảm Biến Siêu Âm SRF04 | 1 | Điện trở vạch 1/4W 5% 10K | 10 |
-| Module relay Mini 1 kênh 5V 10A BLK | 1 | LED 5MM Phủ Đỏ | 10 |
-| Module Cảm Biến Mưa | 1 | LED 5MM Phủ Xanh Lá | 10 |
-| Cảm Biến Đo Độ Ẩm Đất TH | 1 | LED 5MM Phủ Vàng | 10 |
-| Module NE555 (Tạo xung) | 1 | Pin nguồn 9V (Loại Thường) | 1 |
-| Module DHT11 (Cảm biến nhiệt ẩm) | 1 | Dây Đế Pin 9V Ra Đầu Jack DC5.5x2.1mm | 1 |
-| Module Thời Gian Thực DS1307+AT24C32 | 1 | Chiết Áp Đơn B10K | 1 |
-| Module LED Neo Pixel 12 LED RGB | 1 | Còi Chíp (Buzzer) 5V 9.5x12MM | 1 |
-| Board Test GL No.12 (Breadboard) | 1 | Keypad 4x4 dạng dán SMD | 1 |
-| Bộ Dây Cắm Mạch YC-65 (Nhiều kích thước) | 1 | Hộp Đựng KIT Học Tập Arduino HD-UNO | 1 |
-| Dây 40P 20CM Đ-C (Hai Đầu Đực Cái) (Vỉ 10 sợi) | 1 | | |
-
-###  Ứng dụng thực hành:
-Bộ KIT hỗ trợ xây dựng hơn **40 dự án thực tế sinh động**, trải dài ở nhiều cấp độ:
-* **Mức độ Cơ bản:** Học cách làm quen với điều khiển LED đơn, LED hiệu ứng chạy đuổi, hiển thị các thông số dữ liệu trên màn hình LCD1602, thu nhận tín hiệu từ bàn phím Keypad, cho đến điều khiển chính xác góc quay động cơ Servo hay tốc độ Động cơ Bước.
-* **Mức độ Nâng cao:** Phát triển các mô hình hệ thống Nhà thông minh (Smart Home), khóa cửa tự động bảo mật cao RFID, thùng rác thông minh tự động mở nắp và phát tiếng nói, đồng hồ hiển thị LED quay nghệ thuật, mạch cảnh báo rò rỉ khí gas nguy hiểm, hay lập trình trò chơi rắn săn mồi cổ điển trên bảng LED Ma Trận.
-* **Ứng dụng đời sống:** Hệ thống giám sát điều kiện môi trường nhiệt độ/độ ẩm, kiểm soát bãi đỗ xe thông minh bằng RFID, mô phỏng cánh tay robot công nghiệp, hay chế tạo đồng hồ cát điện tử sử dụng bảng LED Matrix 8x8.
-
-### Tài liệu & Học liệu đi kèm:
-* Hệ thống mã nguồn mẫu (Source Code), sơ đồ kết nối chân (Schematic Diagram), và cẩm nang hướng dẫn tường tận cho hơn 40 dự án được cộng đồng đóng góp và lưu trữ tại [GitHub BanLinhKien](https://github.com/BanLinhKien/Arduino).[](https://github.com/BanLinhKien/Arduino)
-* Xem chi tiết thông số sản phẩm và nhận hỗ trợ kỹ thuật trực tiếp tại cổng thông tin điện tử: [banlinhkien.com](https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-blk-plus-p38419270.html).[](https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-blk-plus-p38419270.html)
+<p align="center"> <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_1.png" alt="Arduino" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" /></p>
 
 ---
 
-#  Lộ Trình Học Lập Trình Arduino
+## 1. Arduino là gì?
 
-**Mô tả tổng quan:** Đây là lộ trình huấn luyện lập trình Arduino bài bản được thiết kế cấu trúc khoa học từ cấp độ "Cơ bản đến Nâng cao". Lộ trình này được tối ưu hóa đặc biệt nhằm đi kèm với **Bộ KIT Học Tập Arduino Uno R3 BLK Plus**, tuân thủ nguyên tắc giáo dục STEM trực quan: học đi đôi với hành, tiếp cận dễ hiểu và ứng dụng trực tiếp vào các dự án thực tế ngoài đời sống.
+**Arduino** là nền tảng điện tử mã nguồn mở gồm phần cứng và phần mềm, dễ sử dụng và linh hoạt. Các bo mạch Arduino có thể đọc dữ liệu từ môi trường *(ánh sáng, nhiệt độ, độ ẩm, nút nhấn, tin nhắn…)*, sau đó điều khiển các thiết bị như động cơ, đèn LED hoặc gửi thông tin đến nơi khác. Vi điều khiển trên bo mạch được lập trình bằng **ngôn ngữ C/C++** thông qua **Arduino IDE**, biên dịch thành mã máy để thực thi.
 
-<img src="https://raw.githubusercontent.com/BanLinhKien/Arduino/refs/heads/main/B%E1%BB%99_KIT_H%E1%BB%8Dc_T%E1%BA%ADp_Arduino_Uno_R3_BLK_PLus/1_BLKLab_Arduino_Overview/BLKLab_B%E1%BA%AFt%20%C4%90%E1%BA%A7u%20V%E1%BB%9Bi%20Arduino%20UNO%20R3/BLKLab_02_%20L%E1%BB%99%20Tr%C3%ACnh%20h%E1%BB%8Dc%20Arduino%20v%E1%BB%9Bi%20B%E1%BB%99%20KIT%20H%E1%BB%8Dc%20t%E1%BA%ADp%20Arduino%20Plus%20BLK.png" />
+> ⏳ **Lịch sử hình thành:** Ra đời năm 2003 tại [Học viện Interaction Design](https://en.wikipedia.org/wiki/Interaction_Design_Institute_Ivrea?utm_source=chatgpt.com), *Ivrea (Italy)*, Arduino ban đầu được tạo ra nhằm giúp sinh viên không chuyên về điện tử có thể nhanh chóng chế tạo sản phẩm với chi phí thấp. Là một dự án mã nguồn mở, Arduino khuyến khích cộng đồng toàn cầu cùng phát triển và đóng góp.
 
----
+> 🍻 **Tên gọi thú vị:** Tên **Arduino** lấy từ một quán bar ở *Ivrea*, nơi các nhà sáng lập gặp nhau hình thành ý tưởng. Quán được đặt theo tên một vị chỉ huy quân đội, sau trở thành vua Italy giai đoạn 1002–1014.
 
-### Giai đoạn 1: Overview (Tổng Quan Nền Tảng)
-Bước khởi đầu vững chắc giúp bạn nắm bắt linh hồn của hệ thống nhúng và môi trường làm việc:
-* Định nghĩa Arduino là gì và phạm vi ứng dụng rộng lớn của nó trong thời đại công nghệ.
-* Phân loại và nhận diện các dòng bo mạch Arduino phổ thông trên thị trường.
-* Bóc tách chuyên sâu cấu trúc phần cứng của bo mạch tiêu chuẩn **Arduino UNO**.
-* Cài đặt và làm chủ công cụ lập trình cốt lõi **Arduino IDE**.
-* Quy trình chuẩn để viết code, cấu hình cổng mạch, tải chương trình (upload) và vận hành thử nghiệm.
-* Nắm vững bản chất tư duy điều khiển tín hiệu: Khái niệm Digital I/O và hai trạng thái Logic `HIGH`/`LOW`.
+<p align="center"> <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_2.png" alt="Arduino" width="400" style="display: block; margin: 0 auto; border-radius: 8px;"  /></p>
 
 ---
 
-### Giai đoạn 2: Peripherals (Làm Chủ Phần Cứng Ngoại Vi)
-Đi sâu vào cấu trúc phần cứng vi điều khiển để làm chủ các kỹ thuật giao tiếp tín hiệu quan trọng:
+## Tại sao là Arduino?
 
-| Giao Thức / Chức Năng | 📝 Mô Tả Chi Tiết Ứng Dụng |
-| :--- | :--- |
-| **GPIO** | Kỹ thuật đọc/ghi tín hiệu số ở các chân cấu hình (INPUT/OUTPUT) để nhận biết nút nhấn hoặc kích xuất relay. |
-| **ADC** | Bộ chuyển đổi Tương tự - Số giúp đọc chính xác các giá trị điện áp Analog từ cảm biến môi trường. |
-| **PWM** | Kỹ thuật điều chế độ rộng xung nhằm tinh chỉnh độ sáng bóng LED hoặc kiểm soát tốc độ quay động cơ DC. |
-| **UART (Serial)** | Giao thức truyền thông nối tiếp kinh điển giúp truyền nhận dữ liệu qua lại giữa Arduino và máy tính. |
-| **I2C** | Giao thức truyền thông tiết kiệm chân (chỉ dùng 2 dây SDA/SCL) hỗ trợ kết nối đồng thời nhiều thiết bị ngoại vi. |
-| **INTERRUPT** | Cơ chế xử lý sự kiện ngắt cực kỳ quan trọng giúp phản hồi ngay lập tức các tác vụ khẩn cấp. |
-| **TIMER/COUNTER** | Khối phần cứng định thời, tạo trễ chính xác cao, đo đạc tần số tín hiệu hoặc phát xung độc lập. |
-| **WATCHDOG TIMER** | Hệ thống giám sát thông minh, tự động khởi động lại (Reset) hệ thống nếu xảy ra hiện tượng treo code. |
-| **EEPROM** | Bộ nhớ lưu trữ dữ liệu bền vững, bảo vệ thông số cấu hình không bị mất đi khi hệ thống mất điện. |
+**Arduino** được ưa chuộng trong nhiều lĩnh vực nhờ sự đơn giản, dễ sử dụng và mã nguồn mở. Nó phù hợp cho cả người mới bắt đầu lẫn lập trình viên giàu kinh nghiệm. Cộng đồng Arduino toàn cầu rất lớn, cung cấp nhiều thư viện và hỗ trợ mạnh mẽ, giúp người dùng dễ dàng tìm giải pháp cho vấn đề gặp phải.
+
+* **Đối với người không chuyên (kiến trúc sư, giáo viên, nghệ sĩ…):** Arduino giúp họ nhanh chóng tạo ra sản phẩm điện tử mà trước đây gần như không thể.
+* **Đối với kỹ sư điện tử:** Arduino có thể bị xem là quá đơn giản vì nó che giấu phần phức tạp của lập trình vi điều khiển. Tuy nhiên, để làm chủ Arduino ở mức cao hơn (tùy biến hiệu ứng LED, kết nối cảm biến, truyền nhận dữ liệu…), đòi hỏi kiến thức sâu về vi điều khiển và các giao thức truyền dữ liệu.
+
+🌟 **Ưu điểm lớn nhất:** Cú pháp lệnh đơn giản, thư viện phong phú, cộng đồng lớn và mã nguồn mở. Ngoài ra, Arduino còn cung cấp *Hardware Abstraction Library (HAL)* dành cho những ai muốn nghiên cứu sâu cách thức hoạt động bên trong của nền tảng này.
 
 ---
 
-### Giai đoạn 3: Basic Projects (Dự Án Thực Hành Cơ Bản)
-Hiện thực hóa lý thuyết thông qua các bài tập thực hành nền móng đầu tiên:
-* Lập trình điều khiển LED chớp tắt đơn lẻ, điều khiển chuỗi LED chạy hiệu ứng đuổi.
-* Thu thập tín hiệu từ nút nhấn cơ học để xử lý bật/tắt thiết bị đầu ra.
-* Ứng dụng xung PWM để thay đổi mịn màng độ sáng của đèn LED.
-* Đọc và xử lý sự thay đổi giá trị điện trở tuyến tính thông qua Biến Trở.
-* Giao tiếp và hiển thị thông tin, ký tự chữ lên màn hình kí tự LCD 16x2.
-* Điều khiển còi báo động chủ động hoặc còi buzzer phát âm thanh/nhạc điệu.
-* Thực hành đọc các thông số cảm biến nhiệt độ môi trường xung quanh.
-* Điều khiển định vị góc quay chính xác cao cho Động cơ Servo.
+## Bảng So Sánh Các Board Arduino Phổ Biến
+
+| **Thông số** | **UNO R3** | **Nano 3.x** | **Nano 2.x** | **Leonardo** | **Mega 2560** | **UNO R4 Minima** | **UNO R4 WiFi** |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Hình ảnh** | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_8.png" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_3.jpg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_3.jpg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_4.jpeg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_5.jpg" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_6.webp" width="120"> | <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_7.webp" width="120"> |
+| **Vi điều khiển** | ATmega328P | ATmega328 | ATmega168 | ATmega32u4 | ATmega2560 | Renesas RA4M1 (ARM Cortex-M4) | Renesas RA4M1 (ARM Cortex-M4) |
+| **Đồng xử lý** | — | — | — | — | — | Không | ESP32-S3-MINI (WiFi/BT) |
+| **Điện áp hoạt động** | 5V | 5V | 5V | 5V | 5V | 5V | 5V |
+| **Điện áp đầu vào (khuyến nghị)** | 7–12V | 7–12V | 7–12V | 7–12V | 7–12V | 6–24V | 6–24V |
+| **Điện áp đầu vào (giới hạn)** | 6–20V | 6–20V | 6–20V | 6–20V | 6–20V | — | — |
+| **Chân Digital I/O** | 14 (6 PWM) | 14 (6 PWM) | 14 (6 PWM) | 20 (7 PWM) | 54 (15 PWM) | 14 (6 PWM) | 14 (6 PWM) |
+| **Chân Analog** | 6 | 8 | 8 | 12 | 16 | 6 (14-bit ADC) | 6 (14-bit ADC) |
+| **Dòng điện tối đa mỗi chân I/O** | 20 mA | 20 mA | 20 mA | 20 mA | 20 mA | 8 mA | 8 mA |
+| **Dòng điện cho chân 3.3V** | 50 mA | 50 mA | 50 mA | 50 mA | 50 mA | — | — |
+| **Bộ nhớ Flash** | 32 KB (0.5 KB bootloader) | 32 KB (2 KB bootloader) | 16 KB (2 KB bootloader) | 32 KB (4 KB bootloader) | 256 KB (8 KB bootloader) | 256 KB | 256 KB |
+| **SRAM** | 2 KB | 2 KB | 1 KB | 2.5 KB | 8 KB | 32 KB | 32 KB |
+| **EEPROM / Data Flash** | 1 KB | 1 KB | 0.5 KB | 1 KB | 4 KB | 8 KB (Data Flash) | 8 KB (Data Flash) |
+| **Tần số xung nhịp** | 16 MHz | 16 MHz | 16 MHz | 16 MHz | 16 MHz | 48 MHz | 48 MHz |
+| **UART (Serial)** | 1 | 1 | 1 | 1 | 4 | 1 | 1 |
+| **Kích thước** | 68.6 × 53.4 mm | 45 × 18 mm | 45 × 18 mm | 68.6 × 53.4 mm | 101.52 × 53.3 mm | 68.6 × 53.4 mm | 68.6 × 53.4 mm |
+| **Trọng lượng** | 25 g | 7 g | 7 g | 20 g | 37 g | 25 g | 25 g |
+| **Tính năng nổi bật** | Chuẩn học tập phổ biến nhất | Kích thước nhỏ gọn | Phiên bản Nano đời cũ | Hỗ trợ HID (chuột, bàn phím) | 4 UART, nhiều I/O | DAC 12-bit, CAN Bus, OP AMP | WiFi, Bluetooth, LED Matrix 12×8, Qwiic I2C |
+---
+
+## 2. Cài đặt phần mềm Arduino IDE
+
+
+**Arduino IDE** (Integrated Development Environment) là phần mềm chính thức để lập trình cho bo mạch Arduino. Đây là công cụ miễn phí, hỗ trợ Windows, macOS và Linux.
+
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_8.png" alt="Arduino IDE" width="500" style="display: block; margin: 0 auto;" />
+
+### 2.1. Tải Arduino IDE
+
+Truy cập trang chủ chính thức của Arduino để tải phần mềm:
+
+🔗 **https://www.arduino.cc/en/software**
+
+<img src="https://support.arduino.cc/hc/theming_assets/01KEEJRXNH1WFCAZ8SDRQGEDCW" alt="Trang tải Arduino IDE" width="200" style="display: block; margin: 0 auto;" />
+
+Chọn phiên bản phù hợp với hệ điều hành của bạn:
+
+| Hệ điều hành | Tệp cần tải |
+|---|---|
+| Windows 10/11 | Arduino IDE 2.x – Windows Installer (.exe) |
+| macOS (Intel / Apple Silicon) | Arduino IDE 2.x – macOS (.dmg) |
+| Linux (64-bit) | Arduino IDE 2.x – Linux AppImage (.AppImage) |
+
+> 💡 **Khuyến nghị:** Sử dụng **Arduino IDE 2.x** (phiên bản mới nhất) vì có giao diện hiện đại hơn, hỗ trợ autocomplete, Serial Plotter tích hợp và nhiều tính năng hữu ích khác.
 
 ---
 
-### Giai đoạn 4: Expansion Projects (Dự Án Thực tế Mở Rộng)
-Nâng cao tư duy lập trình bằng cách kết hợp nhiều module ngoại vi vào một hệ thống thống nhất:
-* **Đếm số lượng khách:** Theo dõi và đếm tự động lượng khách ra vào cửa hàng dựa trên nguyên lý phản xạ sóng của Cảm biến Siêu âm.
-* **Đo tần số:** Xây dựng hệ thống đo đạc tần số xung vuông được tạo ra từ IC tạo xung NE555.
-* **Đàn Piano điện tử:** Tự chế một chiếc đàn piano mini phát nhạc vui nhộn sử dụng hàng nút nhấn ma trận.
-* **Đèn giao thông:** Lập trình giả lập hệ thống đèn tín hiệu điều phối giao thông ngã tư thông minh.
-* **Lò ấp trứng tự động:** Ứng dụng thuật toán khống chế và duy trì nhiệt độ ổn định cho lò ấp trứng gia cầm.
-* **Hệ thống tương tác Keypad + LCD:** Nhập dữ liệu, mật khẩu từ ma trận bàn phím Keypad và xuất kết quả lên màn hình LCD.
-*  **Cảm biến an ninh:** Tích hợp bộ ba module cảm biến (Rung, Ánh sáng, Âm thanh) để bật/tắt thiết bị bảo an thông minh.
-*   **Giàn phơi đồ tự động:** Chế tạo mô hình giàn phơi đồ tự động thu vào khi trời mưa và đưa ra khi có nắng nắng.
+### 2.2. Cài Đặt Trên Windows
+
+**Bước 1:** Chạy tệp `.exe` vừa tải về. Nếu Windows hỏi "Do you want to allow this app to make changes?", chọn **Yes**.
+
+<img src="https://docs.arduino.cc/static/a07377d2bf60623d012b62af58438774/a6d36/downloading-and-installing-img01.png" alt="Cài đặt Arduino IDE Windows" width="500" style="display: block; margin: 0 auto;" />
+
+**Bước 2:** Cửa sổ cài đặt xuất hiện. Chọn **I Agree** để đồng ý với điều khoản.
+
+**Bước 3:** Chọn thư mục cài đặt (mặc định là `C:\Program Files\Arduino IDE`) → Nhấn **Install**.
+
+<img src="https://docs.arduino.cc/static/fcbf5c44560912d18cc8d99d076bae5d/a6d36/downloading-and-installing-img02.png" alt="Cài đặt Arduino IDE Windows" width="500" style="display: block; margin: 0 auto;" />
+
+**Bước 4:** Quá trình cài đặt diễn ra tự động. Sau khi hoàn tất, nhấn **Finish**. Trình cài đặt có thể yêu cầu cài thêm **USB driver** cho Arduino – nhấn **Install** để cho phép.
 
 ---
 
-###  Giai đoạn 5: Top 10 Projects (Top 10 Dự Án Độc Đáo Nổi Bật)
-Rèn luyện kỹ năng làm việc độc lập và tư duy kỹ thuật thông qua 10 dự án DIY hoàn chỉnh:
- - <img src="https://img.icons8.com/?size=100&id=l1WEsTEkba1B&format=png&color=000000"  width="25"/>  **Làm hiệu ứng siêu đẹp với LED đơn bằng Arduino:** Sáng tạo các hiệu ứng chuyển động ánh sáng siêu đẹp mắt với hệ thống LED đơn.
- - <img src="https://img.icons8.com/?size=100&id=qPtN2YC9glNR&format=png&color=000000"  width="25"/>  **DIY nhà kính trồng rau sạch thông minh:** Xây dựng mô hình nhà kính nông nghiệp thông minh tự động chăm sóc rau sạch.
- - <img src="https://img.icons8.com/?size=100&id=VHYSAR2dZwad&format=png&color=000000"  width="25"/>  **DIY bộ điều khiển thiết bị điện từ xa bằng remote hồng ngoại:** Thiết kế bộ điều khiển bật/tắt các thiết bị điện trong nhà từ khoảng cách xa.
- - <img src="https://img.icons8.com/?size=100&id=LBraU5RHcH0n&format=png&color=000000"  width="25"/>  **DIY hệ thống cảnh báo ngập úng, lũ lụt:** Chế tạo hệ thống tự động phát tín hiệu cảnh báo khi có hiện tượng ngập úng hoặc lũ lụt dâng cao.
- - <img src="https://img.icons8.com/?size=100&id=eCH3ZrUh4efA&format=png&color=000000"  width="25"/>  **DIY hệ thống cửa tự động :** Thiết kế và lắp ráp hệ thống cửa ra vào tự động đóng mở khi phát hiện có người đến gần.
- - <img src="https://img.icons8.com/?size=100&id=Hg6Hznsfoth8&format=png&color=000000"  width="25"/>  **DIY giàn phơi đồ thông minh:** Hiện thực hóa giàn phơi quần áo thông minh bảo vệ đồ giặt khỏi thời tiết xấu.
- - <img src="https://img.icons8.com/?size=100&id=j95AEAW9B68s&format=png&color=000000"  width="25"/>  **DIY két sắt mini chống trộm:** Tạo ra một chiếc đồng hồ cát kỹ thuật số mô phỏng hạt cát rơi nghệ thuật bằng LED Matrix.
- - <img src="https://img.icons8.com/?size=100&id=JbMacZJ29wHV&format=png&color=000000"  width="25"/>  **DIY đồng hồ cát dùng LED Matrix:** Chế tạo chiếc đồng hồ chuyên dụng đếm ngược thời gian thi đấu cho các kỳ thủ cờ vua.
- - <img src="https://img.icons8.com/?size=100&id=jWStkWhIxb9r&format=png&color=000000"  width="25"/>  **DIY bãi đỗ xe thông minh:** Hoàn thiện mô hình bãi đỗ xe tự động phân luồng và quản lý vị trí trống.
- - <img src="https://img.icons8.com/?size=100&id=4bruBkjJijps&format=png&color=000000"  width="25"/>  **DIY đồng hồ đếm ngược trong cờ vua:** Tự tay làm một chiếc két sắt mini bảo mật cao có tích hợp còi báo động chống trộm.
+### 2.3. Cài Đặt Trên macOS
+
+**Bước 1:** Mở tệp `.dmg` vừa tải về.
+
+**Bước 2:** Kéo biểu tượng **Arduino IDE** vào thư mục **Applications**.
+
+<img src="https://docs.arduino.cc/static/5aa93a8c140c7aaadf39ed6e63dc808d/a6d36/downloading-and-installing-img03.png" alt="Cài đặt Arduino IDE Windows" width="500" style="display: block; margin: 0 auto;" />
+
+**Bước 3:** Mở **Finder → Applications → Arduino IDE** để khởi chạy. Nếu macOS cảnh báo "app from unidentified developer", vào **System Preferences → Security & Privacy → Open Anyway**.
 
 ---
 
-### Giai đoạn 6: Top 3 Advanced Projects (Top 3 Dự Án Chuyên Sâu Nâng Cao)
-Đỉnh cao của lộ trình học tập, hướng tới các giải pháp tự động hóa tích hợp IoT quy mô lớn:
+### 2.4. Khởi Động Arduino IDE Lần Đầu
 
-#### 1.  Hệ thống chắn lũ tầng hầm và cảnh báo ngập lụt đô thị tự động
-* **Cơ chế hoạt động:** Sử dụng các cảm biến đo đạc liên tục mực nước theo thời gian thực. Khi mực nước vượt ngưỡng báo động, hệ thống lập trình sẽ tự động kích hoạt động cơ chịu tải để nâng hoặc hạ các tấm chắn lũ kiên cố, ngăn nước tràn vào tầng hầm tòa nhà. Đồng thời, gửi ngay thông tin cảnh báo khẩn cấp qua Internet tới Smartphone của ban quản lý.
+Sau khi cài đặt xong, mở Arduino IDE. Giao diện chính sẽ như sau:
 
-#### 2.  Hệ thống thu hoạch nước mưa thông minh và điều tiết nước tự động
-* **Cơ chế hoạt động:** Tự động nhận diện trời mưa để thu gom nguồn nước mưa tự nhiên vào bể chứa. Hệ thống điều khiển qua các giai đoạn lọc tạp chất thô, lưu trữ an toàn và tính toán lưu lượng đất để tự động bật máy bơm điều tiết tưới tiêu cho cây trồng một cách tiết kiệm, khoa học nhất.
+<img src="https://docs.arduino.cc/static/6510febddcd0559432446f94ba189bfb/a6d36/ide-2-overview.png" alt="Giao diện Arduino IDE 2" width="650" style="display: block; margin: 0 auto;" />
 
-#### 3.  Hệ thống ươm mầm cây giống tự động toàn phần
-* **Cơ chế hoạt động:** Giám sát liên tục và điều khiển chặt chẽ các chỉ số môi trường sinh trưởng lý tưởng bao gồm: nhiệt độ không khí, độ ẩm đất, và cường độ ánh sáng phù hợp cho từng loại mầm cây. Tự động kích hoạt hệ thống phun sương làm mát, bật đèn quang hợp nhân tạo, và cho phép người dùng theo dõi và điều khiển toàn diện từ xa thông qua ứng dụng di động (Mobile App).
+Các thành phần chính của giao diện:
 
----
-
-###  Bạn Sẽ Nhận Được Gì Sau Lộ Trình Này?
-* Nắm chắc toàn bộ gốc rễ kiến thức phần cứng vi điều khiển và tư duy lập trình C/C++.
-* Tích lũy kinh nghiệm thực tế quý báu thông qua việc tự tay đấu nối và viết code cho hàng chục dự án.
-* Rèn luyện tư duy logic thuật toán nhạy bén và kỹ năng phân tích giải quyết sự cố kỹ thuật.
-* Đạt được sự tự tin tuyệt đối để tự nghiên cứu, thiết kế và chế tạo các sản phẩm điện tử thông minh của riêng mình.
-
-###   Lời Khuyên Vàng Cho Người Học
- -  **Học đi đôi với hành:** Đừng chỉ đọc code mẫu, hãy tự tay cắm dây trên breadboard và nạp chương trình để cảm nhận lỗi sai.
- - **Tịnh tiến độ khó:** Luôn bắt đầu từ những dự án cực kỳ nhỏ (như chớp tắt LED), nắm chắc cốt lõi rồi mới nâng dần độ phức tạp.
- - **Chủ động tìm tòi:** Tập thói quen tra cứu tài liệu kỹ thuật chính thức (Datasheet) và tích cực tham gia thảo luận cùng cộng đồng.
- -  **Kiên trì là chìa khóa:** Gặp lỗi (Bug) là một phần tất yếu của lập trình. Kiên trì debug – Chăm chỉ thực hành – Thỏa sức sáng tạo nhất định sẽ dẫn bạn tới thành công!
+| Khu vực | Chức năng |
+|---|---|
+| **Toolbar** (thanh công cụ) | Compile, Upload, Serial Monitor, Serial Plotter |
+| **Editor** (vùng soạn thảo) | Viết code Arduino (sketch) |
+| **Output Panel** (phía dưới) | Hiển thị kết quả biên dịch và thông báo lỗi |
+| **Board & Port Selector** | Chọn loại bo mạch và cổng COM kết nối |
 
 ---
 
-*Thông tin tham khảo từ [www.arduino.cc](https://www.arduino.cc), [wikipedia.org](https://wikipedia.org) và [banlinhkien.com](https://banlinhkien.com).*
+### 2.5. Cài Đặt Driver USB (CH340/CP2102)
 
+Bo mạch **Arduino UNO R3 clone** (hàng Trung Quốc giá rẻ) thường dùng chip chuyển đổi **CH340** thay vì chip gốc ATMEGA16U2. Máy tính cần cài driver riêng để nhận diện.
 
+<img src="https://components101.com/sites/default/files/components/CH340-IC.jpg" alt="Chip CH340" width="350" style="display: block; margin: 0 auto;" />
 
+**Kiểm tra bo mạch của bạn:** Lật mặt sau bo mạch, tìm chip nhỏ có ký hiệu **CH340** hoặc **CP2102**.
+
+**Tải driver CH340:**
+- 🔗 Windows/macOS: https://sparks.gogo.co.nz/ch340.html
+- Sau khi cài, cắm Arduino vào máy tính qua cáp USB. Kiểm tra trong **Device Manager** (Windows) hoặc `/dev/tty.wchusbserial*` (macOS) để xác nhận đã nhận cổng.
+
+> <img src="https://img.icons8.com/?size=100&id=pIPl8tqh3igN&format=png&color=000000"  width="20"/> Với **Arduino UNO R3 chính hãng** (Arduino.cc), máy tính sẽ tự nhận diện mà không cần cài driver thêm.
+
+---
+
+## 3. 🔧 Kết Nối Arduino Với Máy Tính Và Cấu Hình IDE
+
+### 3.1. Kết Nối Qua Cáp USB
+
+Dùng cáp **USB Type-A sang USB Type-B** (cáp hình vuông, giống cáp máy in cũ) để kết nối Arduino UNO R3 với máy tính.
+
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="600" style="display: block; margin: 0 auto;"  />
+
+Khi cắm đúng:
+- **Đèn LED nguồn ON** (màu xanh lá hoặc đỏ) trên bo mạch sẽ sáng lên.
+- Máy tính sẽ nhận diện một cổng **COM mới** (Windows) hoặc `/dev/ttyACM0` / `/dev/ttyUSB0` (Linux/macOS).
+
+---
+
+### 3.2. Chọn Bo Mạch Và Cổng Kết Nối
+
+Trong Arduino IDE, thực hiện 2 bước quan trọng trước khi nạp code:
+
+**Bước 1 – Chọn loại bo mạch:**
+
+Vào menu **Tools → Board → Arduino AVR Boards → Arduino Uno**
+
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_10.png" alt="UNO" width="600" style="display: block; margin: 0 auto;"  />
+
+**Bước 2 – Chọn cổng kết nối:**
+
+Vào menu **Tools → Port** và chọn cổng COM có Arduino (thường là `COM3`, `COM4`, ... trên Windows hoặc `/dev/ttyACM0` trên Linux).
+
+> 💡 **Mẹo:** Cổng đúng thường có chú thích "(Arduino Uno)" ngay bên cạnh.
+
+---
+
+## 4. Nạp Chương Trình Đầu Tiên – Blink LED
+
+Sau khi cài đặt xong, chúng ta sẽ chạy thử chương trình đầu tiên kinh điển trong thế giới Arduino: **Blink LED** – nhấp nháy đèn LED trên bo mạch.
+
+### 4.1. Mở Ví Dụ Có Sẵn
+
+Arduino IDE đã đi kèm nhiều ví dụ mẫu. Mở chương trình Blink bằng cách:
+
+**File → Examples → 01.Basics → Blink**
+
+<img src="https://docs.arduino.cc/static/5b1b3c4b0d0dca4e2a0c6f3a67e67a3e/29007/ide-2-blink-example.png" alt="Mở ví dụ Blink" width="500" style="display: block; margin: 0 auto;" />
+
+Cửa sổ soạn thảo sẽ hiển thị code như sau:
+
+```cpp
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+}
+```
+
+---
+
+### 4.2. Giải Thích Code
+
+Một chương trình Arduino (gọi là **Sketch**) luôn có 2 hàm bắt buộc:
+
+**`void setup()`**
+- Chạy **một lần duy nhất** khi Arduino khởi động hoặc nhấn nút Reset.
+- Dùng để khởi tạo: cấu hình chân GPIO, khởi tạo Serial, kết nối WiFi,...
+
+**`void loop()`**
+- Chạy **lặp lại vô tận** sau khi `setup()` kết thúc.
+- Đây là nơi đặt logic chính của chương trình.
+
+Giải thích từng dòng trong ví dụ Blink:
+
+| Lệnh | Ý nghĩa |
+|---|---|
+| `pinMode(LED_BUILTIN, OUTPUT)` | Cấu hình chân LED tích hợp (chân 13) là ngõ ra |
+| `digitalWrite(LED_BUILTIN, HIGH)` | Đặt chân 13 = mức cao (5V) → LED sáng |
+| `delay(1000)` | Dừng chương trình 1000ms = 1 giây |
+| `digitalWrite(LED_BUILTIN, LOW)` | Đặt chân 13 = mức thấp (0V) → LED tắt |
+
+> 📌 **`LED_BUILTIN`** là hằng số được Arduino IDE định nghĩa sẵn, tương ứng với chân số **13** – chân kết nối với LED có ký hiệu **L** trên bo mạch Arduino UNO R3.
+
+---
+
+### 4.3. Biên Dịch (Compile)
+
+Trước khi nạp code vào Arduino, cần biên dịch để kiểm tra lỗi cú pháp.
+
+Nhấn nút **✓ Verify** (hoặc tổ hợp phím **Ctrl+R**):
+
+<img src="https://docs.arduino.cc/static/9c86771f21c63130a363a4575b8ed712/a6d36/uploading-a-sketch-img01.png" alt="Biên dịch chương trình" width="500" style="display: block; margin: 0 auto;" />
+
+Nếu biên dịch thành công, vùng Output phía dưới sẽ hiển thị:
+
+```
+Sketch uses 924 bytes (2%) of program storage space. Maximum is 32256 bytes.
+Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables.
+```
+
+---
+
+### 4.4. Nạp Code (Upload)
+
+Sau khi biên dịch thành công, nhấn nút **→ Upload** (hoặc tổ hợp phím **Ctrl+U**) để nạp code vào Arduino.
+
+Trong quá trình nạp:
+- Hai đèn LED nhỏ **TX** và **RX** trên bo mạch sẽ nháy liên tục – đây là dấu hiệu dữ liệu đang được truyền.
+- Thanh tiến trình ở dưới cùng hiển thị phần trăm hoàn thành.
+
+Khi nạp xong, IDE thông báo:
+
+```
+Done uploading.
+```
+
+---
+
+### 4.5. Quan Sát Kết Quả
+
+Ngay sau khi nạp xong, đèn LED ký hiệu **"L"** trên bo mạch Arduino UNO R3 sẽ bắt đầu **nhấp nháy**: sáng 1 giây, tắt 1 giây, lặp lại liên tục.
+
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_8.png" alt="Arduino Blink LED" width="400" style="display: block; margin: 0 auto;" />
+
+🎉 **Chúc mừng!** Bạn đã nạp thành công chương trình đầu tiên lên Arduino UNO R3!
+
+---
+
+### 4.6. Thử Thay Đổi Thời Gian Nhấp Nháy
+
+Hãy thử thay đổi giá trị trong hàm `delay()` để thấy sự khác biệt:
+
+```cpp
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(200);   // Sáng nhanh hơn - 0.2 giây
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(800);   // Tắt lâu hơn - 0.8 giây
+}
+```
+
+Sau khi sửa, nhấn **Upload** lại và quan sát đèn LED thay đổi theo nhịp mới.
+
+> 🔬 **Thử thách:** Hãy thử đặt `delay(50)` và quan sát hiện tượng gì xảy ra. Mắt người không thể phân biệt được khi LED nháy với tốc độ quá nhanh!
+
+---
+
+## 5. Xử Lý Lỗi Thường Gặp
+
+| Thông báo lỗi | Nguyên nhân | Cách khắc phục |
+|---|---|---|
+| `avrdude: ser_open(): can't open device` | Sai cổng COM hoặc chưa chọn Port | Kiểm tra lại **Tools → Port** |
+| `Board at COM3 is not available` | Arduino chưa kết nối hoặc driver chưa cài | Kiểm tra cáp USB và cài driver CH340 |
+| `'pinMode' was not declared in this scope` | Sai tên hàm / lỗi cú pháp | Kiểm tra chính tả, phân biệt HOA/thường |
+| Đèn TX/RX không nháy khi Upload | Chọn sai loại bo mạch | Chọn lại **Tools → Board → Arduino Uno** |
+| Upload thành công nhưng LED không nháy | Code logic sai | Kiểm tra lại tên chân và giá trị `delay` |
+
+---
+
+## Tổng Kết
+
+Qua phần này, bạn đã:
+
+- Cài đặt thành công **Arduino IDE 2.x**
+- Kết nối bo mạch **Arduino UNO R3** với máy tính
+- Cấu hình đúng **Board** và **Port** trong IDE
+- Hiểu cấu trúc cơ bản của một **Arduino Sketch** (setup + loop)
+- Biên dịch và nạp chương trình **Blink LED** đầu tiên
+
+Ở các phần tiếp theo, chúng ta sẽ tìm hiểu cách điều khiển LED với nút nhấn, sử dụng PWM để điều chỉnh độ sáng, và đọc tín hiệu analog từ cảm biến.
