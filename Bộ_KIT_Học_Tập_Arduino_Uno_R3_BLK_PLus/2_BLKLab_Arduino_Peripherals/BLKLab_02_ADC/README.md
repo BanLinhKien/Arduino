@@ -1,3 +1,1 @@
-# Arduino
-
-
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/ADC.png" alt="Arduino" />
