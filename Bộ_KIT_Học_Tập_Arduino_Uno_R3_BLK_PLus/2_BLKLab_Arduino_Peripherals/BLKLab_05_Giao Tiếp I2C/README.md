@@ -34,7 +34,7 @@ Sau bài thực hành này, bạn sẽ biết cách:
 
 ---
 
-# Chương trình
+## Chương trình
 
 ```cpp
 #include <Wire.h>

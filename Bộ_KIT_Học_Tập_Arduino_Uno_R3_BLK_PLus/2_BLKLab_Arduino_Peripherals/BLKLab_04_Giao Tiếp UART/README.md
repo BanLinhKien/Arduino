@@ -25,7 +25,6 @@ Sau bài thực hành này, bạn sẽ biết cách:
 
 > **Lưu ý:** Arduino UNO R3 sử dụng IC chuyển đổi USB-UART (CH340G hoặc ATmega16U2), vì vậy không cần kết nối thêm dây UART ngoài để giao tiếp với máy tính.
 
----
 
 ### Sơ đồ kết nối
 
