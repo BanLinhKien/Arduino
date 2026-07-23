@@ -59,7 +59,7 @@ Bộ KIT hỗ trợ xây dựng hơn **40 dự án thực tế sinh động**, t
 
 **Mô tả tổng quan:** Đây là lộ trình huấn luyện lập trình Arduino bài bản được thiết kế cấu trúc khoa học từ cấp độ "Cơ bản đến Nâng cao". Lộ trình này được tối ưu hóa đặc biệt nhằm đi kèm với **Bộ KIT Học Tập Arduino Uno R3 BLK Plus**, tuân thủ nguyên tắc giáo dục STEM trực quan: học đi đôi với hành, tiếp cận dễ hiểu và ứng dụng trực tiếp vào các dự án thực tế ngoài đời sống.
 
-<img src="https://raw.githubusercontent.com/BanLinhKien/Arduino/refs/heads/main/B%E1%BB%99_KIT_H%E1%BB%8Dc_T%E1%BA%ADp_Arduino_Uno_R3_BLK_PLus/1_BLKLab_Arduino_Overview/BLKLab_B%E1%BA%AFt%20%C4%90%E1%BA%A7u%20V%E1%BB%9Bi%20Arduino%20UNO%20R3/BLKLab_02_%20L%E1%BB%99%20Tr%C3%ACnh%20h%E1%BB%8Dc%20Arduino%20v%E1%BB%9Bi%20B%E1%BB%99%20KIT%20H%E1%BB%8Dc%20t%E1%BA%ADp%20Arduino%20Plus%20BLK.png" />
+<img src="https://raw.githubusercontent.com/BanLinhKien/Arduino/refs/heads/main/B%E1%BB%99_KIT_H%E1%BB%8Dc_T%E1%BA%ADp_Arduino_Uno_R3_BLK_PLus/1_BLKLab_Arduino_Overview/BLKLab_01_%20L%E1%BB%99%20Tr%C3%ACnh%20h%E1%BB%8Dc%20Arduino%20v%E1%BB%9Bi%20B%E1%BB%99%20KIT%20H%E1%BB%8Dc%20t%E1%BA%ADp%20Arduino%20Plus%20BLK.png" />
 
 ---
 
