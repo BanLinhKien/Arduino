@@ -1,23 +1,51 @@
+# <p align="center"> Bộ KIT Học Tập Arduino Uno R3 BLK Plus </p>
 
+## Giới Thiệu
 
-# <p align="center">  Bộ KIT Học Tập Arduino Uno R3 BLK Plus </p>
+- **Bộ KIT Học Tập Arduino Uno R3 BLK Plus** là bộ công cụ học tập toàn diện được xây dựng trên nền tảng vi điều khiển **Arduino Uno R3 (ATmega328P)**, giúp người học tiếp cận lập trình nhúng theo lộ trình từ **cơ bản đến nâng cao** thông qua các bài thực hành và dự án thực tế.
 
+- Bộ KIT được thiết kế dành cho **người mới bắt đầu**, học sinh, sinh viên và những người yêu thích điện tử - lập trình. Với hệ sinh thái gồm **hơn 40 linh kiện và module**, người học sẽ từng bước làm chủ các kiến thức nền tảng của Arduino như **GPIO, ADC, PWM, Timer, Interrupt, UART, SPI, I2C và EEPROM**, đồng thời hiểu cách kết hợp nhiều linh kiện để xây dựng các hệ thống nhúng hoàn chỉnh.
 
-**Bộ KIT Học Tập Arduino Uno R3 BLK Plus** là bộ công cụ học tập cao cấp được biên soạn chuyên nghiệp bởi [BanLinhKien](https://banlinhkien.com), nhằm hỗ trợ người học tiếp cận từ cơ bản đến nâng cao để khám phá lập trình và ứng dụng thực tế của *Arduino*. Với hệ sinh thái lên tới **41 linh kiện và module phong phú**, bộ KIT giúp bạn làm chủ nhanh chóng các giao thức truyền thông hiện đại và hiện thực hóa các ý tưởng sáng tạo độc đáo.
+- Thông qua lộ trình học được xây dựng bài bản, **Bộ KIT Học Tập Arduino Uno R3 BLK Plus** không chỉ giúp bạn biết cách sử dụng từng linh kiện riêng lẻ mà còn hình thành tư duy thiết kế hệ thống, tạo nền tảng vững chắc để tiếp tục nghiên cứu các lĩnh vực nâng cao như **IoT, Robotics, Smart Home, Automation** và các bộ KIT chuyên sâu khác của BLK.
 
 <p align="center">
-  <img src="https://pos.nvncdn.com/f2fe44-24897/ps/Bo-KIT-Hoc-Tap-Arduino-Uno-R3-BLK-Plus-3.jpg?v=1780998279" width="380" style="border-radius: 8px; margin-right: 10px;" />   
-  <img src="https://pos.nvncdn.com/f2fe44-24897/ps/Bo-KIT-Hoc-Tap-Arduino-Uno-R3-BLK-Plus-2.jpg?v=1780998221" width="380" style="border-radius: 8px;" />
+    <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/KIT1.png" width="380"/>
+    <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/KIT2.png" width="380"/>
 </p>
 
-###  Đặc điểm nổi bật:
-* **Phiên bản nâng cấp vượt trội:** Sở hữu 41 linh kiện/module chuyên sâu (so với 34 của bản Uno R3 RFID BLK cũ), hỗ trợ thực hành đầy đủ các giao thức truyền thông cốt lõi: I2C, SPI, USART, OneWire.
-* **Hệ thống module đa dạng, trực quan:** Bao gồm cảm biến siêu âm SRF04, cảm biến độ ẩm đất TH, module nhiệt độ/độ ẩm DHT11, module thời gian thực chính xác cao DS1307+AT24C32, và module tạo xung NE555 mở rộng tư duy mạch học.
-* **Dễ dàng lắp ráp và thực hành:** Các linh kiện riêng lẻ đều được module hóa giúp kết nối nhanh chóng thông qua testboard và dây cắm mạch cao cấp, đi kèm hộp đựng chuyên dụng chống va đập HD-UNO.
-* **Chính sách bảo hành tối ưu:** Bảo hành 6 tháng cho bo mạch chủ Arduino Uno R3, hỗ trợ đổi trả linh hoạt trong vòng 7 ngày nếu phát sinh lỗi từ nhà sản xuất.
-* **Giá trị đầu tư thông minh:** Mức giá tham khảo chỉ **850,000 VNĐ** (cập nhật tại banlinhkien.com).
+---
 
-### Danh sách chi tiết 41 thành phần linh kiện
+## Điểm Nổi Bật
+
+- **Lộ trình học bài bản từ cơ bản đến nâng cao**
+    - Làm quen với Arduino IDE và cấu trúc chương trình.
+    - Thực hành đầy đủ các ngoại vi quan trọng của ATmega328P.
+    - Học theo từng chủ đề kết hợp với các bài thực hành trực quan.
+
+- **Hơn 40 linh kiện và module thực hành**
+    - Bao gồm các cảm biến, động cơ, màn hình hiển thị và module truyền thông phổ biến.
+    - Đáp ứng đầy đủ nhu cầu học tập từ các bài thực hành cơ bản đến các dự án tích hợp nhiều thiết bị.
+    - Dễ dàng mở rộng và phát triển thành các sản phẩm thực tế.
+
+- **Học thông qua dự án thực hành**
+    - Mỗi kiến thức đều đi kèm ví dụ và bài thực hành cụ thể.
+    - Rèn luyện tư duy lập trình, tư duy phần cứng và kỹ năng phân tích hệ thống.
+    - Vừa học lý thuyết vừa trực tiếp lắp ráp, kiểm thử và hoàn thiện sản phẩm.
+
+- **Tài liệu đầy đủ và dễ tiếp cận**
+    - Cung cấp tài liệu hướng dẫn chi tiết, sơ đồ đấu nối và mã nguồn mẫu.
+    - Nội dung được biên soạn theo lộ trình giúp người học dễ dàng tự nghiên cứu.
+    - Phù hợp cho tự học, giảng dạy và thực hiện các đồ án, nghiên cứu.
+
+
+| Đối tượng khách hàng | Vấn đề gặp phải | Giải pháp từ bộ KIT |
+|---|---|---|
+| Người mới bắt đầu học Arduino | Chưa biết bắt đầu từ đâu và học theo lộ trình nào | Xây dựng lộ trình học từ cơ bản đến nâng cao với đầy đủ tài liệu và bài thực hành |
+| Học sinh, sinh viên các ngành kỹ thuật | Thiếu môi trường thực hành và trải nghiệm thực tế | Hơn 40 linh kiện và module giúp thực hành trực tiếp trên từng chủ đề |
+| Người muốn tự nghiên cứu điện tử và lập trình nhúng | Khó kết nối kiến thức lý thuyết với ứng dụng thực tế | Học thông qua các dự án trực quan, giúp hiểu nguyên lý và cách triển khai hệ thống |
+| Người định hướng phát triển IoT, Robotics và Automation | Thiếu nền tảng về phần cứng và ngoại vi vi điều khiển | Làm chủ các ngoại vi Arduino trước khi tiếp cận các bộ KIT chuyên sâu và các dự án phức tạp |
+
+## Danh sách chi tiết 41 thành phần linh kiện
 
 | **Tên Linh Kiện** | **SL** | **Tên Linh Kiện** | **SL** |
 | :--- | :---: | :--- | :---: |
@@ -43,17 +71,6 @@
 | Bộ Dây Cắm Mạch YC-65 (Nhiều kích thước) | 1 | Hộp Đựng KIT Học Tập Arduino HD-UNO | 1 |
 | Dây 40P 20CM Đ-C (Hai Đầu Đực Cái) (Vỉ 10 sợi) | 1 | | |
 
-###  Ứng dụng thực hành:
-Bộ KIT hỗ trợ xây dựng hơn **40 dự án thực tế sinh động**, trải dài ở nhiều cấp độ:
-* **Mức độ Cơ bản:** Học cách làm quen với điều khiển LED đơn, LED hiệu ứng chạy đuổi, hiển thị các thông số dữ liệu trên màn hình LCD1602, thu nhận tín hiệu từ bàn phím Keypad, cho đến điều khiển chính xác góc quay động cơ Servo hay tốc độ Động cơ Bước.
-* **Mức độ Nâng cao:** Phát triển các mô hình hệ thống Nhà thông minh (Smart Home), khóa cửa tự động bảo mật cao RFID, thùng rác thông minh tự động mở nắp và phát tiếng nói, đồng hồ hiển thị LED quay nghệ thuật, mạch cảnh báo rò rỉ khí gas nguy hiểm, hay lập trình trò chơi rắn săn mồi cổ điển trên bảng LED Ma Trận.
-* **Ứng dụng đời sống:** Hệ thống giám sát điều kiện môi trường nhiệt độ/độ ẩm, kiểm soát bãi đỗ xe thông minh bằng RFID, mô phỏng cánh tay robot công nghiệp, hay chế tạo đồng hồ cát điện tử sử dụng bảng LED Matrix 8x8.
-
-### Tài liệu & Học liệu đi kèm:
-* Hệ thống mã nguồn mẫu (Source Code), sơ đồ kết nối chân (Schematic Diagram), và cẩm nang hướng dẫn tường tận cho hơn 40 dự án được cộng đồng đóng góp và lưu trữ tại [GitHub BanLinhKien](https://github.com/BanLinhKien/Arduino).[](https://github.com/BanLinhKien/Arduino)
-* Xem chi tiết thông số sản phẩm và nhận hỗ trợ kỹ thuật trực tiếp tại cổng thông tin điện tử: [banlinhkien.com](https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-blk-plus-p38419270.html).[](https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-blk-plus-p38419270.html)
-
----
 
 #  Lộ Trình Học Lập Trình Arduino
 
@@ -146,17 +163,30 @@ Rèn luyện kỹ năng làm việc độc lập và tư duy kỹ thuật thông
 
 ---
 
-###  Bạn Sẽ Nhận Được Gì Sau Lộ Trình Này?
-* Nắm chắc toàn bộ gốc rễ kiến thức phần cứng vi điều khiển và tư duy lập trình C/C++.
-* Tích lũy kinh nghiệm thực tế quý báu thông qua việc tự tay đấu nối và viết code cho hàng chục dự án.
-* Rèn luyện tư duy logic thuật toán nhạy bén và kỹ năng phân tích giải quyết sự cố kỹ thuật.
-* Đạt được sự tự tin tuyệt đối để tự nghiên cứu, thiết kế và chế tạo các sản phẩm điện tử thông minh của riêng mình.
+## FAQs
+#### 1. Bộ KIT này phù hợp với ai?
 
-###   Lời Khuyên Vàng Cho Người Học
- -  **Học đi đôi với hành:** Đừng chỉ đọc code mẫu, hãy tự tay cắm dây trên breadboard và nạp chương trình để cảm nhận lỗi sai.
- - **Tịnh tiến độ khó:** Luôn bắt đầu từ những dự án cực kỳ nhỏ (như chớp tắt LED), nắm chắc cốt lõi rồi mới nâng dần độ phức tạp.
- - **Chủ động tìm tòi:** Tập thói quen tra cứu tài liệu kỹ thuật chính thức (Datasheet) và tích cực tham gia thảo luận cùng cộng đồng.
- -  **Kiên trì là chìa khóa:** Gặp lỗi (Bug) là một phần tất yếu của lập trình. Kiên trì debug – Chăm chỉ thực hành – Thỏa sức sáng tạo nhất định sẽ dẫn bạn tới thành công!
+Bộ KIT phù hợp cho người mới bắt đầu học Arduino, học sinh, sinh viên và những người muốn tự học lập trình vi điều khiển.
+
+#### 2. Tôi cần biết lập trình trước không?
+
+Không. Bộ KIT được thiết kế theo lộ trình từ cơ bản nên bạn có thể bắt đầu ngay cả khi chưa có kinh nghiệm.
+
+#### 3. Bộ KIT có bao nhiêu dự án?
+
+Hơn 40 bài thực hành và dự án, từ điều khiển LED đến các mô hình Smart Home, RFID và Automation.
+
+#### 4. Bộ KIT có tài liệu và mã nguồn không?
+
+Có. Mỗi bài học đều đi kèm tài liệu hướng dẫn, sơ đồ đấu nối và mã nguồn mẫu.
+
+#### 5. Sau khi học xong nên học gì tiếp?
+
+Bạn nên tiếp tục với Bộ KIT Học Tập Arduino I2C BLK, nơi tập trung vào giao tiếp I2C và xây dựng các hệ thống nhúng có nhiều module hoạt động đồng thời.
+
+#### 6. Bộ KIT có giúp làm đồ án không?
+
+Có. Các dự án trong bộ KIT được thiết kế theo hướng ứng dụng thực tế, là nền tảng tốt để phát triển đồ án, nghiên cứu và các sản phẩm điện tử.
 
 ---
 

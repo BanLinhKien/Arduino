@@ -1,9 +1,7 @@
-# <img src="https://img.icons8.com/?size=100&id=qJhh65nOkrqR&format=png&color=000000" alt="Arduino" width="40"  /> Nền Tảng Lập Trình Arduino & Lộ Trình Phát Triển Toàn Diện
+# <p align="center"> Nền Tảng Lập Trình Arduino & Lộ Trình Phát Triển Toàn Diện </p>
 
 
-<p align="center"> <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/1_1.png" alt="Arduino" width="400" style="display: block; margin: 0 auto; border-radius: 8px;" /></p>
 
----
 
 ## 1. Arduino là gì?
 
@@ -77,7 +75,6 @@ Chọn phiên bản phù hợp với hệ điều hành của bạn:
 
 > 💡 **Khuyến nghị:** Sử dụng **Arduino IDE 2.x** (phiên bản mới nhất) vì có giao diện hiện đại hơn, hỗ trợ autocomplete, Serial Plotter tích hợp và nhiều tính năng hữu ích khác.
 
----
 
 ### 2.2. Cài Đặt Trên Windows
 
@@ -93,7 +90,6 @@ Chọn phiên bản phù hợp với hệ điều hành của bạn:
 
 **Bước 4:** Quá trình cài đặt diễn ra tự động. Sau khi hoàn tất, nhấn **Finish**. Trình cài đặt có thể yêu cầu cài thêm **USB driver** cho Arduino – nhấn **Install** để cho phép.
 
----
 
 ### 2.3. Cài Đặt Trên macOS
 
@@ -105,7 +101,6 @@ Chọn phiên bản phù hợp với hệ điều hành của bạn:
 
 **Bước 3:** Mở **Finder → Applications → Arduino IDE** để khởi chạy. Nếu macOS cảnh báo "app from unidentified developer", vào **System Preferences → Security & Privacy → Open Anyway**.
 
----
 
 ### 2.4. Khởi Động Arduino IDE Lần Đầu
 
@@ -121,8 +116,6 @@ Các thành phần chính của giao diện:
 | **Editor** (vùng soạn thảo) | Viết code Arduino (sketch) |
 | **Output Panel** (phía dưới) | Hiển thị kết quả biên dịch và thông báo lỗi |
 | **Board & Port Selector** | Chọn loại bo mạch và cổng COM kết nối |
-
----
 
 ### 2.5. Cài Đặt Driver USB (CH340/CP2102)
 
@@ -146,13 +139,12 @@ Bo mạch **Arduino UNO R3 clone** (hàng Trung Quốc giá rẻ) thường dùn
 
 Dùng cáp **USB Type-A sang USB Type-B** (cáp hình vuông, giống cáp máy in cũ) để kết nối Arduino UNO R3 với máy tính.
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/2_9" alt="Nano" width="600" style="display: block; margin: 0 auto;"  />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/napcode.png" alt="Nano" width="600" style="display: block; margin: 0 auto;"  />
 
 Khi cắm đúng:
 - **Đèn LED nguồn ON** (màu xanh lá hoặc đỏ) trên bo mạch sẽ sáng lên.
 - Máy tính sẽ nhận diện một cổng **COM mới** (Windows) hoặc `/dev/ttyACM0` / `/dev/ttyUSB0` (Linux/macOS).
 
----
 
 ### 3.2. Chọn Bo Mạch Và Cổng Kết Nối
 
@@ -202,7 +194,6 @@ void loop() {
 }
 ```
 
----
 
 ### 4.2. Giải Thích Code
 
@@ -227,7 +218,6 @@ Giải thích từng dòng trong ví dụ Blink:
 
 > 📌 **`LED_BUILTIN`** là hằng số được Arduino IDE định nghĩa sẵn, tương ứng với chân số **13** – chân kết nối với LED có ký hiệu **L** trên bo mạch Arduino UNO R3.
 
----
 
 ### 4.3. Biên Dịch (Compile)
 
@@ -244,7 +234,6 @@ Sketch uses 924 bytes (2%) of program storage space. Maximum is 32256 bytes.
 Global variables use 9 bytes (0%) of dynamic memory, leaving 2039 bytes for local variables.
 ```
 
----
 
 ### 4.4. Nạp Code (Upload)
 
@@ -260,8 +249,6 @@ Khi nạp xong, IDE thông báo:
 Done uploading.
 ```
 
----
-
 ### 4.5. Quan Sát Kết Quả
 
 Ngay sau khi nạp xong, đèn LED ký hiệu **"L"** trên bo mạch Arduino UNO R3 sẽ bắt đầu **nhấp nháy**: sáng 1 giây, tắt 1 giây, lặp lại liên tục.
@@ -270,7 +257,6 @@ Ngay sau khi nạp xong, đèn LED ký hiệu **"L"** trên bo mạch Arduino UN
 
 🎉 **Chúc mừng!** Bạn đã nạp thành công chương trình đầu tiên lên Arduino UNO R3!
 
----
 
 ### 4.6. Thử Thay Đổi Thời Gian Nhấp Nháy
 
@@ -314,3 +300,8 @@ Qua phần này, bạn đã:
 - Biên dịch và nạp chương trình **Blink LED** đầu tiên
 
 Ở các phần tiếp theo, chúng ta sẽ tìm hiểu cách điều khiển LED với nút nhấn, sử dụng PWM để điều chỉnh độ sáng, và đọc tín hiệu analog từ cảm biến.
+
+---
+
+*Thông tin tham khảo từ [www.arduino.cc](https://www.arduino.cc), [wikipedia.org](https://wikipedia.org) và [banlinhkien.com](https://banlinhkien.com).*
+
