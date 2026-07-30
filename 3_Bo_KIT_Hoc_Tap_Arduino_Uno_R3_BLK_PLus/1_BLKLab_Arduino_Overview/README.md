@@ -119,7 +119,7 @@ Các thành phần chính của giao diện:
 
 ### 2.5. Cài Đặt Driver USB (CH340/CP2102)
 
-Bo mạch **Arduino UNO R3 clone** (hàng Trung Quốc giá rẻ) thường dùng chip chuyển đổi **CH340** thay vì chip gốc ATMEGA16U2. Máy tính cần cài driver riêng để nhận diện.
+Bo mạch **Arduino UNO R3**  thường dùng chip chuyển đổi **CH340** thay vì chip gốc ATMEGA16U2. Máy tính cần cài driver riêng để nhận diện.
 
 <img src="https://components101.com/sites/default/files/components/CH340-IC.jpg" alt="Chip CH340" width="350" style="display: block; margin: 0 auto;" />
 
@@ -174,7 +174,8 @@ Arduino IDE đã đi kèm nhiều ví dụ mẫu. Mở chương trình Blink b�
 
 **File → Examples → 01.Basics → Blink**
 
-<img src="https://docs.arduino.cc/static/5b1b3c4b0d0dca4e2a0c6f3a67e67a3e/29007/ide-2-blink-example.png" alt="Mở ví dụ Blink" width="500" style="display: block; margin: 0 auto;" />
+<img src="https://docs.arduino.cc/3fb57be2d7a0519e5e06856322874177/playpause.gif" alt="Mở ví dụ Blink" width="500" style="display: block; margin: 0 auto;" />
+
 
 Cửa sổ soạn thảo sẽ hiển thị code như sau:
 
