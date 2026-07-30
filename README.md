@@ -14,6 +14,12 @@
 
 <img src="https://pos.nvncdn.com/f2fe44-24897/store/20180126_gVLn1I1Irv2dz2XjhYDIshMM.png" alt="Banlinhkien" width="50" />   [**BanLinhKien**](https://banlinhkien.com/)
 
+---
+
+
+[***Bộ KIT Học Tập Arduino Và 55+ Mạch Điện Tử Cơ Bản BLK***](https://banlinhkien.com/bo-kit-hoc-tap-arduino-va-55-mach-dien-tu-co-ban-blk-p38422156.html)
+
+<img src="https://pos.nvncdn.com/f2fe44-24897/ps/Bo-KIT-Hoc-Tap-Arduino-Va-55-Mach-Dien-Tu-Co-Ban-BLK-2.png?v=1775639407" alt="Bộ KIT Học Tập Arduino Uno R3 RFID BLK" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/Bo-KIT-Hoc-Tap-Arduino-Va-55-Mach-Dien-Tu-Co-Ban-BLK-2.jpg?v=1763452272" alt="Bộ KIT Học Tập Arduino Uno R3 RFID BLK" width="400" />   
 
 ---
 
@@ -26,7 +32,7 @@
 
 [***Bộ KIT Học Tập Arduino Uno R3 BLK Plus***](https://banlinhkien.com/bo-kit-hoc-tap-arduino-uno-r3-blk-plus-p38419270.html)
 
-<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230821_o5LKOchlIF.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 BLK Plus" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230818_gWTNTGRu66.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 BLK Plus" width="400" />   
+<img src="https://pos.nvncdn.com/f2fe44-24897/ps/20230821_o5LKOchlIF.jpeg" alt="Bộ KIT Học Tập Arduino Uno R3 BLK Plus" width="400" />   <img src="https://pos.nvncdn.com/f2fe44-24897/ps/Bo-KIT-Hoc-Tap-Arduino-Uno-R3-BLK-Plus-2.jpg?v=1780998221" alt="Bộ KIT Học Tập Arduino Uno R3 BLK Plus" width="400" />   
 
 ---
 
