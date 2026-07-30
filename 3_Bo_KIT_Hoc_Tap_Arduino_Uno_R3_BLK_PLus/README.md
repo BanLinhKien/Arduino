@@ -76,7 +76,7 @@
 
 **Mô tả tổng quan:** Đây là lộ trình huấn luyện lập trình Arduino bài bản được thiết kế cấu trúc khoa học từ cấp độ "Cơ bản đến Nâng cao". Lộ trình này được tối ưu hóa đặc biệt nhằm đi kèm với **Bộ KIT Học Tập Arduino Uno R3 BLK Plus**, tuân thủ nguyên tắc giáo dục STEM trực quan: học đi đôi với hành, tiếp cận dễ hiểu và ứng dụng trực tiếp vào các dự án thực tế ngoài đời sống.
 
-<img src="https://raw.githubusercontent.com/BanLinhKien/Arduino/refs/heads/main/B%E1%BB%99_KIT_H%E1%BB%8Dc_T%E1%BA%ADp_Arduino_Uno_R3_BLK_PLus/1_BLKLab_Arduino_Overview/BLKLab_01_%20L%E1%BB%99%20Tr%C3%ACnh%20h%E1%BB%8Dc%20Arduino%20v%E1%BB%9Bi%20B%E1%BB%99%20KIT%20H%E1%BB%8Dc%20t%E1%BA%ADp%20Arduino%20Plus%20BLK.png" />
+<img src="https://raw.githubusercontent.com/BanLinhKien/Arduino/refs/heads/main/3_Bo_KIT_Hoc_Tap_Arduino_Uno_R3_BLK_PLus/1_BLKLab_Arduino_Overview/BLKLab_01_%20L%E1%BB%99%20Tr%C3%ACnh%20h%E1%BB%8Dc%20Arduino%20v%E1%BB%9Bi%20B%E1%BB%99%20KIT%20H%E1%BB%8Dc%20t%E1%BA%ADp%20Arduino%20Plus%20BLK.png" />
 
 ---
 
@@ -89,7 +89,6 @@ Bước khởi đầu vững chắc giúp bạn nắm bắt linh hồn của h�
 * Quy trình chuẩn để viết code, cấu hình cổng mạch, tải chương trình (upload) và vận hành thử nghiệm.
 * Nắm vững bản chất tư duy điều khiển tín hiệu: Khái niệm Digital I/O và hai trạng thái Logic `HIGH`/`LOW`.
 
----
 
 ### Giai đoạn 2: Peripherals (Làm Chủ Phần Cứng Ngoại Vi)
 Đi sâu vào cấu trúc phần cứng vi điều khiển để làm chủ các kỹ thuật giao tiếp tín hiệu quan trọng:
@@ -106,7 +105,6 @@ Bước khởi đầu vững chắc giúp bạn nắm bắt linh hồn của h�
 | **WATCHDOG TIMER** | Hệ thống giám sát thông minh, tự động khởi động lại (Reset) hệ thống nếu xảy ra hiện tượng treo code. |
 | **EEPROM** | Bộ nhớ lưu trữ dữ liệu bền vững, bảo vệ thông số cấu hình không bị mất đi khi hệ thống mất điện. |
 
----
 
 ### Giai đoạn 3: Basic Projects (Dự Án Thực Hành Cơ Bản)
 Hiện thực hóa lý thuyết thông qua các bài tập thực hành nền móng đầu tiên:
@@ -119,8 +117,6 @@ Hiện thực hóa lý thuyết thông qua các bài tập thực hành nền m�
 * Thực hành đọc các thông số cảm biến nhiệt độ môi trường xung quanh.
 * Điều khiển định vị góc quay chính xác cao cho Động cơ Servo.
 
----
-
 ### Giai đoạn 4: Expansion Projects (Dự Án Thực tế Mở Rộng)
 Nâng cao tư duy lập trình bằng cách kết hợp nhiều module ngoại vi vào một hệ thống thống nhất:
 * **Đếm số lượng khách:** Theo dõi và đếm tự động lượng khách ra vào cửa hàng dựa trên nguyên lý phản xạ sóng của Cảm biến Siêu âm.
@@ -131,8 +127,6 @@ Nâng cao tư duy lập trình bằng cách kết hợp nhiều module ngoại v
 * **Hệ thống tương tác Keypad + LCD:** Nhập dữ liệu, mật khẩu từ ma trận bàn phím Keypad và xuất kết quả lên màn hình LCD.
 *  **Cảm biến an ninh:** Tích hợp bộ ba module cảm biến (Rung, Ánh sáng, Âm thanh) để bật/tắt thiết bị bảo an thông minh.
 *   **Giàn phơi đồ tự động:** Chế tạo mô hình giàn phơi đồ tự động thu vào khi trời mưa và đưa ra khi có nắng nắng.
-
----
 
 ###  Giai đoạn 5: Top 10 Projects (Top 10 Dự Án Độc Đáo Nổi Bật)
 Rèn luyện kỹ năng làm việc độc lập và tư duy kỹ thuật thông qua 10 dự án DIY hoàn chỉnh:
@@ -147,7 +141,6 @@ Rèn luyện kỹ năng làm việc độc lập và tư duy kỹ thuật thông
  - <img src="https://img.icons8.com/?size=100&id=jWStkWhIxb9r&format=png&color=000000"  width="25"/>  **DIY bãi đỗ xe thông minh:** Hoàn thiện mô hình bãi đỗ xe tự động phân luồng và quản lý vị trí trống.
  - <img src="https://img.icons8.com/?size=100&id=4bruBkjJijps&format=png&color=000000"  width="25"/>  **DIY đồng hồ đếm ngược trong cờ vua:** Tự tay làm một chiếc két sắt mini bảo mật cao có tích hợp còi báo động chống trộm.
 
----
 
 ### Giai đoạn 6: Top 3 Advanced Projects (Top 3 Dự Án Chuyên Sâu Nâng Cao)
 Đỉnh cao của lộ trình học tập, hướng tới các giải pháp tự động hóa tích hợp IoT quy mô lớn:
@@ -172,6 +165,7 @@ Bộ KIT phù hợp cho người mới bắt đầu học Arduino, học sinh, s
 
 Không. Bộ KIT được thiết kế theo lộ trình từ cơ bản nên bạn có thể bắt đầu ngay cả khi chưa có kinh nghiệm.
 
+
 #### 3. Bộ KIT có bao nhiêu dự án?
 
 Hơn 40 bài thực hành và dự án, từ điều khiển LED đến các mô hình Smart Home, RFID và Automation.
@@ -180,13 +174,35 @@ Hơn 40 bài thực hành và dự án, từ điều khiển LED đến các mô
 
 Có. Mỗi bài học đều đi kèm tài liệu hướng dẫn, sơ đồ đấu nối và mã nguồn mẫu.
 
-#### 5. Sau khi học xong nên học gì tiếp?
+#### 5. Có video hướng dẫn không?
+
+Có.
+
+Mỗi nội dung đều có video hướng dẫn để bạn dễ dàng quan sát cách đấu nối, lập trình và chạy thử dự án.
+
+#### 6. Sau khi học xong nên học gì tiếp?
 
 Bạn nên tiếp tục với Bộ KIT Học Tập Arduino I2C BLK, nơi tập trung vào giao tiếp I2C và xây dựng các hệ thống nhúng có nhiều module hoạt động đồng thời.
 
-#### 6. Bộ KIT có giúp làm đồ án không?
+#### 7. Bộ KIT có giúp làm đồ án không?
 
 Có. Các dự án trong bộ KIT được thiết kế theo hướng ứng dụng thực tế, là nền tảng tốt để phát triển đồ án, nghiên cứu và các sản phẩm điện tử.
+
+#### 8. Mình chưa biết gì có mua được không?
+
+Được nhé.
+
+Đây cũng chính là đối tượng mà bộ KIT hướng tới. Chỉ cần dành thời gian học theo từng bài và thực hành thường xuyên, bạn sẽ dần làm chủ kiến thức từ cơ bản đến nâng cao.
+
+#### 9. Học có khó không?
+
+Không quá khó nếu học theo đúng lộ trình. Các bài học được sắp xếp từ dễ đến nâng cao, mỗi bài đều có sơ đồ kết nối, giải thích nguyên lý và code mẫu. Bạn chỉ cần thực hành lần lượt là sẽ hiểu dần cách Arduino hoạt động.
+
+#### 10. Bộ KIT có bảo hành không?
+
+Có.
+
+Các linh kiện và bo mạch trong bộ KIT đều được bảo hành theo chính sách của [Banlinhkien](https://banlinhkien.com). Nếu gặp lỗi do nhà sản xuất, shop sẽ hỗ trợ kiểm tra và đổi mới theo quy định.
 
 ---
 
