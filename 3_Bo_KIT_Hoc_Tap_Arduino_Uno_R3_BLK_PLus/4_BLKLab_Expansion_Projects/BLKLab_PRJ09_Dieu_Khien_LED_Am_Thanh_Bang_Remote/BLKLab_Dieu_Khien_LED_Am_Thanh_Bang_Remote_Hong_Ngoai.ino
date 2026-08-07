@@ -1,5 +1,5 @@
 // -------------------------------------------------------------
-// CHUYỂN IRREMOTE SANG TIMER 1 ĐỂ KHÔNG XUNG ĐỘT VỚI TONE() & LED D3
+// PRJ: Điều khiển LED & Âm thanh bằng Remote hồng ngoại
 // -------------------------------------------------------------
 #define IR_USE_AVR_TIMER1 
 #include <IRremote.hpp>
