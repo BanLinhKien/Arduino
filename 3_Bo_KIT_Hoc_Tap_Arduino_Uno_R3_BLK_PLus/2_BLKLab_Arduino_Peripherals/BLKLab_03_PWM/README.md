@@ -29,7 +29,7 @@ Sau bài thực hành này, bạn sẽ biết cách:
 
 ### Sơ đồ đấu nối
 
-<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/PWM2.png" alt="Arduino" />
+<img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/PWM3.png" alt="Arduino" />
 
 ### Kết nối
 
