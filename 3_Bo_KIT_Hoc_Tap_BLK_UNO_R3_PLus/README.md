@@ -63,11 +63,11 @@
 | Module relay Mini 1 kênh 5V 10A BLK | 1 | LED 5MM Phủ Đỏ | 10 |
 | Module Cảm Biến Mưa | 1 | LED 5MM Phủ Xanh Lá | 10 |
 | Cảm Biến Đo Độ Ẩm Đất TH | 1 | LED 5MM Phủ Vàng | 10 |
-| Module NE555 (Tạo xung) | 1 | Pin nguồn 9V (Loại Thường) | 1 |
-| Module DHT11 (Cảm biến nhiệt ẩm) | 1 | Dây Đế Pin 9V Ra Đầu Jack DC5.5x2.1mm | 1 |
+| Module NE555 (Tạo xung) | 1 | Module Nguồn 3.3V-5V Cho TestBoard MB-102 830 Lỗ | 1 |
+| Module DHT11 (Cảm biến nhiệt ẩm) | 1 | Nguồn Adapter 9V1A DC5.5x2.1mm | 1 |
 | Module Thời Gian Thực DS1307+AT24C32 | 1 | Chiết Áp Đơn B10K | 1 |
 | Module LED Neo Pixel 12 LED RGB | 1 | Còi Chíp (Buzzer) 5V 9.5x12MM | 1 |
-| Board Test GL No.12 (Breadboard) | 1 | Keypad 4x4 dạng dán SMD | 1 |
+| Board Test MB-102 830 Lỗ (16.5x5.5cm) | 1 | Keypad 4x4 dạng dán SMD | 1 |
 | Bộ Dây Cắm Mạch YC-65 (Nhiều kích thước) | 1 | Hộp Đựng KIT Học Tập Arduino HD-UNO | 1 |
 | Dây 40P 20CM Đ-C (Hai Đầu Đực Cái) (Vỉ 10 sợi) | 1 | | |
 
@@ -76,7 +76,7 @@
 
 **Mô tả tổng quan:** Đây là lộ trình huấn luyện lập trình Arduino bài bản được thiết kế cấu trúc khoa học từ cấp độ "Cơ bản đến Nâng cao". Lộ trình này được tối ưu hóa đặc biệt nhằm đi kèm với **Bộ KIT Học Tập Arduino Uno R3 BLK Plus**, tuân thủ nguyên tắc giáo dục STEM trực quan: học đi đôi với hành, tiếp cận dễ hiểu và ứng dụng trực tiếp vào các dự án thực tế ngoài đời sống.
 
-<img src="https://raw.githubusercontent.com/BanLinhKien/Arduino/refs/heads/main/3_Bo_KIT_Hoc_Tap_Arduino_Uno_R3_BLK_PLus/1_BLKLab_Arduino_Overview/BLKLab_01_%20L%E1%BB%99%20Tr%C3%ACnh%20h%E1%BB%8Dc%20Arduino%20v%E1%BB%9Bi%20B%E1%BB%99%20KIT%20H%E1%BB%8Dc%20t%E1%BA%ADp%20Arduino%20Plus%20BLK.png" />
+<img src="https://raw.githubusercontent.com/BanLinhKien/Arduino/refs/heads/main/3_Bo_KIT_Hoc_Tap_BLK_UNO_R3_PLus/1_BLKLab_Arduino_Overview/BLKLab_02_%20T%E1%BB%95ng%20quan%20v%E1%BB%81%20Arduino%20UNO%20R3.png" />
 
 ---
 
