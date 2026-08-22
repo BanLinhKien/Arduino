@@ -1,12 +1,12 @@
-# <p align="center"> Bộ KIT Học Tập Arduino Uno R3 BLK Plus </p>
+# <p align="center"> Bộ KIT Học Tập BLK Uno R3 Plus </p>
 
 ## Giới Thiệu
 
-- **Bộ KIT Học Tập Arduino Uno R3 BLK Plus** là bộ công cụ học tập toàn diện được xây dựng trên nền tảng vi điều khiển **Arduino Uno R3 (ATmega328P)**, giúp người học tiếp cận lập trình nhúng theo lộ trình từ **cơ bản đến nâng cao** thông qua các bài thực hành và dự án thực tế.
+- **Bộ KIT Học Tập BLK Uno R3 Plus** là bộ công cụ học tập toàn diện được xây dựng trên nền tảng vi điều khiển **Arduino Uno R3 (ATmega328P)**, giúp người học tiếp cận lập trình nhúng theo lộ trình từ **cơ bản đến nâng cao** thông qua các bài thực hành và dự án thực tế.
 
 - Bộ KIT được thiết kế dành cho **người mới bắt đầu**, học sinh, sinh viên và những người yêu thích điện tử - lập trình. Với hệ sinh thái gồm **hơn 40 linh kiện và module**, người học sẽ từng bước làm chủ các kiến thức nền tảng của Arduino như **GPIO, ADC, PWM, Timer, Interrupt, UART, SPI, I2C và EEPROM**, đồng thời hiểu cách kết hợp nhiều linh kiện để xây dựng các hệ thống nhúng hoàn chỉnh.
 
-- Thông qua lộ trình học được xây dựng bài bản, **Bộ KIT Học Tập Arduino Uno R3 BLK Plus** không chỉ giúp bạn biết cách sử dụng từng linh kiện riêng lẻ mà còn hình thành tư duy thiết kế hệ thống, tạo nền tảng vững chắc để tiếp tục nghiên cứu các lĩnh vực nâng cao như **IoT, Robotics, Smart Home, Automation** và các bộ KIT chuyên sâu khác của BLK.
+- Thông qua lộ trình học được xây dựng bài bản, **Bộ KIT Học Tập BLK Uno R3 Plus** không chỉ giúp bạn biết cách sử dụng từng linh kiện riêng lẻ mà còn hình thành tư duy thiết kế hệ thống, tạo nền tảng vững chắc để tiếp tục nghiên cứu các lĩnh vực nâng cao như **IoT, Robotics, Smart Home, Automation** và các bộ KIT chuyên sâu khác của BLK.
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/theduong6168/BLKLab/refs/heads/main/image/KIT1.png" width="380"/>
@@ -49,7 +49,7 @@
 
 | **Tên Linh Kiện** | **SL** | **Tên Linh Kiện** | **SL** |
 | :--- | :---: | :--- | :---: |
-| KIT Arduino UNO R3 CH340G (Kèm Dây USB & Jump) | 1 | Module LED 7 Thanh 0.36" 4 Số Katot | 1 |
+| KIT UNO R3 CH340G (Kèm Dây USB & Jump) | 1 | Module LED 7 Thanh 0.36" 4 Số Katot | 1 |
 | LCD1602 Xanh Lá 5V | 1 | LED 7 Thanh 0.56" 1 Số Anot (Sáng Đỏ) | 1 |
 | Module Chuyển Đổi I2C cho LCD1602 | 1 | IC 74HC595 DIP16 (Mở rộng chân) | 1 |
 | Module Điều khiển Động Cơ L298 V3 5-35VDC 2A | 1 | LED Matrix 2 Màu Xanh Đỏ 8x8 Anode Chung | 1 |
